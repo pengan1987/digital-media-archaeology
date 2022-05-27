@@ -1,5 +1,4 @@
 # 电脑之外
-
 我今天是数字媒体的实验考古的最后一节课：电脑之外。在前面的七节课里，我们所讨论的“数字媒体”跨越了六七十年的历史和若干种不同的硬件设备，从50、60年代的大型主机到今天最普遍的智能手机，所有的这些设备都属于同一类别：数字式电子计算机（Digital electronic computer）。它们所处理的数据也都是数字数据（Digital data），而我们这个系列的主题“数字媒体”（Digital media），正是建立在使用数字式电子计算机处理数字数据的基础上的。无论是其表现形式是超文本、音频、视频、三维模型还是交互游戏，其内容都是数字数据。
 
 而这一节课，我们希望将讨论的对象暂时从数字媒体上移开，而着重于讨论表现形式，即：今天我们常见的数字媒体的表现形式及其具备的特性，究竟从何而来？其中有一些可以非常直观的找出来，比如数字音乐继承了唱片工业的遗产，而数字视频的基础设施则广泛来自电影和电视工业。但这其中仍然有一些影响深刻，却更为隐秘并不为人广泛所知的联系。
@@ -13,71 +12,32 @@
 ## 模拟计算机
 但数字式计算机并非是人们发明过的唯一的计算工具，也不是人们唯一用作媒体设备的计算工具。我们在中学数学中往往都接触过尺规作图解方程的方法，就是一种通过空间中的机械运动进行计算的示例。而计算尺这种经典的机械计算工具仍然在不少场合被用到。
 
-飞行大家谈：E6B领航计算尺的使用方法1
-80 赞同 · 18 评论文章
-
-而电脑动画的起点，也是一种模拟式计算机。1950年代，约翰·海尔斯·惠特尼（John Hales Whitney）开始尝试改装二战中退役的M5/M7火炮射击指挥仪（gun director），惠特尼利用指挥仪中的球盘式积分器和凸轮控制影片中灯泡的位置，实现了最早的电脑动画。
-
-电影片头赏 ——《迷魂记》_哔哩哔哩_bilibili
-​www.bilibili.com/video/BV1wT4y1g7JT
-
-1958年希区柯克的电影《迷魂记》的片头，就是由惠特尼使用模拟式计算机制作的。
-
-1997年8月的《Animation World Magazine》介绍了约翰·惠特尼的创作
-
-Digital Harmony: The Life of John Whitney, Computer Animation Pioneer
-
-Rhizome网站上2013年的文章介绍了《迷魂记》片头的创作背景
-
-Did 'Vertigo' Introduce Computer Graphics to Cinema?
+而电脑动画的起点，也是一种模拟式计算机。1950年代，约翰·海尔斯·惠特尼（John Hales Whitney）开始尝试改装二战中退役的M5/M7火炮射击指挥仪（gun director），惠特尼利用指挥仪中的球盘式积分器和凸轮控制影片中灯泡的位置，实现了最早的电脑动画[^1]。惠特尼使用这种方式，为1958年希区柯克的电影《迷魂记》制作了片头[^2]。
 
 ## 收音机
 虽然我们现在已经很难找到模拟式的计算机。但在日常生活中，模拟电路仍然是随处可见的。而最常见的一种基于模拟电路、同时又是媒体设备的装置就是收音机。一个最简单收音机往往具有两个可调节的旋钮，一个用于调节音量，一个用于调节频率。这两个旋钮都是模拟式的。通过调节收音机的音量可以明显感受到它与数字式的音响系统的不同，比如手机或电脑的音量都会由固定的“刻度”，比如0~100，我们只能在不同的音量刻度中“跳跃”，这也是典型的离散数值系统的特点。而模拟式的收音机的音量变化确是连续的、旋钮的角度或推杆的位置都不存在固定的刻度。
 
-收音机的音量旋钮
 收音机作为一种历史悠久的电子传播媒体渠道，与许多其他的电子媒体共享着若干相同的特性。与互联网类似，收音机对应的广播电台也有着边际成本（Marginal cost）递减的特点：即服务的听众或用户数量越多，花费在单个用户身上的成本就越低。在信号可以覆盖的范围内，无论有多少听众，广播电台都只需要发送一次信号，因此一个区域拥有收音机的用户越多，广播电台的传播效果就越好，这与手机App追求装机量的逻辑是相同的。
 
 而使用硬拷贝的媒体则不具备这样的优势，如报纸、杂志能触及的读者数量皆受制于印刷的数量；而唱片、磁带也是如此，每多增加一份拷贝，就需要多付出一份成本。收音机的普及是在唱片和录音技术出现之后对流行音乐影响最大的技术，录音技术将听众和演出现场分开，收音机则继续将听众和存储介质分开，让听众通过收音机收听音乐的成本几乎为零。
 
-英国周边的船只和海上平台上的海盗电台，图片来自：THE STORM IS ABOUT TO BREAK
-
-在这个过程中也出现了特别具有标志性的文化现象，就是海盗电台。在1950~1960年代，无线电发射设备已经逐渐廉价到业余爱好者可以自行组装和运行，没有执照运营的地下电台就成为许多新兴音乐流派重要的传播途径，特别是在英国，海盗电台对摇滚乐的形成和传播产生过重要的影响。在BBC的专题《重塑广播：塑造BBC的100种声音》（Radio Reinvented：100 Voices that made the BBC）种的第一期，就介绍了BBC在应对海盗电台的竞争的过程中也吸收了海盗电台作为流行音乐广播的遗产。
+在这个过程中也出现了特别具有标志性的文化现象，就是海盗电台。在1950~1960年代，无线电发射设备已经逐渐廉价到业余爱好者可以自行组装和运行，没有执照运营的地下电台就成为许多新兴音乐流派重要的传播途径，特别是在英国，海盗电台对摇滚乐的形成和传播产生过重要的影响。在BBC的专题《重塑广播：塑造BBC的100种声音》[^3]中的第一期，就介绍了BBC在应对海盗电台的竞争的过程中也吸收了海盗电台作为流行音乐广播的遗产。
 
 而当收音机和磁带录音机组合成为收录机之后，通过磁带录制广播电台播放的音乐成为一种廉价的获得录音的手段。这也引起了唱片工业界的反弹，英国唱片业协会 (BPI)在1980年代曾以“家庭录音正在扼杀音乐”作为口号开展反对家庭录音的营销活动。而随着这一活动推出的“磁带和骨头”标志，也被反版权的文件分享网站“海盗湾”挪用与其标志上。
 
-JOHN CAGE_ Imaginary Landscape No. 4_哔哩哔哩_bilibili
-​www.bilibili.com/video/BV1aC4y1a7ZV
-
 在艺术界最有影响力的使用收音机做创作的艺术家是约翰·凯奇（John Cage），在1951年《想象的风景第四号》（Imaginary Landscape No. 4）就使用了12台收音机产生所有的音响。在1960年的《水上行走》（Water Walk）中，使用了一系列生活用品来制造声音效果，其中也使用了收音机。
-
-John Cage - Water Walk_哔哩哔哩_bilibili
-​www.bilibili.com/video/BV1SW411X7r4
 
 ## 多媒体的前身：多画面投影
 今天，我们通常把“多媒体”（multimedia）和电脑上的数字媒体等同起来。但在1970年代到1990年代间，“多媒体”一词却与一系列基于胶片的媒体紧密结合：多图像（Multi-image）表演。
 
 多图像表演通常使用基于35毫米反转片的胶片幻灯机，通过声音与画面同步的方式进行表演，简易的版本通常使用录音带里特殊的声音信号控制单台幻灯机切换画面，而复杂的版本则使用多台幻灯机拼接或层叠出复杂的画面，而更晚一些的版本则和计算机结合，利用电脑可以精确的控制十余台幻灯机进行明暗、图像的切换，组合成更加复杂的动态画面效果。
 
-Audio Visual Laboratories (AVL)开发的计算机多图像系统曾经被广泛使用并一度成为视听展示行业的实时标准，其工程师Steven Michelsen保存了一系列相关设备的资料：
-
-Audio Visual Laboratories Multi-Image Slide Show Programming Computers
-​www.stevenmichelsen.com/AVL/
-
-多图像（Multi-image）表演制作人Douglas Mesney的网站展示了大量相关作品和幕后资料
-
-Incredible Images Shows - Douglas Mesney
-​www.incredibleimages.com/index.html
-
-媒体保存技术员Fergus O’Connor介绍了泰特美术馆尝试通过逆向工程重现声画同步多图像表演的实践
-
-Slow Dissolve: Re-presenting synchronised slide-based artworks in the 21st Century
-​resources.culturalheritage.org/emg-review/volume-4-2015-2016/oconnor/
+Audio Visual Laboratories (AVL)开发的计算机多图像系统曾经被广泛使用并一度成为视听展示行业的实时标准，其工程师Steven Michelsen保存了一系列相关设备的资料[^4]，而多图像（Multi-image）表演制作人Douglas Mesney的网站“不可思议的图像表演”[^5]则展示了大量相关作品和幕后资料。此外媒体保存技术员Fergus O’Connor也撰文介绍了泰特美术馆尝试通过逆向工程重现声画同步多图像表演的实践[^6]。
 
 我们现在在网上仍然能够买到二手的幻灯机，德国产的徕卡（Leica）、金德曼（Kinderman）、禄来（Rollei）幻灯机通常是长条形德片槽，而美国产的柯达（Kodak）和国产的海鸥幻灯机则通常是圆盘形片槽。
 
 目前来看，幻灯片的片槽、片夹都不难买到。但制作幻灯片本身却是比较复杂的环节。一个可以在非专业环境下制作的方式是先打印，再使用反转片翻拍，但胶卷和冲洗的费用都不低。在直接能够连接电脑的数据投影机（Data projector）流行之前，商业环境下也会用胶片记录仪（Film Recorder）将数字图像转换为胶片（电影和档案行业称为“数转胶”），但目前提供这种服务的机构已经很少，而且价格更贵。
 
-普通喷墨打印机打印的菲林片不够清晰
 目前淘宝上可以买到支持喷墨打印和激光打印的菲林片，是一种值得尝试的低成本制作幻灯片的方式，但对打印机会比较挑剔，我使用办公室的喷墨打印机试做了一些，可以观看，但明显清晰度不够，有机会我用分辨率更高的打印机再试一下。
 
 ## 书写投影器
@@ -85,18 +45,9 @@ Slow Dissolve: Re-presenting synchronised slide-based artworks in the 21st Centu
 
 这种强大的交互性除了适合于教育，也非常适合于设计交互原型，我们很容易发现微软PixelSense（最开始叫Surface）上操作照片的方式与书写投影器的相似性。
 
-使用书写投影器制作的液体灯光秀
-而使用书写投影器最重要的表演形式，应当是液体灯光秀（liquid light show），它使用不同密度的液体会分层的特点，来制作斑斓、迷幻的视觉效果。通常使用的材料有矿物油、食用色素、油性色素（Oil dye，国内比较容易买到的是蜡烛色素）等。而所用的容器表面皿（watch glass/clock glass）是一种常见的实验室器材，也可以在淘宝上买到。此外，我也尝试了使用水拓画的颜料，效果与使用油性颜料有一定区别，颜色较淡。
+而使用书写投影器最重要的表演形式，应当是液体灯光秀（liquid light show），它使用不同密度的液体会分层的特点，来制作斑斓、迷幻的视觉效果。通常使用的材料有矿物油、食用色素、油性色素（Oil dye，国内比较容易买到的是蜡烛色素）等。而所用的容器表面皿（watch glass/clock glass）是一种常见的实验室器材，也可以在淘宝上买到。此外，我也尝试了使用水拓画的颜料，效果与使用油性颜料有一定区别，颜色较淡。在海外DIY网站instructables上，有一个比较详细的液体灯光秀教程[^7]。
 
-
-Liquid Light Lab是近年来比较活跃的液体灯光秀团体：Liquid Light Lab
-
-instructables也有一个比较详细的液体灯光秀教程：Old School Psychedelic Light Show
-
-约书亚灯光秀（Joshua Light Show）
-液体灯光秀表演中最知名的例子要数从1967年问世的约书亚灯光秀（Joshua Light Show），在60年代末70年代初，这一表演曾经出现在谁人乐队（The Who）、感恩至死（Grateful Dead）、大门乐队（The Doors）、詹尼斯·乔普林（Janis Joplin）等乐队和歌手的演出现场，对现代VJ的审美产生了重要的影响。
-
-约书亚灯光秀官网：Joshua Light Show
+液体灯光秀表演中最知名的例子要数从1967年问世的约书亚灯光秀（Joshua Light Show）[^8]，在60年代末70年代初，这一表演曾经出现在谁人乐队（The Who）、感恩至死（Grateful Dead）、大门乐队（The Doors）、詹尼斯·乔普林（Janis Joplin）等乐队和歌手的演出现场，对现代VJ的审美产生了重要的影响。近年来，也有一些新的比较液体灯光秀团体如Liquid Light Lab[^9]在海外活跃。
 
 ## 最成功的立体视觉产品：View-Master
 推出于1939年纽约世博会的View-Master是目前市场上最成功的立体视觉产品，它诞生的时间仅仅比第一款大量销售的彩色胶片柯达克罗姆胶卷（Kodachrome）晚四年。时至今日，这款已经超过80年历史的光学玩具仍然没有停产，在美国亚马逊上仍然能海淘到新品。它不仅是最成功的视觉玩具，也启发了之后的一系列立体视觉产品。
@@ -104,10 +55,17 @@ instructables也有一个比较详细的液体灯光秀教程：Old School Psych
 课上所展示的View-Master片盘，野生动物内容是和Discovery探索频道合作推出的
 同时View-Master也开发了丰富的立体内容生态，View-Master和国家地理、探索频道、迪士尼等有着长期的合作，同时《星际迷航》、《时间隧道》（The Time Tunnel）、《星球大战》等科幻影视题材也登陆过View-Master。
 
-View-Master数据库：The View-Master Database
-View-Master资源站： The View-Master Resource
-英国的View-Master及立体视觉资料网站vhttp://iewmaster.co.uk： 20th Century Stereo Viewers
-机核网关于View-Master的报道： 有个玩具 80 年前就能带你进入立体世界
+在海外，View-Master有着不少的爱好者和收藏者，他们为View-Master建立了若干详尽的资源目录，如View-Master  Database（viewmasterinfo.com），The View-Master Resource（vmresource.com），20th Century Stereo Viewers（viewmaster.co.uk）等等，给研究者提供了不少的便利。
 
 ## 结语：连接“新媒体”与“旧媒体”
 在这一节课里，我们一小半的时间在玩收音机，一大半的时间在玩胶片——它们都不是一般意义上的“新媒体”或“数字媒体”，但我们却不难感受到它与基于数字式计算机的各种技术产物的相似性，无论是基于时间（time-based）的特性，动态影像（motion graphic）的生成，以及光学错觉（Optical illusion）的利用，都是电影制作者和数字媒体制作者所共享的创作手法。而无论我们是解读使用“旧媒体”还是“新媒体”制作的作品，这些背景知识都可以帮我们理解创作者们的实践和创新。经过这节课跨越数十年的“时间旅行”，我们在面临一些未曾见过的作品时，也会更加容易地找到其中的历史线索和脉络。
+
+[^1]: 1997年8月的《Animation World Magazine》介绍了约翰·惠特尼的创作：https://www.awn.com/mag/issue2.5/2.5pages/2.5moritzwhitney.html
+[^2]: Rhizome网站上2013年的文章介绍了《迷魂记》片头的创作背景：https://rhizome.org/editorial/2013/may/9/did-vertigo-introduce-computer-graphics-cinema/
+[^3]: Radio Reinvented：100 Voices that made the BBC：https://www.bbc.com/historyofthebbc/100-voices/radio-reinvented/
+[^4]: AVL Multi-Image Slide Show Computers：http://www.stevenmichelsen.com/AVL/
+[^5]: Incredible Images Shows：http://www.incredibleimages.com/index.html
+[^6]: Slow Dissolve: Re-presenting synchronised slide-based artworks in the 21st Century：https://resources.culturalheritage.org/emg-review/volume-4-2015-2016/oconnor/
+[^7]: Old School Psychedelic Light Show：https://www.instructables.com/Old-School-Psychedelic-Light-Show/
+[^8]: 约书亚灯光秀官网：https://www.joshualightshow.com/
+[^9]: Liquid Light Lab：https://liquidlightlab.com/home.html

@@ -94,7 +94,6 @@ IEEE 1394接口除了可以连接数字摄像机之外，也可以通过媒体�
 我们能够发现，在经历过90年代多媒体个人电脑功能的突飞猛进之后，个人电脑能够处理的媒介类型也基本上被确定下来：图像、声音、视频、交互操作、3D生成影像、光盘和通信。直到今天，它们仍然是大多数多媒体艺术作品所使用的材料。
 
 ## 参考资料
-
 [^1]: BBC存档的节目信息：https://genome.ch.bbc.co.uk/18900b0c0fe6426b922b26c45fecd570
 [^2]: 加利福尼亚大学伯克利分校的战略性计算和通信技术课堂报告介绍了Quantel诉Adobe一案：https://inst.eecs.berkeley.edu/~eecsba1/sp98/reports/eecsba1f/Final.html#Adobe
 [^3]: Richard Shoup的SuperPaint论文：https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.94.157&rep=rep1&type=pdf
