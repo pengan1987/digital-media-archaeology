@@ -1,5 +1,6 @@
-# Hands on Digital Media Archaeology
-"Hands-on Digital Media Archaeology" is a series of experimental courses held at the Network Society Research Institute of the School of Intermedia Art, China Academy of Art, at the invitation of Professor Huang Sunquan. The first phase of this course took place between October and December 2021, and this manual has been compiled from the lecture notes of the classroom sessions.
+# Introduction
+
+"[Hands-on Digital Media Archaeology](#user-content-fn-1)[^1]" is a series of experimental courses held at the Network Society Research Institute of the School of Intermedia Art, China Academy of Art, at the invitation of Professor Huang Sunquan. The first phase of this course took place between October and December 2021, and this manual has been compiled from the lecture notes of the classroom sessions.
 
 As the first hands-on-centered media archaeology course in mainland China, I attempted to establish a small-scale media archaeology lab. The aim was to acquaint all participants with significant historical digital and electronic media through hands-on activities. This involved showcasing and experiencing outdated or "dead" media, also referred to as "obsolete media," along with media devices closely associated with technological advancements. Through these materials, the goal was to re-examine the origins of the characteristics present in today's digital media.
 
@@ -11,3 +12,4 @@ In this course, each episode will discuss a specific theme. For example, first e
 
 For each episode's topic, it will first attempt to discuss how the IT industry and regular users utilized these technologies and devices at the time. Next, I will explore and showcase the works created by new media artists using these mediums. Additionally, the course will provide background information on specific media.
 
+[^1]: This is a test content
