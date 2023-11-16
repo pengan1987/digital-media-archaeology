@@ -9,9 +9,9 @@ The primary conduit for interoperating between diverse media today is the comput
 
 # TV Output
 
-Next, let's revisit a classic case, the 1987 "Painting with Light" series by the BBC, inviting renowned artists such as David Hockney and Howard Hodgkin to create drawings using the Quantel Paintbox computer device.
+Next, let's revisit a classic case, the 1987 "[Painting with Light](https://genome.ch.bbc.co.uk/18900b0c0fe6426b922b26c45fecd570)" series by the BBC, inviting renowned artists such as David Hockney and Howard Hodgkin to create drawings using the Quantel Paintbox computer device.
 
-The Quantel Paintbox, released in 1981, was the earliest commercial tool enabling computer drawing within television signals and marked the advent of commercial computer-based painting software. In 1996, Quantel sued Adobe over computer painting patents[^2], referencing Richard Shoup's 1973 SuperPaint. Adobe successfully defended itself based on SuperPaint[^3], and consequently, the operation of computer painting tools is no longer under patent protection, allowing various software developers to use these methods freely.
+The Quantel Paintbox, released in 1981, was the earliest commercial tool enabling computer drawing within television signals and marked the advent of commercial computer-based painting software. In 1996, [Quantel sued Adobe](https://inst.eecs.berkeley.edu/~eecsba1/sp98/reports/eecsba1f/Final.html#Adobe) over computer painting patents, referencing Richard Shoup's 1973 SuperPaint. Adobe successfully defended itself based on [SuperPaint](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.94.157&rep=rep1&type=pdf), and consequently, the operation of computer painting tools is no longer under patent protection, allowing various software developers to use these methods freely.
 
 The Quantel Paintbox served as a cross-media system, linking brushes, computer software, and television via technological means. Today, I've brought a television transmission device, a TV modulator, capable of sending video signals into a cable TV network. It's connected to this DVD player on the classroom table, acting as a video source. By modulating it through the modulator, all TVs connected to the cable can receive the program being played by the DVD player. Our modulator can simultaneously modulate four video sources onto four TV channels, effectively simulating a miniature cable TV station with four sets of programs.
 
@@ -27,14 +27,9 @@ The visuals of home computers supporting TV output could be recorded by VCRs and
 
 The Laser 310 can output to a television in two ways. One method is through composite video signals, known as an AV line. AV interfaces can still be found on today's televisions, allowing modern LCD TVs to connect to the Laser 310 computer. Additionally, the Laser 310 is equipped with an RF modulator, a feature common in many old-school computers but less prevalent in today's technology, which directly transmits signals to a TV tuner.
 
-## CD-ROM和光盘
-在现代多媒体电脑概念形成的过程中，一个重要的里程碑就是CD-ROM光盘的出现。前面提到的HyperCard就时常被用来用来制作光盘内容。在90年代初，CD-ROM是个人电脑上能使用的存储容量最大的设备。CD-ROM容量有640MB，而第一款内置CD-ROM的苹果电脑，1992年下半年的Macintosh IIvx标配的硬盘只有80MB，光盘的容量是硬盘的数倍。
-
-即使是我们用于展示的2003年生产的PowerMac G4，它的硬盘容量也只有60GB，只能装下不到100张CD-ROM。而90年代中期推出的DVD-ROM每张光盘可以有4.7GB容量，只要12~13张光盘就可以把这台电脑的硬盘装满。
-
 ### HyperCard
 
-The next software to mention is HyperCard. While the visual and auditory language of computer software and games still, to a considerable extent, draws from the logic of movies and TV, the development of computer interactivity is a facet unique to the medium. Introduced in 1987, HyperCard was the first widely used hypermedia tool, supporting button-driven navigation while also allowing the embedding of visual and auditory resources like images and sounds into its cards. HyperCard's organizational approach profoundly influenced the development of the World Wide Web. The first browser supporting embedded images and tables, ViolaWWW, cited HyperCard as an inspiration for its functionality design[^4].
+The next software to mention is HyperCard. While the visual and auditory language of computer software and games still, to a considerable extent, draws from the logic of movies and TV, the development of computer interactivity is a facet unique to the medium. Introduced in 1987, HyperCard was the first widely used hypermedia tool, supporting button-driven navigation while also allowing the embedding of visual and auditory resources like images and sounds into its cards. HyperCard's organizational approach profoundly influenced the development of the World Wide Web. The first browser supporting embedded images and tables, ViolaWWW, [cited HyperCard as an inspiration](https://web.archive.org/web/20220831020010/http://viola.org/viola/violaIntro.html) for its functionality design.
 
 Older Macintosh programs like HyperCard can no longer run on today's Macs. To demonstrate it, I've prepared a PowerMac G4, a model from 2003. It showcases several configurations different from modern computers, such as a display interface using the dedicated ADC (Apple Display Connector), which can transmit both images and power. This computer can run the native Mac OS 9, thus supporting most software developed for Motorola 68K processor-based Macintosh systems before the mid-1990s.
 
@@ -44,7 +39,7 @@ A crucial milestone in the formation of the modern multimedia computer concept w
 
 Even the PowerMac G4 produced in 2003, which we're using for the demonstration, had a hard drive capacity of only 60GB, accommodating less than 100 CD-ROMs. By the mid-1990s, the introduction of DVD-ROMs increased the storage capacity to 4.7GB per disc, meaning it would take just 12 to 13 discs to fill up this computer's hard drive.
 
-Therefore, CD-ROMs, representing optical media, served as substantial storage devices for a considerable period. The widespread adoption of CD drives made it possible to distribute software content that was previously difficult to carry using floppy disks as the primary distribution method. Games distributed on CD-ROMs often included high-quality pre-recorded audio for background music and sound effects. Many also featured pre-rendered high-quality cinematic videos, content that couldn't fit on floppy disks. Some artists attempted to distribute their multimedia works via CD-ROM. Sandra Fauconnier, a Belgian art historian, established "The CD-ROM Cabinet," an art preservation project for CD-ROMs, making some disc image files available for public access via the Internet Archive.
+Therefore, CD-ROMs, representing optical media, served as substantial storage devices for a considerable period. The widespread adoption of CD drives made it possible to distribute software content that was previously difficult to carry using floppy disks as the primary distribution method. Games distributed on CD-ROMs often included high-quality pre-recorded audio for background music and sound effects. Many also featured pre-rendered high-quality cinematic videos, content that couldn't fit on floppy disks. Some artists attempted to distribute their multimedia works via CD-ROM. Sandra Fauconnier, a Belgian art historian, established "[The CD-ROM Cabinet](https://cdromcabinet.tumblr.com/)", an art preservation project for CD-ROMs, making some disc image files available for public access via the Internet Archive.
 
 One of the demonstrations to follow is the game "Myst," one of the most iconic early CD-ROM games and the best-selling PC game of the 1990s, with sales reaching 6 million copies, a figure surpassed only in 2002 by "The Sims." It's worth noting that the initial version of Myst was developed on a Macintosh using HyperCard.
 
@@ -63,7 +58,7 @@ Before the 1990s, the term "multimedia" wasn't closely associated with computer 
 - 1993: Multimedia PC Level 2: 486SX (25MHz), 4MB RAM, 160MB HDD, 2x CD-ROM
 - 1996: Multimedia PC Level 3: Pentium (75MHz), 8MB RAM, 540MB HDD, 4x CD-ROM, MPEG-I, 352x240, 30fps (VCD-level MPEG video)
 
-To understand the development of multimedia computers during this period, one can refer to Professor Chen Liuqin Zhi's paper "Understanding Multimedia Information Systems: Today's Achievements and Tomorrow's Possibilities" presented at the NIT'92 conference[^6]. The paper describes the dominant position held by CD-ROMs and various CD standards in multimedia systems in the early '90s. Additionally, the Tate Gallery introduces some multimedia works beyond computers[^7].
+To understand the development of multimedia computers during this period, one can refer to Professor Chen Liuqin Zhi's paper "[Understanding Multimedia Information Systems: Today's Achievements and Tomorrow's Possibilities](http://web.simmons.edu/~chen/nit/NIT'92/049-che.htm)" presented at the NIT'92 conference. The paper describes the dominant position held by CD-ROMs and various CD standards in multimedia systems in the early '90s. Additionally, the Tate Gallery introduces [some multimedia works](https://www.tate.org.uk/art/art-terms/m/multi-media) beyond computers.
 
 ## Codecs
 
@@ -84,7 +79,7 @@ Now, let's shift to Microsoft's DirectX. Microsoft, differing from Apple's empha
 
 Direct3D is a relatively lower-level API that allows software to directly manipulate graphics card functions. However, these graphic functionalities are highly intricate and swiftly evolving, raising the bar for game development. Some gaming companies open up their game's graphical capabilities for licensing to other developers, leading to the creation of game engines. Engines like idTech (Quake series), GoldSrc (Half-Life), and Unreal Engine began licensing for use by other developers by the late '90s.
 
-The proliferation of 3D graphics cards also provided a new platform for the demoscene community to craft real-time visual programs. Demotools like Werkkzeug[^8] offered solutions akin to game engines for real-time 3D art demos.
+The proliferation of 3D graphics cards also provided a new platform for the demoscene community to craft real-time visual programs. Demotools like [Werkkzeug](https://github.com/farbrausch/fr_public) offered solutions akin to game engines for real-time 3D art demos.
 
 ## Video Capture
 
@@ -103,17 +98,6 @@ Besides connecting digital camcorders, the IEEE 1394 interface could link to ana
 ## Paperless Fax and Multimedia Communication
 The evolution of computer multimedia capabilities and widespread internet use transformed the telecommunications industry. Modems used for internet access were also extensively employed for paperless faxing, a function built into Windows 95 and subsequent versions.
 
-In 1995, VocalTec developed the "Internet Phone," the first commercially successful IP telephony software. In 1996, Microsoft's NetMeeting, released alongside Internet Explorer 3.0, further popularized network video calling and made webcams a common computer peripheral. Internet-based voice and video calls disrupted long-distance telephone services, a significant revenue stream in the telecommunications industry, sparking the domestic "First IP Telephony Lawsuit."[^9] Jennifer Ringley, through her webcam and self-built website Jennicam, established the fundamental form of "lifecasting" or "daily casting."
+In 1995, VocalTec developed the "Internet Phone," the first commercially successful IP telephony software. In 1996, Microsoft's NetMeeting, released alongside Internet Explorer 3.0, further popularized network video calling and made webcams a common computer peripheral. Internet-based voice and video calls disrupted long-distance telephone services, a significant revenue stream in the telecommunications industry, sparking the [first IP telephony lawsuit](https://www.gmw.cn/01gmrb/1999-01/01/GB/17924%5EGM10-003.HTM) in China. Jennifer Ringley, through her webcam and self-built website Jennicam, established the fundamental form of "lifecasting" or "daily casting."
 
 Following the rapid advancements in multimedia personal computer functionality during the 1990s, the types of media handled by personal computers were essentially established: images, sound, video, interactive operations, 3D-generated imagery, discs, and communication. Even today, these remain the primary materials utilized in most multimedia art pieces.
-
-## 参考资料
-[^1]: BBC存档的节目信息：https://genome.ch.bbc.co.uk/18900b0c0fe6426b922b26c45fecd570
-[^2]: 加利福尼亚大学伯克利分校的战略性计算和通信技术课堂报告介绍了Quantel诉Adobe一案：https://inst.eecs.berkeley.edu/~eecsba1/sp98/reports/eecsba1f/Final.html#Adobe
-[^3]: Richard Shoup的SuperPaint论文：https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.94.157&rep=rep1&type=pdf
-[^4]: A Brief Overview of the VIOLA Engine, and its Applications：http://viola.org/viola/violaIntro.html
-[^5]: The CD-ROM Cabinet：https://cdromcabinet.tumblr.com/
-[^6]: Understanding multimedia information systems: consequences for today and possibilities for tomorrow：http://web.simmons.edu/~chen/nit/NIT'92/049-che.htm
-[^7]: Multi-media - Art Term：https://www.tate.org.uk/art/art-terms/m/multi-media
-[^8]: Werkkzeug的开发团队Farbrausch公开了他们的一系列demo制作工具：https://github.com/farbrausch/fr_public
-[^9]: 光明日报《IP电话案：“网上第一告”》：https://www.gmw.cn/01gmrb/1999-01/01/GB/17924%5EGM10-003.HTM
