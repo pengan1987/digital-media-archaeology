@@ -15,11 +15,11 @@ The disk model is one of the most common models we encounter, and the floppy dis
 
 The image above basically explains how a floppy disk operates. At one corner of the 3.5-inch floppy, there's a small hole with a sliding plastic tab—a write-protect switch. When this hole is open, the contents of the disk cannot be altered. Many characteristics of floppy disks aren't far from our current systems; several resemble hard disks, such as the file system, directory structure, but with significantly smaller capacities.
 
-When discussing floppy disks, we often refer to the 3.5-inch floppy as a "1.44 MB floppy," but in reality, floppy disk formats can be quite complex. When dealing with old computer floppy disks, the initial hurdle often encountered is the disk format. OmniFlop[^1] is software specifically designed to read and write data to old computer floppy disks. It provides alternative drivers beyond the default Windows floppy disk drivers, supporting a broader range of floppy disk formats. OmniFlop's website lists approximately 167 floppy disk formats it can read, some with capacities as small as a few dozen KB to over 1600KB.
+When discussing floppy disks, we often refer to the 3.5-inch floppy as a "1.44 MB floppy," but in reality, floppy disk formats can be quite complex. When dealing with old computer floppy disks, the initial hurdle often encountered is the disk format. [OmniFlop](http://www.shlock.co.uk/Utils/OmniFlop/) is software specifically designed to read and write data to old computer floppy disks. It provides alternative drivers beyond the default Windows floppy disk drivers, supporting a broader range of floppy disk formats. OmniFlop's website lists approximately 167 floppy disk formats it can read, some with capacities as small as a few dozen KB to over 1600KB.
 
 Even similar-looking 3.5-inch floppy disks might have varying capacities on different computers. Many might not even be readable with standard PC floppy drives. The floppy disk formats of Apple Macintosh and Apple IIGS are notably different from those on IBM PCs. Their 400KB and 800KB formats used a Sony-developed Zoned Constant Angular Velocity (Zoned CAV) floppy drive. Therefore, old Macintosh floppy disks cannot be read using modern floppy drives. I've personally encountered this issue before with my old Macintosh SE, which used an 800KB floppy drive incompatible with standard PC drives, hindering the use of floppy disks as a data transfer medium.
 
-To make it possible to read these less common formats using more readily available equipment, especially floppy drives in IBM PCs and compatible machines, various software and tools have been developed for floppy disk digital preservation and forensics. For instance, fdrawcmd[^2] is a Windows floppy drive controller driver supporting more floppy disk formats, while KyroFlux[^3] offers a dedicated hardware floppy drive controller capable of reading formats, including Apple 400/800KB formats, that many PC floppy drives cannot.
+To make it possible to read these less common formats using more readily available equipment, especially floppy drives in IBM PCs and compatible machines, various software and tools have been developed for floppy disk digital preservation and forensics. For instance, [fdrawcmd](https://simonowen.com/fdrawcmd/) is a Windows floppy drive controller driver supporting more floppy disk formats, while [KyroFlux](https://kryoflux.com/) offers a dedicated hardware floppy drive controller capable of reading formats, including Apple 400/800KB formats, that many PC floppy drives cannot.
 
 ## Hard Disk
 Another common storage medium is the hard disk. Floppy disks derive their name from the flexible plastic used for their disks, while hard disks utilize materials typically made of metal, although some models use glass—materials that cannot bend—hence the term "hard" disk. In fact, hard disks predate floppy disks. Floppy disks were developed in the late '60s and became a commercial product in the '70s, whereas the widely acknowledged first hard disk, the IBM 350 RAMAC, was introduced in 1956.
@@ -41,7 +41,7 @@ The Jaz drive is another intriguing case representing the primary approach to ma
 
 Another storage device using CHS addressing is the optical magnetic disk, also known as the MO disk or MO optical disk. It's readily available in second-hand markets, as many archival institutions used it for long-term storage until tape drives gradually replaced it in recent years. The MO disk operates by magnetic writing and optical reading, employing the Faraday effect where light deflects upon encountering a magnetic field, allowing data reading through changes in light. Despite being an optical storage device in principle, unlike CDs or DVDs, it operates more like a disk in software and has a CHS structure.
 
-The latest devices utilizing a hard drive-like storage method are memory cards and solid-state drives (SSDs), both based on flash memory chips. However, they also report CHS structure to software. Documentation for industrial storage cards, including CF cards[^4] and SD cards[^5], provides CHS parameters as a reference for embedded developers.
+The latest devices utilizing a hard drive-like storage method are memory cards and solid-state drives (SSDs), both based on flash memory chips. However, they also report CHS structure to software. Documentation for industrial storage cards, including [CF cards](https://docs.rs-online.com/5e7c/0900766b80d86218.pdf) and [SD cards](https://www.apro-tw.com/Databank/2009%20Datasheet/Industrial%20SD/100-WPSDMD-01V1.pdf), provides CHS parameters as a reference for embedded developers.
 
 Although memory cards roughly adhere to hard drive standards in software operations, their interface and form factor complexity present numerous challenges to users. There are complexities in compatibility between memory cards, as well as standard and non-standard adapter cards. For example, MMC cards typically work in SD card slots, almost all CF cards can convert to PC cards without performance loss, and many memory cards have PC card versions of card readers. However, the compatibility and stability of these adapters vary, often requiring actual testing to confirm their performance.
 
@@ -65,35 +65,14 @@ As an example from my own experience, I have a 1987 IBM PS/2 Model 30 with a 720
 
 However, there are more challenges with Apple systems. One issue is the incompatibility with earlier mentioned floppy disk formats. The 400k and 800k Macintosh floppy drives were discontinued after the PowerMac G3, and regular PC floppy drives cannot read them. This requires multiple data migrations, necessitating a compatible machine like my Power Macintosh 6100 and Power Macintosh 7300, both acting as intermediaries for the Macintosh SE, exchanging data with modern computers via Ethernet due to their Ethernet cards. This is a common approach when dealing with data from old computers.
 
-Another challenge when handling files from old Apple computers is the HFS file system's type and creator codes. Unlike Windows or later macOS versions that use file extensions to denote file types, old Mac OS systems store file types in HFS file attributes. Transferring files using non-HFS formatted disks may result in losing file types stored in HFS attributes, leading to uncertainty about which program to use to open the file. Thus, handling these file systems requires special attention. If you still have a Mac OS 9 or earlier Apple computer, tools like FileTyper or FileType can be used to view and modify HFS file system type and creator codes.
+Another challenge when handling files from old Apple computers is the HFS file system's type and creator codes. Unlike Windows or later macOS versions that use file extensions to denote file types, old Mac OS systems store file types in HFS file attributes. Transferring files using non-HFS formatted disks may result in losing file types stored in HFS attributes, leading to uncertainty about which program to use to open the file. Thus, handling these file systems requires special attention. If you still have a Mac OS 9 or earlier Apple computer, tools like [FileTyper](https://www.macintoshrepository.org/2050-filetyper) or [FileType](http://www.frederikseiffert.de/filetype/) can be used to view and modify HFS file system type and creator codes.
 
-When dealing with disks of uncertain formats, Windows tools like DiskGenius or R-Studio can be used to investigate disk partition conditions. Often, disk tools on Apple systems hide many file system details, making diagnosis and repair challenging. Moreover, newer Linux kernels have built-in hfsplus modules, enabling low-level operations on Apple HFS partition tables using Linux tools like GParted, which the macOS built-in disk utilities does not support.
-
-## 光盘
-接下来我们来看一下光盘，光盘的一个特点就是它的存储结构是一个或若干连续的轨道，并非像硬盘那样是非常规则的多层同心圆结构，也因此无法用CHS结构进行寻址。通常纯数据CD-ROM只有一个轨道，多轨道CD往往用于在一张光盘上存储不同类型的数据，比如同时存储音频和数据。在光盘备份工具IsoBuster网站上的文章[^9]介绍了CD和DVD光盘的结构。
-
-一个能够让我们了解光盘结构的方式就是CUE脚本，它记录了关于光盘轨道详细的信息。在Hydrogenaudio Knowledgebase的文档中对CUE脚本有详细的介绍[^10]。我们可以先看一下普通的CD-ROM的CUE表，它只有一个轨道，使用的是MODE1/2048格式。
-
-```
-CATALOG 0000000000000
-FILE "Myst (1994)(Broderbund).iso" BINARY
-  TRACK 01 MODE1/2048
-    INDEX 01 00:00:00
-```
-而VCD的CUE表则通常是MODE2/2352格式。
-```
-FILE "Image.bin" BINARY
-  TRACK 01 MODE2/2352
-    INDEX 01 00:00:00
-  TRACK 02 MODE2/2352
-    INDEX 00 00:29:02
-    INDEX 01 00:31:00
-```
+When dealing with disks of uncertain formats, Windows tools like DiskGenius or R-Studio can be used to investigate disk partition conditions. Often, disk tools on Apple systems hide many file system details, making diagnosis and repair challenging. Moreover, newer Linux kernels have built-in hfsplus modules, enabling low-level operations on Apple HFS partition tables using Linux tools like [GParted](https://gparted.org/), which the macOS built-in disk utilities does not support.
 
 ## Optical Discs
-Let's delve into optical discs. One characteristic of optical discs is their storage structure, which comprises one or several continuous tracks, unlike hard drives that have a regular multi-layered concentric structure. Hence, they cannot be addressed using the CHS structure. Typically, a pure data CD-ROM has only one track, while multi-track CDs are often used to store different types of data on a single disc, such as storing both audio and data. IsoBuster, a disc backup tool, has articles[^9] on CD and DVD disc structures.
+Let's delve into optical discs. One characteristic of optical discs is their storage structure, which comprises one or several continuous tracks, unlike hard drives that have a regular multi-layered concentric structure. Hence, they cannot be addressed using the CHS structure. Typically, a pure data CD-ROM has only one track, while multi-track CDs are often used to store different types of data on a single disc, such as storing both audio and data. IsoBuster, a disc backup tool, has [articles on CD and DVD disc structures](https://www.isobuster.com/help/cd_dvd_layout).
 
-One way to understand the structure of optical discs is through a CUE script, which records detailed information about the disc tracks. The Hydrogenaudio Knowledgebase has detailed documentation on CUE scripts[^10]. Let's take a look at the CUE sheet for a standard CD-ROM, which has only one track in MODE1/2048 format.
+One way to understand the structure of optical discs is through a CUE script, which records detailed information about the disc tracks. The Hydrogenaudio Knowledgebase has [detailed documentation on CUE scripts](https://wiki.hydrogenaud.io/index.php?title=Cue_sheet). Let's take a look at the CUE sheet for a standard CD-ROM, which has only one track in MODE1/2048 format.
 
 ```
 CATALOG 0000000000000
@@ -117,11 +96,11 @@ All CD discs are structured into sectors of 2352 bytes each. However, the MODE1 
 
 Being the first affordable, widely distributable high-capacity digital storage, CDs were initially designed for music storage. This led to the emergence of various standards tailored to store different types of content. For instance, the initial CD standard in 1980 was termed the "Red Book." The CD-ROM, introduced in 1985 for computer data discs, was not standardized initially. It wasn't until 1988 that the corresponding "Yellow Book" was established. On the other hand, CD-i, designed for multimedia interactive content, diverged from CD-ROM standards with its "Green Book" in 1986, with corresponding devices released in 1990. The writable CD standard, known as the "Orange Book," emerged in 1988. The VCD, a popular home video medium in China, adopted the "White Book" standard in 1993.
 
-The CD-i format is relatively uncommon domestically but has garnered increased attention and research overseas in recent years. The Black Moon Project[^11] hosts extensive details about CD-i, while the CDinteractive forum[^12] serves as another resource for CD-i information.
+The CD-i format is relatively uncommon domestically but has garnered increased attention and research overseas in recent years. The [Black Moon Project](http://www.blackmoonproject.co.uk/) hosts extensive details about CD-i, while the [CDinteractive forum](http://www.cdinteractive.co.uk/forums/cdinteractive/) serves as another resource for CD-i information.
 
 Following the 1990s, the CD-based 12cm discs evolved into higher-density successors, namely DVD and Blu-ray discs. Many characteristics of CDs, especially CD-ROMs, were inherited, such as the 2048-byte sector size and the ISO9660-based disc file format. This explains why ISO remains the most popular format for disc image files today.
 
-Similar to the diverse file systems found on hard drives, different file systems exist on optical discs[^13]. The original ISO9660 supported only 8.3 filenames. However, since Windows 95, operating systems have supported long filenames. Consequently, most modern optical discs use ISO9660 as a base and incorporate Joliet extensions to support long filenames. Apple Macintosh, especially the Classic Mac OS predating Mac OS X, widely utilized the HFS file system on optical discs.
+Similar to the diverse file systems found on hard drives, [different file systems exist on optical discs](https://www.isobuster.com/help/file_systems). The original ISO9660 supported only 8.3 filenames. However, since Windows 95, operating systems have supported long filenames. Consequently, most modern optical discs use ISO9660 as a base and incorporate Joliet extensions to support long filenames. Apple Macintosh, especially the Classic Mac OS predating Mac OS X, widely utilized the HFS file system on optical discs.
 
 UDF gradually replaced ISO9660 as the standard for optical disc storage after the mid-2000s. A prime example is that Windows installation discs post-Windows 7 cannot be read on operating systems that do not support UDF formats. Additionally, Blu-ray discs default to using UDF as their file system.
 
@@ -129,9 +108,9 @@ Another significant application of UDF lies in its better support for random rea
 
 The development of UDF is closely tied to the development of DVDs. It was included in the 1996 DVD-Video standard and is used on nearly all movie DVDs. Compared to earlier VCDs, DVD discs possess greater programming capabilities, supporting a programmable "virtual machine". Consequently, they were used to develop some video-based electronic games. For instance, the interactive DVD game of Harry Potter that I showcased in class is one such example.
 
-《Inside DVD-Video》[^14] provides detailed insights into the functionalities of the DVD interactive virtual machine. One notable aspect of DVD interactive games is their programmability, integrated within the DVD-Video disc standard. Hence, any DVD player or gaming console adhering to these standards can run such games, making it a viable approach for cross-platform gaming on gaming consoles.
+[Inside DVD-Video](https://en.wikibooks.org/wiki/Inside_DVD-Video/Interaction_Machine) provides detailed insights into the functionalities of the DVD interactive virtual machine. One notable aspect of DVD interactive games is their programmability, integrated within the DVD-Video disc standard. Hence, any DVD player or gaming console adhering to these standards can run such games, making it a viable approach for cross-platform gaming on gaming consoles.
 
-In the updated Blu-ray Disc standard, a Java virtual machine known as BD-J is directly employed. This advancement enables the development of more complex games. Blu-play website[^15] offers numerous BD-J game downloads and development resources.
+In the updated Blu-ray Disc standard, a Java virtual machine known as BD-J is directly employed. This advancement enables the development of more complex games. [Blu-play website](http://www.blu-play.com/) offers numerous BD-J game downloads and development resources.
 
 ## Videotapes
 
@@ -143,7 +122,7 @@ Most videotape recorders rely on helical scan recording, usually employing a rap
 
 The simplest linear editing system can be assembled using two videotape recorders: material in recorder A and the produced result in recorder B. To concatenate two segments, recorder A must be fast-forwarded to the position of the first segment. Then, while recorder A plays, recorder B records. When the first segment ends, pause the recording on recorder B, fast-forward recorder A to the second segment's position, then start recording on recorder B while playing the second segment on recorder A. This process joins video segments from different positions into a continuous video. Repeating this loop yields a complete video composed of spliced segments.
 
-MediaCollege.com provides detailed guidance on assembling a tape-based linear editing system[^16]. Since linear editing heavily relies on playback time, maintaining precise editing positions can be challenging on non-professional equipment. Therefore, professional-grade recorders often support timecode functionality to ensure alignment during editing.
+MediaCollege.com provides [detailed guide](https://www.mediacollege.com/video/editing/linear/setup.html) on assembling a tape-based linear editing system. Since linear editing heavily relies on playback time, maintaining precise editing positions can be challenging on non-professional equipment. Therefore, professional-grade recorders often support timecode functionality to ensure alignment during editing.
 
 ## Video Mixer
 
@@ -169,7 +148,7 @@ For DV tapes, since they are digital in nature, the best way to capture their qu
 
 The difference between these three interfaces is that the 9-pin IEEE 1394b supports a transfer speed of 800 Mbps, while the 4-pin or 6-pin 1394a only supports 400 Mbps. Thus, when using a 1394b to 1394a data cable, all IEEE 1394b devices will operate at the reduced speed of 400 Mbps. However, interchanging the two IEEE 1394a interfaces does not affect the speed. The 6-pin interface, compared to the 4-pin, includes a 12V power supply function, but most DV devices do not utilize the 1394 port for power, except for the early iPods.
 
-There are rare instances where certain set-top boxes use the SCSI interface. For instance, the NOKIA DVB9600S supports connecting a hard drive via SCSI to record digital TV programs. DVB2000, an alternative operating system developed by enthusiasts for the NOKIA DVB9600S, contains detailed technical information about SCSI interfaces, SCART interfaces, and digital TV[^17].
+There are rare instances where certain set-top boxes use the SCSI interface. For instance, the NOKIA DVB9600S supports connecting a hard drive via SCSI to record digital TV programs. DVB2000, an alternative operating system developed by enthusiasts for the NOKIA DVB9600S, contains detailed technical information about SCSI interfaces, SCART interfaces, and digital TV in [its documents](https://trippstadt.wohnheim.uni-kl.de/sat/Operating%20Manual%20Dvb2000%20englisch.pdf).
 
 However, in most cases, the recording of digital TV is typically done using either a IEEE 1394 cable or Ethernet. Many set-top boxes support transmitting MPEG-TS (MPEG Transport Stream) over Ethernet, allowing users to losslessly transfer digital TV streams from set-top box to their computers with softwares like VLC. With these variant methods for converting analog and digital videos into digital files, enabling different forms of video to be stored as digital files on computers for editing and production purposes.
 
@@ -184,22 +163,3 @@ Because cassette tapes were affordable and easy to duplicate, they became popula
 Cassette tapes also had a less common yet crucial use: storing computer data. For instance, computers like the Laser 310, which we showcased, had a tape recorder interface used to save and load programs. Today, computers, phones, or digital recorders can used as replacement to tape recorders for loading programs into vintage computers.
 
 That's all for today; we've covered the characteristics and uses of disks, optical media, and tapes. These storage mediums either directly formed components of multimedia computers, like disks and optical discs, or their operational logic was inherited by multimedia computers, as seen in the "audio recorder" programs found on computers and phones, often mimicking the control panels of cassette tape recorders. In the next class, we'll delve into another origin of modern media machines: vintage personal computers.
-
-## 参考资料
-[^1]: OmniFlop网站：http://www.shlock.co.uk/Utils/OmniFlop/
-[^2]: fdrawcmd.sys：https://simonowen.com/fdrawcmd/
-[^3]: KyroFlux：https://kryoflux.com/
-[^4]: 创见（Transcend）工业CF卡资料：https://docs.rs-online.com/5e7c/0900766b80d86218.pdf
-[^5]: APRO工业SD卡资料：https://www.apro-tw.com/Databank/2009%20Datasheet/Industrial%20SD/100-WPSDMD-01V1.pdf
-[^6]: FileTyper可以在Macintosh Repository找到：https://www.macintoshrepository.org/2050-filetyper
-[^7]: FileType是另一个可以修改类型和创建者代码的工具：http://www.frederikseiffert.de/filetype/
-[^8]: GPartd是一个开源的磁盘分区工具：https://gparted.org/
-[^9]: CD/DVD Layout：https://www.isobuster.com/help/cd_dvd_layout
-[^10]: Cue sheet：https://wiki.hydrogenaud.io/index.php?title=Cue_sheet
-[^11]: The Black Moon Project：http://www.blackmoonproject.co.uk/
-[^12]: CDinteractive论坛：http://www.cdinteractive.co.uk/forums/cdinteractive/
-[^13]: IsoBuster网站上的文章介绍了光盘上的文件系统：https://www.isobuster.com/help/file_systems
-[^14]: Inside DVD-Video：https://en.wikibooks.org/wiki/Inside_DVD-Video/Interaction_Machine
-[^15]: Blu-Play：http://www.blu-play.com/news
-[^16]: How to Set up a Tape-to-Tape Editing System： https://www.mediacollege.com/video/editing/linear/setup.html
-[^17]: DVB2000使用手册：https://trippstadt.wohnheim.uni-kl.de/sat/Operating%20Manual%20Dvb2000%20englisch.pdf

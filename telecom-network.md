@@ -5,7 +5,7 @@ Today, I've set up an array of equipment, most of which are connected to telepho
 
 Additionally, I'll demonstrate how the telephone network influenced the personal computer revolution. Apple's co-founders, Wozniak and Jobs, were enthusiasts of the "blue box." The blue box was a device used for hacking into the telephone network, signifying that hackers were active in the telephone network before they emerged on the computer network.
 
-Brazilian artist Eduardo Kac, known for creating telecommunications art using Minitel, presented "Aspects of the Aesthetics of Telecommunications" at the 1992 Siggraph conference on computer graphics[^1]. Today's class will focus more on experimental demonstrations. However, if you're interested in related theories, I highly recommend reading Kac's paper.
+Brazilian artist Eduardo Kac, known for creating telecommunications art using Minitel, presented "[Aspects of the Aesthetics of Telecommunications](http://www.ekac.org/telecom.paper.siggrap.html)" at the 1992 Siggraph conference on computer graphics. Today's class will focus more on experimental demonstrations. However, if you're interested in related theories, I highly recommend reading Kac's paper.
 
 ## A Basic Telephone Network
 Let's explore how the most fundamental telephone network operates. I've set up a telephone exchange and a corresponding operator's switchboard phone in the classroom. The exchange model is quite old, a 1990s Nitsuko TX824 model. However, the operator's phone has informative lights that clearly indicate the telephone exchange's operational status. When I pick up one phone, for instance, number 12 lights up on the switchboard phone. Then, when I pick up another phone, let's say number 14, it appears on the switchboard as well.
@@ -23,7 +23,7 @@ If you're familiar with Bauhaus history, you might know László Moholy-Nagy as 
 
 In 1967, the nonprofit organization "Experiments in Art and Technology" (E.A.T.) was founded by engineers Billy Klüver and Fred Waldhauer from Bell Labs, along with artists Robert Rauschenberg and Robert Whitman. This group delved into numerous experiments closely related to telecommunication technology.
 
-Another notable instance was the "Art By Telephone"[^2] exhibition at the Museum of Contemporary Art in Chicago in 1969. Here, all artworks were created without blueprints or plans; participating artists solely relied on verbal descriptions via telephone to instruct on-site personnel in constructing their pieces.
+Another notable instance was the "[Art By Telephone](https://mcachicago.org/Exhibitions/1969/Art-By-Telephone)" exhibition at the Museum of Contemporary Art in Chicago in 1969. Here, all artworks were created without blueprints or plans; participating artists solely relied on verbal descriptions via telephone to instruct on-site personnel in constructing their pieces.
 
 ## Long-Distance Telephone Networks and Monopolies in Telecommunications
 
@@ -77,7 +77,7 @@ By the 1980s, some artists began exploring the fax machine's ability to transmit
 
 Today, we have a fax machine on-site, and we can try using it for relay art. After the receiving fax machine presses the "start" button, we'll hear a sequence of beep sounds, which is the fax machine's CNG (calling tone). Then, when we press the "start" button on the sending side, the fax machine begins transmitting. We'll hear a high-frequency sound similar to the one heard when a Modem handshakes, known as CED (called station identification), as the fax machine also transmits images through a Modem.
 
-Since many fax machines use thermal paper for printing, they can only output black-and-white images. The color parts often exhibit a grid-like effect due to dithering, producing some unique visual effects. Additionally, relay-based creation is an intriguing characteristic of fax art. In China, participation in fax art is scarce. The only known exhibition and creative activity related to fax art was the inaugural Shanghai International Fax Art Exhibition in 1996, themed "Let's Talk About Money".
+Since many fax machines use thermal paper for printing, they can only output black-and-white images. The color parts often exhibit a grid-like effect due to dithering, producing some unique visual effects. Additionally, relay-based creation is an intriguing characteristic of fax art. In China, participation in fax art is scarce. The only known exhibition and creative activity related to fax art was the inaugural Shanghai International Fax Art Exhibition in 1996, themed "[Let's Talk About Money](https://aaa.org.hk/tc/collections/event-database/lets-talk-about-money-shanghai-first-international-fax-art-exhibition)".
 
 ## Pagers
 In the realm of telecommunications, pagers are closely related to telephones but operate quite differently. They utilize communication technologies like frequency-shift keying (FSK), similar to those in modems, to transmit text messages via radio waves. However, this mode of information transmission is unidirectional—messages can only be sent from a paging station to a pager and typically cannot be replied to directly from the pager. Bi-directional pagers that allowed direct message replies only emerged in the mid-to-late 1990s, but their usage was not as extensive as that of uni-directional pagers.
@@ -99,7 +99,7 @@ Pagers are not internet-connected devices, but they have had a profound impact o
 
 Another connection between telephony and paging is that the telephone serves as the most common backward channel for one-way paging networks. If the sender is familiar with receiver, they leave their name; otherwise, if it's a stranger or an unfamiliar number (like a payphone), they leave a callback number in the pager message, allowing the receiver to establish contact.
 
-Even today, pagers are still used in some industries. In 2016, the artist Brannon Dorsey created a device called Holypager[^4], utilizing software-defined radio technology to intercept and print all nearby pager service information. This artwork was showcased at the 2017 Radical Networks conference in Brooklyn, New York, to raise awareness about the vulnerability of protocols like POCSAG used in pagers without encryption, highlighting potential privacy risks in wireless communication and the digital space.
+Even today, pagers are still used in some industries. In 2016, the artist Brannon Dorsey created a device called [Holypager](https://brannondorsey.com/project/holy-pager), utilizing software-defined radio technology to intercept and print all nearby pager service information. This artwork was showcased at the 2017 Radical Networks conference in Brooklyn, New York, to raise awareness about the vulnerability of protocols like POCSAG used in pagers without encryption, highlighting potential privacy risks in wireless communication and the digital space.
 
 ## Mobile Phones
 Next, I'd like to explore mobile phones, showcasing the Personal Handy-phone System (PHS), which was just retired in Japan last year. PHS was a typical 2G mobile phone technology, closely associated with landlines compared to other mobile communication technologies. PHS base stations often directly connected to landline networks through ISDN lines used by digital telephones. Phone numbers also utilized landline numbers, making them essentially "embedded" in the landline network.
@@ -115,7 +115,7 @@ If you're interested in exploring telecommunication art, new artworks might invo
 ## Emergence of Network Art
 Let's shift our focus back to the remote dial-up computer systems we showcased earlier. The predecessors of network art emerged in the late 1970s and early 1980s around similar systems, known as Telematic Arts. These works were typically displayed using computer terminals and were thus referred to as terminal art.
 
-Whether Roy Ascott's endeavors around computer terminals in the 1980s or the renowned Electronic Café International[^5], terminals connected to telephone networks played a pivotal role. The structural diagram of Electronic Café International depicts a thick line labeled "Phone company," interweaving the entire artwork. Each section of the work revolved around terminals or computer hosts connected via modems to telephone lines. Terminals with handwritten drawing boards and terminals linked to Community Memory can be seen.
+Whether Roy Ascott's endeavors around computer terminals in the 1980s or the renowned [Electronic Café International](http://www.ecafe.com/), terminals connected to telephone networks played a pivotal role. The structural diagram of Electronic Café International depicts a thick line labeled "Phone company," interweaving the entire artwork. Each section of the work revolved around terminals or computer hosts connected via modems to telephone lines. Terminals with handwritten drawing boards and terminals linked to Community Memory can be seen.
 
 Community Memory was the earliest public-accessible BBS (Bulletin Board System). Its name encapsulates the basic operation of a social network—shared "memory" among community members. Each user could log in through a terminal and store or retrieve content they wished to share. This shared storage-based system served as the precursor to various network forums. Technologies like CBBS and FidoNet that followed Community Memory constituted the initial form of social networks. These networks emerged before the popularity of the internet and significantly influenced the structure of many similar services on the internet.
 
@@ -125,13 +125,13 @@ The prosperity of BBS penetrated the art world. In 1991, Wolfgang Staehle's The 
 
 In our classroom, you can experience how dial-up BBS used to function. The essence of modem communication is akin to connecting two computers like teleprinters. Whatever I type on one side will appear on the other side, and vice versa. In today's TCP/IP protocol, "ports" simulate this process, offering bidirectional transfer capabilities on each port.
 
-Our classroom's BBS server runs a backup from the renowned "Beijing Paradise BBS" in 1998, which is a node of Chinese FidoNet, or CFido[^6]. Accessing a dial-up BBS doesn't require an internet account, yet it allows posting, chatting, and even second-hand trading. The fundamental organizational form of information in the BBS system is mail, equivalent to the "discussion board" in today's online forums, referred to as "mail zones" for reading posts.
+Our classroom's BBS server runs a backup from the renowned "Beijing Paradise BBS" in 1998, which is a node of [Chinese FidoNet](https://www.cfido.com/), or CFido. Accessing a dial-up BBS doesn't require an internet account, yet it allows posting, chatting, and even second-hand trading. The fundamental organizational form of information in the BBS system is mail, equivalent to the "discussion board" in today's online forums, referred to as "mail zones" for reading posts.
 
 ## Internet Service Providers
 
 Some enthusiasts and non-profit organizations also utilized facilities similar to BBS, like modem dial-up systems, to offer internet access without charging any network access fees. This type of internet access was often referred to as Free-Net. For users in the area where Free-Net operated, the only cost for using the internet was the local call charges. Since in many parts of the USA, local calls were on a monthly package, residents in these areas could access the internet very affordably after the advent of Free-Net.
 
-Community wireless networks that emerged in some countries today, such as Spain's Guifi.net, can be considered successors to Free-Net's spirit. Similarly, in our "classroom teleco" also provides internet access. We can experience how ISPs worked during the dial-up era. Our dial-up network offers a 33.6Kbps internet access, this is the highest speed achievable with analog modems; 56Kbps dial-up networks required special digital modem equipment.
+Community wireless networks that emerged in some countries today, such as Spain's [Guifi.net](https://guifi.net/), can be considered successors to Free-Net's spirit. Similarly, in our "classroom teleco" also provides internet access. We can experience how ISPs worked during the dial-up era. Our dial-up network offers a 33.6Kbps internet access, this is the highest speed achievable with analog modems; 56Kbps dial-up networks required special digital modem equipment.
 
 The telecommunication services provided by "classroom teleco" at this time are close to the late 1990s' standards. Computers accessing the network via telephone lines have full TCP/IP protocol support, enabling various functionalities of the internet.
 
@@ -146,12 +146,3 @@ The last device I'll showcase today is the EoC (Ethernet over Coax) cable modem.
 In the 2000s, both telephone and cable TV companies underwent significant fiber optic upgrades to their network infrastructures, with fiber optic cables laid down on streets and in neighborhoods. However, the cost of directly installing fiber optics in older buildings remained relatively high, leading to the use of existing telephone and cable TV lines to provide broadband services. These broadband networks, based on existing lines, achieved transmission speeds of several to tens of megabits, meeting the requirements of most contemporary network applications. With the proliferation of broadband networks, the internet was separated from telephone lines, and many households opted out of landline telephones in favor of internet only services.
 
 And thus, the story of our small "classroom teleco" concludes. From local telephone calls, long-distance calls, dial-up computer terminal, fax, pagers, mobile phones, BBS, dial-up internet to broadband internet, the technological evolution showcased in the classroom mirrors the real-world development of the telecommunications industry. The virtual world of networks we see today isn't illusory but is built upon numerous cables, switches, modems, terminals, servers, routers, and other network devices. The ultimate material of "network art" is precisely these hardware devices. Their functionalities and characteristics shape and limit the patterns of human behavior on networks.
-
-## 参考资料
-[^1]: Aspects of the Aesthetics of Telecommunications http://www.ekac.org/telecom.paper.siggrap.html
-[^2]: Art By Telephone https://mcachicago.org/Exhibitions/1969/Art-By-Telephone
-[^3]: 亚洲艺术文献库中存档的“我们谈谈钱–上海首届国际传真艺术展”资料 https://aaa.org.hk/tc/collections/event-database/lets-talk-about-money-shanghai-first-international-fax-art-exhibition
-[^4]: Holypager https://brannondorsey.com/project/holy-pager
-[^5]: Electronic Cafe http://www.ecafe.com/
-[^6]: 中国惠多网 https://www.cfido.com/
-[^7]: guifi.net https://guifi.net/
