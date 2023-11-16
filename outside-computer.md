@@ -14,7 +14,7 @@ For example, temperature in the natural world is a continuously changing value. 
 
 However, digital computers aren't the only computational tools humans have invented, nor are they the only computing tools used as media devices. In our high school math classes, we often encounter methods of solving equations through compass and straightedge constructions, which represent one form of computation performed through mechanical movements in space. Slide rules, a classic mechanical computing tool, are still used in various contexts.
 
-The inception of computer animation also emerged from an analog computer. In the 1950s, John Whitney began experimenting with repurposing decommissioned M5/M7 gun directors used in World War II. Whitney utilized the director's ball-shaped integrator and cam mechanism to control the position of bulbs in a film, achieving some of the earliest computer animation techniques[^1]. Using this approach, he created the opening sequence for Alfred Hitchcock's film "Vertigo" in 1958[^2].
+The inception of computer animation also emerged from an analog computer. In the 1950s, John Whitney began experimenting with repurposing decommissioned M5/M7 gun directors used in World War II. Whitney utilized the director's ball-shaped integrator and cam mechanism to control the position of bulbs in a film, achieving some of the [earliest computer animation techniques](#user-content-fn-1)[^1]. Using this approach, he created the [opening sequence for Alfred Hitchcock's film "Vertigo" in 1958](#user-content-fn-2)[^2].
 
 ## Radios
 
@@ -24,7 +24,7 @@ As a longstanding electronic broadcasting medium, radios share several similarit
 
 However, media with hard copies lack this advantage. Newspapers, magazines, vinyl records, and tapes are all limited by the number of copies printed or produced. The popularity of radios significantly impacted pop music after the emergence of recording and audio technology. While recording technology separated audiences from live performances, radios further disconnected audiences from storage media, virtually eliminating the cost for listeners to enjoy music through radios.
 
-This era also saw the emergence of a particularly iconic cultural phenomenon—the pirate radio. During the 1950s to 1960s, wireless transmission equipment became inexpensive enough for amateur enthusiasts to assemble and operate. Unlicensed underground stations became crucial for the dissemination of emerging music genres, notably in the UK, where pirate radios significantly influenced the formation and dissemination of rock music. In the BBC series "Radio Reinvented：100 Voices that made the BBC" [^3], the first episode discusses how the BBC, while responding to competition from pirate radios, also absorbed their legacy as a popular music broadcast medium.
+This era also saw the emergence of a particularly iconic cultural phenomenon—the pirate radio. During the 1950s to 1960s, wireless transmission equipment became inexpensive enough for amateur enthusiasts to assemble and operate. Unlicensed underground stations became crucial for the dissemination of emerging music genres, notably in the UK, where pirate radios significantly influenced the formation and dissemination of rock music. In the BBC series "[Radio Reinvented：100 Voices that made the BBC](https://www.bbc.com/historyofthebbc/100-voices/radio-reinvented/)", the first episode discusses how the BBC, while responding to competition from pirate radios, also absorbed their legacy as a popular music broadcast medium.
 
 When radios and tape recorders combined to form recording machines, recording music from radio broadcasts became an affordable means of obtaining recordings. This sparked a backlash from the music industry; the British Phonographic Industry (BPI) campaigned against home taping in the 1980s, using slogans like "Home Taping Is Killing Music." The logo created during this campaign, featuring a cassette and a skull, was later repurposed by copyright-defying file-sharing websites like "The Pirate Bay."
 
@@ -36,7 +36,7 @@ Today, we often equate "multimedia" with digital media on computers. However, be
 
 Multi-image projection typically utilized slide projectors based on 35mm film, synchronizing sound with visuals. Basic versions employed special audio signals within a cassette tape to control the switching of a single projector. More complex setups involved multiple projectors, combining or layering images, while later versions incorporated computers. Computers allowed precise control of over a dozen projectors, managing brightness and image transitions to create intricate visual effects.
 
-The computer multi-image system developed by Audio Visual Laboratories (AVL) was widely used and became a standard in the audio-visual display industry. Engineer Steven Michelsen from AVL has preserved a collection of related equipment [^4], while Douglas Mesney's website "Incredible Image Productions" showcases numerous works and behind-the-scenes details [^5]. Additionally, media preservation technician Fergus O'Connor authored a piece discussing Tate Museum's attempt to reproduce synchronized audio-visual multi-image performances through reverse engineering [^6].
+The computer multi-image system developed by Audio Visual Laboratories (AVL) was widely used and became a standard in the audio-visual display industry. Engineer Steven Michelsen from AVL has preserved [a collection of related equipment](http://www.stevenmichelsen.com/AVL/), while Douglas Mesney's website "[Incredible Images Shows](http://www.incredibleimages.com/)" showcases numerous works and behind-the-scenes details [^5]. Additionally, media preservation technician Fergus O'Connor [authored an article](https://resources.culturalheritage.org/emg-review/volume-4-2015-2016/oconnor/) discussing Tate Museum's attempt to reproduce synchronized audio-visual multi-image performances through reverse engineering.
 
 Even today, second-hand slide projectors can still be found online. German brands like Leica, Kinderman, and Rollei often have bar-shaped slide trays, while American brands like Kodak and Chinese brand Seagull typically feature disc-shaped slide trays.
 
@@ -50,9 +50,9 @@ The overhead projector, is a close relative to the previously mentioned slide pr
 
 This robust interactivity, beyond its educational utility, is particularly advantageous for designing interactive prototypes. The resemblance between how Microsoft PixelSense (initially called Surface) operates photos and the overhead projector is quite evident.
 
-One of the most important artform of the overhead projector is the liquid light show. This form of performance utilizes the stratifying properties of liquids with varying densities to create vibrant, psychedelic visual effects. Typically, materials such as mineral oil, food coloring, oil dye (commonly use as candle dye in China), among others, are employed. The containers used, such as watch glass or clock glass, are standard laboratory equipment and can also be purchased on platforms like Taobao. Additionally, I experimented with watercolor pigments for this purpose, which produced lighter colors compared to oil-based dyes. There's a detailed liquid light show tutorial available on the DIY website Instructables.
+One of the most important artform of the overhead projector is the liquid light show. This form of performance utilizes the stratifying properties of liquids with varying densities to create vibrant, psychedelic visual effects. Typically, materials such as mineral oil, food coloring, oil dye (commonly use as candle dye in China), among others, are employed. The containers used, such as watch glass or clock glass, are standard laboratory equipment and can also be purchased on platforms like Taobao. Additionally, I experimented with watercolor pigments for this purpose, which produced lighter colors compared to oil-based dyes. There's a [detailed liquid light show tutorial](https://www.instructables.com/Old-School-Psychedelic-Light-Show/) available on the DIY website Instructables.
 
-One of the most renowned examples of a liquid light show is the Joshua Light Show, introduced in 1967. During the late '60s and early '70s, this show made appearances at concerts of bands and artists like The Who, Grateful Dead, The Doors, Janis Joplin, significantly influencing the modern aesthetics of VJs. Recently, there have been newer groups specializing in liquid light shows, such as Liquid Light Lab, actively engaged in overseas events.
+One of the most renowned examples of a liquid light show is the [Joshua Light Show](https://www.joshualightshow.com/), introduced in 1967. During the late '60s and early '70s, this show made appearances at concerts of bands and artists like The Who, Grateful Dead, The Doors, Janis Joplin, significantly influencing the modern aesthetics of VJs. Recently, there have been newer groups specializing in liquid light shows, such as [Liquid Light Lab](https://liquidlightlab.com/), actively engaged in overseas events.
 
 ## View-Master: The Most Successful Stereoscopic Product
 
@@ -60,7 +60,7 @@ Debuting at the 1939 New York World's Fair, View-Master remains the most success
 
 View-Master developed a rich ecosystem of stereoscopic content, fostering long-term partnerships with National Geographic, Discovery Channel, Disney, and more. Additionally, science fiction series like "Star Trek," "The Time Tunnel," and "Star Wars" also made their way onto View-Master reels.
 
-View-Master has garnered a substantial following among enthusiasts and collectors over the world. They have meticulously cataloged resources dedicated to View-Master, such as the View-Master Database (viewmasterinfo.com), The View-Master Resource (vmresource.com), 20th Century Stereo Viewers (viewmaster.co.uk), among others, providing researchers with a wealth of information.
+View-Master has garnered a substantial following among enthusiasts and collectors over the world. They have meticulously cataloged resources dedicated to View-Master, such as the [View-Master Database](https://viewmasterinfo.com/), The [View-Master Resource](https://vmresource.com/), [20th Century Stereo Viewers](https://viewmaster.co.uk/), among others, providing researchers with a wealth of information.
 
 ## Conclusion: Bridging "New Media" and "Old Media"
 
@@ -68,12 +68,11 @@ In this class session, we spent a good portion of our time exploring radios and 
 
 Regardless of whether we analyze works produced using "old media" or "new media," this background knowledge helps us understand the practices and innovations of creators. After this time-traveling class session spanning decades, encountering previously unseen works will now allow us to more easily identify their historical context and connections.
 
-[^1]: 1997年8月的《Animation World Magazine》介绍了约翰·惠特尼的创作：https://www.awn.com/mag/issue2.5/2.5pages/2.5moritzwhitney.html
-[^2]: Rhizome网站上2013年的文章介绍了《迷魂记》片头的创作背景：https://rhizome.org/editorial/2013/may/9/did-vertigo-introduce-computer-graphics-cinema/
-[^3]: Radio Reinvented：100 Voices that made the BBC：https://www.bbc.com/historyofthebbc/100-voices/radio-reinvented/
-[^4]: AVL Multi-Image Slide Show Computers：http://www.stevenmichelsen.com/AVL/
-[^5]: Incredible Images Shows：http://www.incredibleimages.com/index.html
-[^6]: Slow Dissolve: Re-presenting synchronised slide-based artworks in the 21st Century：https://resources.culturalheritage.org/emg-review/volume-4-2015-2016/oconnor/
-[^7]: Old School Psychedelic Light Show：https://www.instructables.com/Old-School-Psychedelic-Light-Show/
-[^8]: 约书亚灯光秀官网：https://www.joshualightshow.com/
-[^9]: Liquid Light Lab：https://liquidlightlab.com/home.html
+[^1]: Reference to [Digital Harmony: The Life of John Whitney, Computer Animation Pioneer](https://www.awn.com/mag/issue2.5/2.5pages/2.5moritzwhitney.html)
+
+[^2]: Reference to [Did 'Vertigo' Introduce Computer Graphics to Cinema?](https://rhizome.org/editorial/2013/may/9/did-vertigo-introduce-computer-graphics-cinema/) by Tom McCormack
+
+
+
+
+
