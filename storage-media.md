@@ -1,73 +1,73 @@
-# 存储介质
-今天的话题是存储介质，我们很多时候在处理新媒体展览的时候，往往会需要处理一些可能已经过时的存储介质的情况。虽然在上一节课中提到现代PC几乎可以处理所有我们能见到的媒介，但实际操作起来往往会遇到各种障碍。特别是电脑对存储介质的访问能力正在从默认配置变成选配件。如果现在去市场上买一台新的电脑的话，往往都是没有光驱的，甚至像2016年之后的Macbook Pro连标准的USB的口都没有。电脑厂商几乎是在强迫让用户高度的依赖网络，并让用户把他们所有的资料都放到网上去传送。
+# Storage Media
+Today's topic is storage media. When dealing with new media exhibitions, we often need to handle potentially outdated storage media. While modern PCs can handle almost all media types, practical operations frequently encounter various obstacles. Computer access to storage media is shifting from default inclusion to optional add-ons. If you were to buy a new computer today, it would likely lack an optical drive, and even machines like the MacBook Pro from 2016 onwards lack standard USB ports. Computer manufacturers are almost coercing users into heavy reliance on the internet and uploading all their data online for transfer.
 
-但是无论是电脑艺术收藏者还是策展人，都往往会遇到需要把一些往日的作品带到今天的观众面前的需求。这时通常需要需要处理一些旧式的存储介质，就像我在教室里摆的这一堆，其中就包括了录像带、录音带、光盘、软盘等等。这节课主要的内容，就是是向大家展示不同存储介质的特点，以及怎样去处理这些存储介质。
+However, whether an art collector or a curator, there's often a need to present past works to today's audience. This frequently involves dealing with older storage media, like the pile I've set up in the classroom, which includes videotapes, cassette tapes, CDs, floppy disks, and more. The primary aim of this lesson is to showcase the characteristics of different storage media and how to handle them.
 
-## 电子存储的模型
-我们遇到的电子存储介质的操作方式大概会有三种模型，第一类是磁盘模型，是我们在电脑最常见到的一个情形，我们平时在电脑上处理文件的时候，都是在操作一个磁盘模型的存储介质。它的特点是磁盘一般有一个特定类型的文件系统，可以随机读取和写入。
+## Models of Electronic Storage
+The operation of electronic storage media typically falls into three models. The first is the disk model, the most common scenario encountered on computers. When handling files on a computer, we're working with a disk model of storage media. These disks generally have a specific type of file system and allow for random read and write operations.
 
-另外一种模型就是光盘模型，我们会发现如果说要刻一张光盘的话，往往是需要先做一个母带（Mastering）镜像，然后再刻录到光盘上。刻完的光盘通常不能随意修改其中的内容，这种模型叫做WORM（Write once read many），只能写入一次但可以读取很多次。即使是可擦写的刻录盘，想改写其中的内容也往往需要把整张光盘都抹掉重刻，而不能随机的改写文件内容。当然光盘有一种例外的情况，就是可擦写光盘配合UDF文件系统时，可以以类似磁盘的方式访问。
+Another model is the optical disc model. When creating a CD, for example, there's often a need to create a master image before burning it onto the disc. Once burned, CDs typically can't be easily modified, known as the WORM (Write Once Read Many) model. Even rewritable discs often require erasing the entire disc to modify its contents, rather than random file rewriting. However, there is an exception with rewritable discs using the UDF file system, allowing disk-like access.
 
-第三种模型就是磁带模型，录像带和录音带是典型这种情况。磁带通常是没有文件系统的，必须要顺序的读取和写入。但是磁带和磁盘类似的一点就是可以多次写入，通常情况下，磁带写入的起点也是自由的。
+The third model is the tape model, seen in videotapes and cassette tapes. Tapes usually lack a file system and require sequential read and write operations. However, like disks, tapes offer the ability for multiple writes, and the starting point for writing on tapes is typically flexible.
 
-## 软盘
-磁盘模型是我们平时来说见的最多的一个模型，软盘是磁盘模型最简单的实现。我今天带的是曾经常见的3.5寸软盘，它的外壳上有格小窗户，当它被放进软驱之后窗户就会打开，磁头就可以接触到磁盘表面。它真正用于存储的结构很简单，就是一个涂满磁性材料的塑胶片，通过探测磁盘表面磁性或对表面磁性材料重新磁化进行读写。
+## Floppy Disk
+The disk model is one of the most common models we encounter, and the floppy disk represents the simplest implementation of this model. The 3.5-inch floppy disk I brought today was once prevalent. It has a small window on its shell, which opens when inserted into the floppy drive, allowing the read/write head to access the magnetic surface. Its structure for storage is straightforward—a plastic sheet coated with magnetic material, where data is read or written by detecting or altering the magnetic field on the disk's surface.
 
-上面的图片基本上解释了软盘的工作原理，3.5寸软盘的一角有一个带有滑动塑料快的小孔，这是写保护功能的开关，打开这个小孔软盘里的东西就不能改写了。软盘的许多特性并没有离开我们现在的系统太远，许多软盘的特性都和硬盘是相似的，比如文件系统、文件目录等等，软盘的容量通常很小。
+The image above basically explains how a floppy disk operates. At one corner of the 3.5-inch floppy, there's a small hole with a sliding plastic tab—a write-protect switch. When this hole is open, the contents of the disk cannot be altered. Many characteristics of floppy disks aren't far from our current systems; several resemble hard disks, such as the file system, directory structure, but with significantly smaller capacities.
 
-我们今天在讨论软盘时往往会把3.5寸软盘说成是“1.44兆软盘”，但其实软盘的格式往往是非常复杂的。当处理老式电脑的软盘时候，往往遇到的第一道坎就是软盘格式。OmniFlop[^1]是一款专门用来读写老式电脑软盘的软件，它提供了替代Windows内置的软驱驱动程序来支持更多格式的软盘，在它的网站上我们可以看到列举了OmniFlop可以读取的一百六七十种软盘格式，有的格式容量小到几十KB到100多KB，有些容量则比较大，可以到1600KB以上。
+When discussing floppy disks, we often refer to the 3.5-inch floppy as a "1.44 MB floppy," but in reality, floppy disk formats can be quite complex. When dealing with old computer floppy disks, the initial hurdle often encountered is the disk format. OmniFlop[^1] is software specifically designed to read and write data to old computer floppy disks. It provides alternative drivers beyond the default Windows floppy disk drivers, supporting a broader range of floppy disk formats. OmniFlop's website lists approximately 167 floppy disk formats it can read, some with capacities as small as a few dozen KB to over 1600KB.
 
-我们会发现即使是同样是相同外观的3.5英寸软盘，在不同电脑上使用的容量也是不一样的，许多甚至不能用标准的PC软盘去读取。苹果Macintosh与Apple IIGS的软盘格式就与IBM PC上的明显不同，它的400KB、800KB格式所使用的就是索尼开发的分区恒角速（Zoned CAV）软驱，所以老式Macintosh的软盘是没办法用现在的软驱来读取的。这是我之前曾经亲自遇到过一个问题，因为我当时有一个老的Macintosh SE，它就是使用的800K软驱，因为它没有办法使用普通PC软驱读取，所以就无法使用软盘作为导出数据的渠道。
+Even similar-looking 3.5-inch floppy disks might have varying capacities on different computers. Many might not even be readable with standard PC floppy drives. The floppy disk formats of Apple Macintosh and Apple IIGS are notably different from those on IBM PCs. Their 400KB and 800KB formats used a Sony-developed Zoned Constant Angular Velocity (Zoned CAV) floppy drive. Therefore, old Macintosh floppy disks cannot be read using modern floppy drives. I've personally encountered this issue before with my old Macintosh SE, which used an 800KB floppy drive incompatible with standard PC drives, hindering the use of floppy disks as a data transfer medium.
 
-为了能够尽可能利用较容易获取的设备，特别是IBM PC及兼容机的软驱读取那些较罕见的格式，许多用于软盘数字保存和取证的软件和工具被开发出来，比如fdrawcmd[^2]是一个Windows软驱控制器驱动，可以支持更多软盘格式；而KyroFlux[^3]提供了一个专用的硬件软驱控制器，可以读取包括苹果400/800KB格式在内的许多PC软驱无法读取的格式。
+To make it possible to read these less common formats using more readily available equipment, especially floppy drives in IBM PCs and compatible machines, various software and tools have been developed for floppy disk digital preservation and forensics. For instance, fdrawcmd[^2] is a Windows floppy drive controller driver supporting more floppy disk formats, while KyroFlux[^3] offers a dedicated hardware floppy drive controller capable of reading formats, including Apple 400/800KB formats, that many PC floppy drives cannot.
 
-## 硬盘
-另外一种最常见存储介质就是硬盘。软盘则得名于它所使用的柔性塑胶盘片，而硬盘盘片使用的材质通常是是金属的，少数型号也使用玻璃，都是不能弯折的硬材料，因此称作硬盘。其实硬盘出现的时间比软盘要更早。软盘开发于60年代末，在70年代才成为商业产品，而公认的第一款硬盘IBM 350 RAMAC在1956年就上市了。
+## Hard Disk
+Another common storage medium is the hard disk. Floppy disks derive their name from the flexible plastic used for their disks, while hard disks utilize materials typically made of metal, although some models use glass—materials that cannot bend—hence the term "hard" disk. In fact, hard disks predate floppy disks. Floppy disks were developed in the late '60s and became a commercial product in the '70s, whereas the widely acknowledged first hard disk, the IBM 350 RAMAC, was introduced in 1956.
 
-软盘是一个二维的存储结构（不考虑双面的情况下），所有的数据都存储在一个平面上，如果硬盘中只有单个盘片，那么它逻辑上就像是一个密度更高的软盘。无论是软盘还是硬盘，磁盘上面的数据都以若干层环状排列，每一环就被称作一个“磁道”（Track）；每个磁道会被分割成若干个片段（sector），因为形状是一个扇形，所以中文叫“扇区”。
+A floppy disk is a two-dimensional storage structure (not considering double-sided cases), where all data is stored on a single plane. If a hard disk contains only a single disk platter, it logically resembles a higher-density floppy disk. Whether floppy or hard disks, data on the disk is arranged in multiple concentric rings referred to as "tracks," and each track is divided into segments known as "sectors".
 
-硬盘的结构要比软盘更复杂，你可以把硬盘粗略地理解成是一串摞在一起的软盘。大多数硬盘都有不止一个盘片，因此它是三维结构，多个盘片上位置相同的磁道被逻辑上划为一组，构成一个逻辑上的“圆柱体”，叫做一个柱面（cylinder）；每个盘片都有各自独立的磁头（head），如果盘片正反面都有磁性材料，每个盘片就有两个磁头，也因此每个磁头所操作的范围互不重叠。
+The structure of hard disks is more intricate than floppy disks. Roughly speaking, a hard disk can be seen as a stack of floppy disks. Most hard disks have multiple disk platters, creating a three-dimensional structure. Tracks positioned identically across multiple disk platters form a logical grouping, constituting a logical "cylinder." Each disk platter has its independent read/write head(s). If both sides of a disk platter have magnetic material, there are two read/write heads per disk platter, and as a result, each head operates within a non-overlapping range.
 
-如果想在硬盘上定位数据，就需要有三个资料：数据所在的柱面号（cylinder）、数据在哪个磁头（head）上（也就是在哪个盘片的哪一面），以及数据所在的扇区（sector）。知道这三个数据，也就是许多时候提到的“CHS”数据，就可以精确的找到数据在硬盘上存储的位置了。即使今天的磁盘工具，它仍然会处使用这种方式来定位数据。比如说我现在用的电脑虽然是固态硬盘，物理上已经不存在磁盘结构，但是固态硬盘的固件仍然模拟了CHS信息，硬盘分区表也仍然依靠CHS参数来建立。
+To locate data on a hard disk, three pieces of information are required: the cylinder number where the data resides, the head (indicating which disk platter and which side), and the sector where the data is stored. This information, often referred to as "CHS" data, allows precise data positioning on the hard disk. Even modern disk tools continue to use this method to access data. For example, although the physical structure of solid-state drives (SSDs) no longer contains a disk structure, their firmware still emulates CHS information, and the disk partition table relies on CHS parameters to establish partitions.
 
-CHS寻址是PC上操作大容量存储最常用的方式，即使今天的硬盘所报告给软件的CHS信息已经不再与磁盘的物理结构挂钩，但软件仍以这种方式去访问硬盘中的数据。利用类似DiskGenius这样的磁盘工具软件就可以看到磁盘中每个分区都依靠一组起始和终止的柱面-磁头-扇区（CHS）信息来定位。
+CHS addressing remains the most commonly used method for handling large-capacity storage on PCs. Even though the CHS information reported by modern hard disks no longer corresponds directly to the physical structure of the disk—such as reporting tens or hundreds of heads, which is incongruent with modern hard disk structures—tools like DiskGenius display partitions on the disk based on a set of starting and ending cylinder-head-sector (CHS) information.
 
-但现代电脑的硬盘提供的CHS信息已经不再准确对应硬件的物理结构了，比如磁盘工具里报告的磁头号有几十上百号，这显然与现代硬盘的真实结构不符，而后面要讲的储存卡等固态存储设备虽然也有CHS信息，但已经完全没有旋转的机械结构了，此时的CHS信息是出于软件的兼容性去模拟的，这种技术叫逻辑区块地址（Logical Block Address，LBA）。
+However, the CHS information provided by modern computer hard disks no longer accurately represents the hardware's physical structure. For instance, reported head numbers in disk tools might range from dozens to hundreds, which clearly does not align with the actual structure of modern hard disks. Also, in solid-state storage devices like memory cards, while there's CHS information, it no longer relates to any rotating mechanical structure. This CHS information is simulated for software compatibility and is known as Logical Block Address (LBA) technology.
 
-## 可移动磁盘和储存卡
-很多在结构上并不是硬盘的存储装置，也会来模拟CHS信息来提供软件上的兼容性。比如Zip驱动器就是一个典型的例子，从物理结构上讲它是软盘的升级版，它比3.5寸软盘略大，有更加厚重、坚固的外壳，内部盘片的材质则与软盘相似。Zip虽然有着类似软盘的物理结构，软件在操作Zip磁盘时却遵循和硬盘类似的CHS寻址规则。
+## Removable Disks and Memory Cards
+Many storage devices that do not structurally resemble hard drives simulate CHS information to provide software compatibility. For instance, the Zip drive is a typical example. Physically, it's an upgrade from the floppy disk, slightly larger with a more robust outer shell, and similar internal disk material. Despite its physical structure resembling a floppy disk, software operations on the Zip disk follow CHS addressing rules similar to hard drives.
 
-Jaz驱动器是另一个有意思的案例，它代表了在今天常见的USB的移动硬盘出现之前，将硬盘移动化的主要思路：即盘片本身是比较便宜的，但是它读写的机构比如磁头和控制电路是比较昂贵的。在Jaz驱动器上，盘片被单独放在一个可拆换、可携带的卡匣里，而磁头和控制电路是固定在驱动器里面的。在1995年推出时，它的容量与当时的内置硬盘相仿。但由于磁头和电路是固定的，它的容量也无法只靠更换磁盘卡匣升级，而是要整套驱动器都重新购买，所以在2000年代之后就被我们常见的USB移动硬盘取代了。
+The Jaz drive is another intriguing case representing the primary approach to make hard drives portable before the common USB-based mobile hard drives today. The disks were relatively inexpensive, but the mechanisms for reading and writing, like the heads and control circuits, were costly. In the Jaz drive, the disk was placed inside a removable and portable cartridge, while the heads and control circuits remained fixed inside the drive. Upon its launch in 1995, its capacity was comparable to internal hard drives of that time. However, due to the fixed heads and circuits, upgrading the capacity required replacing the entire drive rather than just swapping the disk cartridge. Consequently, it was replaced by the USB mobile hard drives that became common after the 2000s.
 
-还有一种使用CHS寻址的存储设备就是光磁盘，光磁盘也叫MO磁盘或者MO光盘这样的东西。它在咸鱼上比较容易买到，因为之前很多档案机构用它来做长期存档，直到近年来才逐渐被磁带机取代。光磁盘是磁性写入、光学读取的设备，它的原理叫赫尔效应，就是光线遇到磁场的时候是会发生偏转，因此可以探测光线的变化来读取数据。虽然它在原理上是一种光存储设备，但和以CD、DVD为代表的光盘不同，它在软件操作时更像是磁盘，也是具有CHS结构的。
+Another storage device using CHS addressing is the optical magnetic disk, also known as the MO disk or MO optical disk. It's readily available in second-hand markets, as many archival institutions used it for long-term storage until tape drives gradually replaced it in recent years. The MO disk operates by magnetic writing and optical reading, employing the Faraday effect where light deflects upon encountering a magnetic field, allowing data reading through changes in light. Despite being an optical storage device in principle, unlike CDs or DVDs, it operates more like a disk in software and has a CHS structure.
 
-而使用类似硬盘存储方式最新的设备就是储存卡以及固态硬盘，它们是基于闪存芯片的存储，但是它实际上也会向软件报告CHS结构。我找了到两个工业储存卡的文档，包括CF卡[^4]和SD卡[^5]，会发现他们都为嵌入式开发者提供了参考的CHS参数。
+The latest devices utilizing a hard drive-like storage method are memory cards and solid-state drives (SSDs), both based on flash memory chips. However, they also report CHS structure to software. Documentation for industrial storage cards, including CF cards[^4] and SD cards[^5], provides CHS parameters as a reference for embedded developers.
 
-虽然储存卡在软件操作上大致遵循硬盘标准，但它接口和外形规格的复杂度给使用者留下不少挑战。储存卡之间有着复杂的兼容性，以及很多标准或非标准的转接卡。比如说像MMC卡通常可以在SD卡槽中使用，几乎所有CF卡都可以不损失性能的转换为PC卡，同时许多储存卡都有PC卡版本的读卡器，MicroSD卡可以转接成CF、SD、Memory Stick、xD Card等一系列转接卡，而这种转接的情况兼容型、稳定性不一，往往需要实际测试之后才能确定其性能。
+Although memory cards roughly adhere to hard drive standards in software operations, their interface and form factor complexity present numerous challenges to users. There are complexities in compatibility between memory cards, as well as standard and non-standard adapter cards. For example, MMC cards typically work in SD card slots, almost all CF cards can convert to PC cards without performance loss, and many memory cards have PC card versions of card readers. However, the compatibility and stability of these adapters vary, often requiring actual testing to confirm their performance.
 
-## 硬盘接口
-我们刚才在讲到储存卡的时候就提到了不同接口兼容性的问题，其实接口的问题是数字保存最大的挑战之一。现代电脑上常见的SATA接口较为容易处理，因为笔记本和移动硬盘使用的2.5寸硬盘和台式机的3.5寸硬盘的SATA接口的外形是一致的。但早一些的PATA（IDE）接口就有2.5寸硬盘的44针和3.5寸硬盘的40针两种标准，这个时候就需要用到转接卡了。
+## Hard Drive Interfaces
+Talking about memory cards highlighted the issue of different interface compatibilities, and interface concerns remain one of the significant challenges in digital preservation. The commonly seen SATA interfaces in modern computers are relatively easier to handle since both the 2.5-inch drives for laptops and portable hard drives, as well as the 3.5-inch drives for desktops, use a consistent SATA interface. However, the older PATA (IDE) interface had two standards: a 44-pin connector for 2.5-inch drives and a 40-pin connector for 3.5-inch drives, requiring the use of adapter cards.
 
-此外前面提到的CF卡和SD卡也是可以转接成IDE的，相应的转接卡也较为常见。CF转接IDE非常适合用于展示老式PC，比如说486或者586电脑上的作品。去年秋天我在上海展出的《人民计算机》，就使用了SD卡到IDE的转接卡。新的储存卡比老旧的小容量硬盘更可靠、价格也更便宜，同时也便于维护，可以随时将储存卡抽取下来并放到现代PC上进行操作。这对于老电脑相关展品的策展人及的使用老电脑创作的艺术家来说非常实用。
+Additionally, as mentioned earlier, CF and SD cards can be adapted to IDE interfaces, and corresponding adapter cards are common. The CF to IDE adapter is particularly suitable for showcasing old PCs, such as works on 486 or 586 computers. Last fall, during the exhibition of "People's Computer" in Shanghai, I used an SD to IDE adapter. Newer storage cards are more reliable, cheaper than older small-capacity hard drives, and easier to maintain. They can be easily removed and used for operations on modern PCs. This convenience is highly practical for curators exhibiting old computer-related artifacts and artists creating art using old computers.
 
-但是下面要讲到的SCSI接口就算是电脑存储接口的“深水区”了，直到2000年代初，SCSI接口都比同时期的IDE接口要稍微快一点，而且有较低的CPU占用，曾经广泛被用在服务器高端PC上。大部分90年代中期及之前的苹果电脑上面也都有SCSI接口。
+However, the SCSI interface, which I'll discuss next, is like the "deep end" of computer storage interfaces. Until the early 2000s, SCSI interfaces were slightly faster than IDE interfaces of the same period, with lower CPU usage, and were widely used in high-end PCs and servers. Most Apple computers before the mid-90s also had SCSI interfaces.
 
-SCSI接口处理的难点之一就是菊花链（daisy chain）的配置，“菊花链”是指将若干设备一个接一个地串联起来，最终只有一个接口连接到主机（host）。在整个链条最远离主机的最后一个设备上需要设置终结器（terminator）才能保证这一链条的正常运行。有的设备有内置终结器，需要使用设备上的开关来开启；有的设备则没有内置终结器，需要使用额外的硬件终结器并连接到设备空闲的SCSI接口上。
+One of the challenges with SCSI interfaces is the configuration of the daisy chain. The daisy chain refers to linking multiple devices one after another, with only one interface connecting to the host. To ensure the chain's proper functioning, a terminator must be set on the last device farthest from the host. Some devices have built-in terminators, controlled by switches on the device, while others require external hardware terminators connected to the device's free SCSI interface.
 
-虽然说SCSI接口处理起来蛮麻烦的，但是很多时候却是操作老苹果电脑最便利的办法。比如说我之前提到软盘搞不定的老Macintosh SE，最后就是用SCSI连接Zip驱动器来使用的。就像我前面提到的，Zip驱动器在软件看来是以硬盘的方式工作的，而老Macintosh的固件也可以将Zip驱动器当做一个外置硬盘，并直接从上面启动。这就给我的操作带来很大的便利。因为Zip驱动器也有USB的版本，因此我只需要更换盘片，就可以使用现代PC把用模拟器准备好的操作系统和应用程序镜像写入Zip软盘并在老Macintosh上运行。
+Though dealing with SCSI interfaces can be troublesome, it's often the most convenient way to operate old Apple computers. For instance, as I mentioned earlier, my old Macintosh SE, which I couldn't fix with a floppy disk, was eventually used with a SCSI-connected Zip drive. Just like I mentioned earlier, the Zip drive worked as a hard drive in the software's view, and the old Macintosh firmware recognized the Zip drive as an external hard drive, allowing direct booting from it, making my operations much more convenient. As the Zip drive also has a USB version, I could easily swap disks and use a modern PC to write prepared OS and application images onto the Zip disk and run them on the old Macintosh using an emulator.
 
-当然如果你的设备有IDE接口的话，我觉得最好还是不要用SCSI。因为SCSI接口类型实在太多了，比如老式苹果电脑的外置SCSI接口是25针的DB-25，内置的SCSI接口是低密度的50针接口。但许多外设是高密度50帧或68针的，从80年代到2000年代，SCSI接口覆盖了大量不同功能和时代的电脑硬件，虽然嵌套多重转接头理论上可以连接所有的设备，但未必都能正常工作。因此我自己在使用PowerMac 7300的时候，就安装了一张PCI的SATA卡来连接硬盘。
+However, if your device has an IDE interface, it's better to avoid using SCSI. SCSI interfaces have various types, such as the external SCSI interface of old Apple computers being a 25-pin DB-25, while the internal SCSI interface is a low-density 50-pin interface. Many peripherals use high-density 50 or 68-pin connectors. From the 80s to the 2000s, SCSI interfaces covered a wide range of computer hardware with different functionalities and eras. Even though theoretically, nested multiple adapters could connect all devices, they might not all work properly. That's why when I used the PowerMac 7300, I installed a PCI SATA card to connect the hard drive, bypassing the SCSI interface.
 
-## 文件系统
-对于数字保存的另外一个挑战就是老电脑的磁盘中会遇到各种各样的不同的文件系统。IBM PC及兼容机所使用的FAT16或FAT32是最容易处理的，一般来说只要能够有合适的接口连接到主机，FAT格式的磁盘在现代电脑上大部分情况是可以读的。同时Windows系统很大程度上保留了对旧型应用程序的二进制兼容，32-bit的Windows 7甚至Windows 10都可以直接运行很多16-bit的Windows3.0程序。
+## File Systems
+Another challenge in digital preservation is encountering various file systems in old computers' disks. The FAT16 or FAT32 used in IBM PCs and compatibles is the easiest to handle. Generally, if the disk has an appropriate interface to connect to the host, disks with FAT formats are mostly readable on modern computers. Additionally, Windows systems largely maintain binary compatibility with old applications. Even 32-bit Windows 7 and Windows 10 can directly run many 16-bit Windows 3.0 programs.
 
-拿我自己遇到的真实情况举例，我有一台1987年的IBM PS/2 Model 30,它是720KB的3.5寸软驱，这种格式用现在的USB软驱也是可以读取的，因此我成功地把Windows 3.0的黑白棋游戏通过软盘复制到Windows7的电脑上来执行。Linux由于是开始就是为IBM PC开发的，所以1993年推出的ext2差不多是能见到的最老的文件系统，在现在的发行版上读取也没有大碍。
+As an example from my own experience, I have a 1987 IBM PS/2 Model 30 with a 720KB 3.5-inch floppy drive. With a USB floppy drive, I successfully copied a Windows 3.0 game of Othello and executed it on a Windows 7 computer. Linux, developed initially for the IBM PC, supports ext2, introduced in 1993, and reading it on current distributions poses no major obstacles.
 
-但是苹果的话问题就会比较多，一个问题是前面提到的软盘格式是不兼容的问题，400k和800k的Macintosh软驱在PowerMac G3之后就没有了，而普通PC软驱也不能读取。这个时候就会涉及到多次的数据迁移，首先需要一台能有软盘，并且能够兼容的机器，比如我自己的Power Macintosh 6100和Power Macintosh 7300都充当过“中转站”，用来为Macintosh SE准备软盘。因为这两款电脑都有以太网网卡，所以可以通过网线跟现代电脑交换数据。这时处理老式电脑的数据时常用的一种手段。
+However, there are more challenges with Apple systems. One issue is the incompatibility with earlier mentioned floppy disk formats. The 400k and 800k Macintosh floppy drives were discontinued after the PowerMac G3, and regular PC floppy drives cannot read them. This requires multiple data migrations, necessitating a compatible machine like my Power Macintosh 6100 and Power Macintosh 7300, both acting as intermediaries for the Macintosh SE, exchanging data with modern computers via Ethernet due to their Ethernet cards. This is a common approach when dealing with data from old computers.
 
-在处理老式苹果电脑的文件时的另外一个问题就是HFS文件系统的类型代码（type code）和创建者代码（creator code），老式Mac OS系统不像Windows或Mac OS X之后的苹果电脑那样使用文件扩展名来标志文件类型，而是将文件类型存储在HFS系统的文件属性里。如果在转移文件的过程中使用了非HFS格式的磁盘，就可能丢失保存在HFS属性中的文件的类型而导致不知道该用什么程序打开的情形，因此会需要特别小心的处理这些文件系统。如果你仍然有可以运行Mac OS 9或更早版本的苹果电脑，可以使用FileTyper或FileType这样的工具查看和修改HFS文件系统的类型和创建者代码。
+Another challenge when handling files from old Apple computers is the HFS file system's type and creator codes. Unlike Windows or later macOS versions that use file extensions to denote file types, old Mac OS systems store file types in HFS file attributes. Transferring files using non-HFS formatted disks may result in losing file types stored in HFS attributes, leading to uncertainty about which program to use to open the file. Thus, handling these file systems requires special attention. If you still have a Mac OS 9 or earlier Apple computer, tools like FileTyper or FileType can be used to view and modify HFS file system type and creator codes.
 
-如果拿到一块不确定格式的磁盘的话，通常来说可以用Windows工具，比如说像DiskGenius、R-Studio这样的工具，来先调查一下磁盘分区的状况。因为很多时候苹果上的磁盘工具隐藏了很多文件系统的细节而导致难以诊断和修复的情况。此外，比较新的Linux内核也内置了hfsplus模块，使用GParted[^8]等Linux工具可以对苹果HFS分区表做一些Mac OS X自带分区工具所不支持的底层操作。
+When dealing with disks of uncertain formats, Windows tools like DiskGenius or R-Studio can be used to investigate disk partition conditions. Often, disk tools on Apple systems hide many file system details, making diagnosis and repair challenging. Moreover, newer Linux kernels have built-in hfsplus modules, enabling low-level operations on Apple HFS partition tables using Linux tools like GParted, which the macOS built-in disk utilities does not support.
 
 ## 光盘
 接下来我们来看一下光盘，光盘的一个特点就是它的存储结构是一个或若干连续的轨道，并非像硬盘那样是非常规则的多层同心圆结构，也因此无法用CHS结构进行寻址。通常纯数据CD-ROM只有一个轨道，多轨道CD往往用于在一张光盘上存储不同类型的数据，比如同时存储音频和数据。在光盘备份工具IsoBuster网站上的文章[^9]介绍了CD和DVD光盘的结构。
@@ -90,75 +90,100 @@ FILE "Image.bin" BINARY
     INDEX 01 00:31:00
 ```
 
-其实所有的CD光盘都是以2352字节为一个扇区（sector）的，但CD-ROM的MODE1设计用来存储数据，因此使用了一部分空间作为纠错和校验，所以每个扇区只能存储2048字节的数据。
+## Optical Discs
+Let's delve into optical discs. One characteristic of optical discs is their storage structure, which comprises one or several continuous tracks, unlike hard drives that have a regular multi-layered concentric structure. Hence, they cannot be addressed using the CHS structure. Typically, a pure data CD-ROM has only one track, while multi-track CDs are often used to store different types of data on a single disc, such as storing both audio and data. IsoBuster, a disc backup tool, has articles[^9] on CD and DVD disc structures.
 
-由于CD是第一个廉价、可以大量发行的大容量数字化存储设备，因此最初被设计用来存储音乐的CD衍生出诸多用来存储不同内容的标准，比如1980年最初的CD标准叫“红皮书”，1985年上市的电脑数字光盘标准CD-ROM在最初并未标准化，直到1988年对应的“黄皮书”才出现，用于多媒体互动内容的CD-i则和CD-ROM相反，其标准“绿皮书”发布于1986年，而1990年才有对应的设备发售。可写入CD光盘的标准“橙皮书”发布于1988年。在中国曾经流行的家庭视频媒介VCD标准“白皮书”出现于1993年。
+One way to understand the structure of optical discs is through a CUE script, which records detailed information about the disc tracks. The Hydrogenaudio Knowledgebase has detailed documentation on CUE scripts[^10]. Let's take a look at the CUE sheet for a standard CD-ROM, which has only one track in MODE1/2048 format.
 
-CD-i格式是国内比较少见，但近些年在海外比较多提及和研究的光盘格式。The Black Moon Project[^11]保存了大量关于CD-i的细节，而CDinteractive论坛[^12]是另一个查找CD-i资料的去处。
+```
+CATALOG 0000000000000
+FILE "Myst (1994)(Broderbund).iso" BINARY
+  TRACK 01 MODE1/2048
+    INDEX 01 00:00:00
+```
 
-在90年代之后，以CD为基础的12cm光盘出现了密度更高的后代，就是DVD和蓝光光盘，许多CD，特别是CD-ROM的特性都被继承了下来，比如2048字节的扇区尺寸，以及ISO9660为基础的光盘文件格式，这也是为什么现在最流行的光盘镜像文件都是ISO格式的原因。
+On the other hand, a VCD's CUE sheet typically uses MODE2/2352 format.
 
-当然与硬盘上存在多种不同的文件系统类似，光盘上也存在不同的文件系统[^13]。原始的ISO9660只能支持8.3文件名，但在Windows 95之后的操作系统都支持长文件名，因此今天多数光盘是都使用ISO9660的基础上加入了Joliet扩展以支持长文件名，而苹果Macintosh，特别是Mac OS X之前的Classic Mac OS则广泛在光盘上使用HFS文件系统。
+```
+FILE "Image.bin" BINARY
+  TRACK 01 MODE2/2352
+    INDEX 01 00:00:00
+  TRACK 02 MODE2/2352
+    INDEX 00 00:29:02
+    INDEX 01 00:31:00
+```
 
-在2000年代中期之后，UDF正逐渐替代ISO9660成为光盘存储的标准，最具代表性的例子就是Windows7之后的Windows安装光盘都无法在不支持UDF格式的操作系统上读取。而蓝光光盘也默认使用UDF作为其文件系统。
+All CD discs are structured into sectors of 2352 bytes each. However, the MODE1 design of CD-ROMs is intended for data storage, allocating some space for error correction and verification, limiting each sector's data storage to 2048 bytes.
 
-UDF格式的另一个重要应用就是它对随机读写支持更好，在可擦写光盘格式比如CD-RW上，光盘被格式化成UDF文件系统后，就可以像硬盘那样自由地增减、改写文件了。在Windows Vista或更新的Windows系统上，插入可擦写地光盘后会提示以“实时文件系统”（Live file system，微软用于描述UDF文件系统的术语）还是“Mastered”方式操作，选择前者就会将光盘格式化为UDF格式，并类似U盘那样自由读写操作，而选择后者则会在硬盘上预先准备光盘的ISO9660镜像，直到退出光盘时再一次性写入。
+Being the first affordable, widely distributable high-capacity digital storage, CDs were initially designed for music storage. This led to the emergence of various standards tailored to store different types of content. For instance, the initial CD standard in 1980 was termed the "Red Book." The CD-ROM, introduced in 1985 for computer data discs, was not standardized initially. It wasn't until 1988 that the corresponding "Yellow Book" was established. On the other hand, CD-i, designed for multimedia interactive content, diverged from CD-ROM standards with its "Green Book" in 1986, with corresponding devices released in 1990. The writable CD standard, known as the "Orange Book," emerged in 1988. The VCD, a popular home video medium in China, adopted the "White Book" standard in 1993.
 
-UDF的开发和DVD的开发紧密相关，它被包含在1996年的DVD-Video标准中并几乎被用在所有电影DVD盘上。相比之前的VCD光盘，DVD光盘有着更强的编程能力，它支持一种可编程的“虚拟机”，因此也被用作开发一些基于视频片段的电子游戏。比如我在课堂上展示的这款，就是哈利波特的DVD交互游戏。
+The CD-i format is relatively uncommon domestically but has garnered increased attention and research overseas in recent years. The Black Moon Project[^11] hosts extensive details about CD-i, while the CDinteractive forum[^12] serves as another resource for CD-i information.
 
-《Inside DVD-Video》[^14]一书中，详细的介绍了DVD交互虚拟机的功能。DVD交互游戏的一个特点就是它的可编程特性是捆绑在DVD-Video光盘标准里的，因此所有符合标准的DVD影碟机和游戏机都可以运行这类游戏，所以它是为游戏主机上运行跨平台游戏的一个可行思路。
+Following the 1990s, the CD-based 12cm discs evolved into higher-density successors, namely DVD and Blu-ray discs. Many characteristics of CDs, especially CD-ROMs, were inherited, such as the 2048-byte sector size and the ISO9660-based disc file format. This explains why ISO remains the most popular format for disc image files today.
 
-在更新的蓝光光盘标准中，则直接使用了Java虚拟机，被称作BD-J，因此可以开发更加复杂的游戏，在Blu-play网站[^15]上就提供了不少BD-J游戏的下载和开发资料。
+Similar to the diverse file systems found on hard drives, different file systems exist on optical discs[^13]. The original ISO9660 supported only 8.3 filenames. However, since Windows 95, operating systems have supported long filenames. Consequently, most modern optical discs use ISO9660 as a base and incorporate Joliet extensions to support long filenames. Apple Macintosh, especially the Classic Mac OS predating Mac OS X, widely utilized the HFS file system on optical discs.
 
-## 录像带
-接下来我们来处理的媒介就不是那么紧密的和电脑相关了，它就是录像带。录像带的格式也蛮混乱的，不仅是说外形尺寸的不同，而且很多时候有着相同外形的录像带内部也有若干代际的差别和模拟与数字之分。
+UDF gradually replaced ISO9660 as the standard for optical disc storage after the mid-2000s. A prime example is that Windows installation discs post-Windows 7 cannot be read on operating systems that do not support UDF formats. Additionally, Blu-ray discs default to using UDF as their file system.
 
-从处理的方式上来讲，大概我们可以把录像带分为两类，模拟式的和数字式的。模拟式的磁带比如说最常见的VHS，以及SVHS、VHS-C、Video8（V8）、Hi8和Betacam、BetaMax等；数字式的磁带最常见的是MiniDV、Digital 8、DVCPRO、DVCAM、MicroMV、D-VHS等等。它们之间的兼容性也很混乱，通常同样尺寸的录像机新的机器可以兼容旧的，比如SVHS机器可以播放VHS磁带，Digital 8录像机可以播放Hi8和Video8；当然也有不同尺寸可以互操作的情况，比如较小的VHS-C磁带可以通过转接盒装进VHS录像机，而许多DVCPRO和DVCAM录像机可以兼容MiniDV磁带，整体上来说就是新的兼容旧的，大的兼容小的。因此如果你拿到一个录像带却不认识它的话，大概就要调查一下他用什么样的机器才能放的出来。
+Another significant application of UDF lies in its better support for random read-write capabilities. When an optical disc, like a CD-RW, is formatted with the UDF file system, it allows files to be added, modified, or erased freely, much like a hard drive. In Windows Vista or newer versions of Windows, inserting a rewritable optical disc prompts the choice between operating in "Live file system" (Microsoft's term for the UDF file system) or "Mastered" mode. Opting for the former formats the disc into UDF, enabling similar read-write capabilities as a USB drive. Choosing the latter creates an ISO9660 image of the disc on the hard drive until the disc is ejected, and then it writes everything at once.
 
-大多数录像机的录制模式是基于螺旋扫描（Helical scan）的，通常有一个高速旋转的磁头，并在磁带上形成与走带方向倾斜的磁轨，这一点和线性记录的盒式录音带不同。盒式录音带可以用剪刀剪断再粘贴的方式剪辑，但编辑录像磁带通常不能用这种方式，通常对录像带的编辑是需要分段翻录来完成的。这种编辑方式中视频片段线性的保存在录像带的不同播放时间上，因此叫做线性编辑（Linear Editing），而与之相对应的，存在电脑磁盘里，可以随机调用视频片段的编辑方式就是非线性编辑（non-Linear Editing）。
+The development of UDF is closely tied to the development of DVDs. It was included in the 1996 DVD-Video standard and is used on nearly all movie DVDs. Compared to earlier VCDs, DVD discs possess greater programming capabilities, supporting a programmable "virtual machine". Consequently, they were used to develop some video-based electronic games. For instance, the interactive DVD game of Harry Potter that I showcased in class is one such example.
 
-我们可以用两台录像机组成一个最简单的线性编辑系统，素材在录像机A中，而制作的结果在录像机B中。如我们要将两段素材连接在一起，就要先把录像机A快进到第一段素材的位置，然后录像机A播放的同时录像机B进行录制；在第一个片段结束时，暂停录像机B的录制，再把录像机A快进到片段二的位置，再在录像机A播放片段二的同时启动录像机B录制，就可以将片段一和片段二两个不同位置的视频片段拼接成一段连续的视频。不断循环这个过程就可以得到一个由托干片段组成的完整视频节目。
+《Inside DVD-Video》[^14] provides detailed insights into the functionalities of the DVD interactive virtual machine. One notable aspect of DVD interactive games is their programmability, integrated within the DVD-Video disc standard. Hence, any DVD player or gaming console adhering to these standards can run such games, making it a viable approach for cross-platform gaming on gaming consoles.
 
-在MediaCollege.com网站中，就详细地介绍了如何组建一套基于磁带地线性编辑系统[^16]，由于线性编辑是高度依赖播放时间的，在非专业的录像机中编辑时，往往剪辑的位置很难保证准确。因此专业级录像机通常需要支持时间码（timecode）功能，以此保证素材在剪辑时可以对齐。
+In the updated Blu-ray Disc standard, a Java virtual machine known as BD-J is directly employed. This advancement enables the development of more complex games. Blu-play website[^15] offers numerous BD-J game downloads and development resources.
 
-## 视频特技台
-另一个线性编辑常用的设备是视频特技台（video mixer），我们可以用它制作模拟信号电视时代常见的视频效果。比如蓝幕/绿幕、画中画、画面转场等等，它可以不依赖电脑，直接在视频线路上实现相应的效果。配合录像机编辑时，它被串联在播放素材的录像机和制作的录像机之间，在播放的同时由编辑者实时加入特技的操作并录制到制作的录像机中。
+## Videotapes
 
-通过特技台可以做出许多经典的特技镜头，比如飞近飞远这样的效果，就是绿幕结合画中画功能一起实现的，通过绿幕把演员的画面放进背景中，再利用画中画的功能放大缩小或左右移动，这些都是可以由特技台上的推杆很容易的控制的。
+Let's dive into a medium that's not as closely related to computers: videotapes. The formats of videotapes are quite diverse, not just in terms of external dimensions but often hiding various generations and distinctions between analog and digital within tapes that share similar outer appearances.
 
-用老式电脑配合特技台，就得到一套80年代风格的字幕机。老式电脑性能有限，因此不能在电脑直接将字幕叠加到画面上，而通常需要在文字后设置一个纯色的背景，再用特技台的颜色键（Chroma Key）或者亮度键（Luma Key）功能抠图，并用画中画功能叠加到视频上，实现视频字幕的效果。
+In terms of handling, we can broadly categorize videotapes into two types: analog and digital. Analog tapes include the most common ones like VHS, SVHS, VHS-C, Video8 (V8), Hi8, Betacam, BetaMax, while digital tapes encompass the likes of MiniDV, Digital 8, DVCPRO, DVCAM, MicroMV, D-VHS, among others. Compatibility between them is quite chaotic; generally, newer machines of the same size can handle older tapes. For instance, SVHS players can handle VHS tapes, Digital 8 players can play Hi8 and Video8 tapes. There are also cases of different-sized tapes being interoperable; for example, smaller VHS-C tapes can be adapted into VHS players using an adapter, and many DVCPRO and DVCAM recorders can work with MiniDV tapes. Overall, it's about the new accommodating the old, and the large accommodating the small. So, if you're handed a videotape you're unfamiliar with, you'll likely need to investigate which machine can play it.
 
-这种视频特技台在今天的创作中仍然有一定实用的价值，一个用途就是制作怀旧视频，它可以准确地重现《西游记》和《奥特曼》中的老式电视特效。此外模拟式特技台在实现相应效果的时候几乎没有延迟，虽然受限于模拟信号它的分辨率有限，但是在对延迟的要求超过画质的时候，比如一些现场表演中就非常有用。
+Most videotape recorders rely on helical scan recording, usually employing a rapidly rotating head that creates inclined magnetic tracks on the tape in the direction of movement. This method differs from linear recording on cassette tapes, which can be edited by cutting and splicing. Video editing with videotapes typically requires segment-by-segment dubbing. This editing technique involves linearly storing video segments at different playback times on the tape, hence termed linear editing. In contrast, non-linear editing allows for random access to video segments stored on computer disks.
 
-## 视频采集
-我们在上面演示了录像带时代编辑视频常见的几种用例，接下来我们就讨论一下视频采集的流程吧。在刚才的演示中，我会不停地找各种各样的线，这是视频处理的又一个麻烦的地方。
+The simplest linear editing system can be assembled using two videotape recorders: material in recorder A and the produced result in recorder B. To concatenate two segments, recorder A must be fast-forwarded to the position of the first segment. Then, while recorder A plays, recorder B records. When the first segment ends, pause the recording on recorder B, fast-forward recorder A to the second segment's position, then start recording on recorder B while playing the second segment on recorder A. This process joins video segments from different positions into a continuous video. Repeating this loop yields a complete video composed of spliced segments.
 
-最常见的模拟视频线就是混合视频（Composite Video）线，通常是黄白红三色的，但红白分别是左右声道音频，只有黄色是视频信号。这种线几乎所有模拟视频设备都有，但是它相对来说画面的质量也不是那么好。另外一种常用的线是Y/C分量线也就是S-Video，你会发现它的接口有点像电脑上的鼠标小圆口。S-Video接口里面有四根针脚，也就是两对线路，它的亮度和色度是分离的，它的画面要好于混合视频线。第三种是色差线，它在DVD或者说蓝光播放机上比较常见，因为它就可以支持高清的输出了。
+MediaCollege.com provides detailed guidance on assembling a tape-based linear editing system[^16]. Since linear editing heavily relies on playback time, maintaining precise editing positions can be challenging on non-professional equipment. Therefore, professional-grade recorders often support timecode functionality to ensure alignment during editing.
 
-以及说有些时候你会遇到SCART这种欧洲标准的插头，它比的情况较混乱，因为它可能用来传输多种不同的信号，有些时候是色差，有些时候是VGA、S-Video或混合视频，如果能够找到支持SCART信号的设备是最好的情况，但这些设备通常只在欧洲销售。而要用不支持SCART接头的设备与SCART设备互联，就需要查阅SCART设备的说明书，确定具体支持哪些信号，并配合对应的使用了。
+## Video Mixer
 
-大多数的模拟电视卡或者视频采集卡至少应该有混合视频和S-Video接口，而色差接口往往就只有专门的高清采集卡才有，很多游戏主播会用色差线来采集游戏主机的画面。如果是电视卡，还可能有RF射频电视信号、FM收音机信号以及数字电视信号。
+Another device commonly used in linear editing is the video mixer, allowing for the creation of classic video effects prevalent in the analog TV era. It can execute effects like blue/green screen keying, picture-in-picture, and transitions without relying on a computer, directly implementing these effects in the video signal path. When coupled with VCR for editing, it's interconnected between the VCR playing the material and the VCR recording the result. While playing, the editor can real-time manipulate effects using the mixer and record them onto the producing VCR.
 
-对于磁带式的DV的话，因为它本身就是数字格式，所以质量最好的办法就是用1394线来采集。1394接口在摄像机，特别是索尼的机型上很多时候叫 i.Link，通常是4针的小接口。6针的1394接口是电脑上最常见的，基本上来说2000~2010年之间的苹果电脑上面都会有。1394b的9针接口在苹果电脑上也比较普遍，从2003年到2012年的很多型号上都能找到。在2012年之后的视网膜屏幕Macbook Pro就没有1394接口了，只能通过雷电接口转接。
+With a video mixer, many classic video effects can be achieved. For instance, the fly-in/fly-out effect involves combining green screen with picture-in-picture functionality. This technique places the actor's image into the background using the green screen and then uses picture-in-picture to zoom in, zoom out, or move the image left and right—all controlled easily through the levers on the effects mixer.
 
-这三种接口之间的差别是9针的1394b支持800Mbps传输速度，而4针或6针的1394a只支持400Mbps的速度，因此在使用1394b转1394a数据线的时候，所有1394b设备都会降速到1394a的400Mbps。而两种1394a接口互相转换则不会影像速度，6针相比4针的接口多了12V供电的功能，但大部分DV都没有使用1394口供电，唯一比较常见的使用1394口供电的设备是硬盘式的iPod。
+Pairing an old computer with a effects mixer creates a setup resembling an 80s-style character generator. Since old computers had limited capabilities, they couldn't overlay subtitles directly onto the video. Instead, they typically placed a solid color background behind the text. Then, using the effects mixer's Chroma Key or Luma Key functions, they would overlay the text onto the video through picture-in-picture, achieving the effect of video subtitles.
 
-一种罕见的情况是有一些电视机顶盒会使用SCSI接口，比如说NOKIA DVB9600S就支持使用SCSI连接硬盘录制数字电视节目。DVB2000是爱好者为NOKIA DVB9600S开发的替代操作系统，功能非常丰富，其手册中包含了许多SCSI接口、SCART接口和数字电视的技术细节[^17]。
+Even in modern content creation, this type of video mixer retains practical value. One application is producing nostalgic videos, accurately recreating the vintage TV effects seen in shows like "Journey to the West" and "Ultraman." Additionally, analog effects mixers offer almost no delay when producing the desired effects. Although limited in resolution due to analog signals, they prove highly valuable in situations where minimizing delay is more critical than achieving high image quality, such as in live performances.
 
-当然，更多情况下录制数字电视往往会使用1394线或网线，许多机顶盒都支持通过网线传输MPEG-TS（MPEG传输流，MPEG transport stream），通过VLC或类似的软件就可以把数字电视节目视频流无损的保存在电脑上。上面提到的这些就是模拟和数字视频向电脑转换的常见途径，通过这些转换，各种形态的视频都可以以数字文件的形式保存在电脑上，并可以利用电脑进行加工和制作。
+## Video Capture
 
-## 盒式磁带
-那么最后一种事情我们就要讲的就是盒式磁带，盒式磁带可以说是第一个在家庭中普及的，可以用做小型、个人录音室的设备。作为家庭录音的起点，盒式磁带在大众文化中产生非常深刻的影响，也一度在唱片发行商中带来恐慌，英国唱片业协会（BPI）一度以“Home Taping Is Killing Music”（家庭录音正在扼杀音乐）作为口号，宣传盒式磁带和家庭录音会导致盗版泛滥并音乐工业。但也有一些乐队和发行商对家庭录音持欢迎态度，他们将出售的卡带B面留白，供买家自行录制。
+We just demonstrated several common scenarios for editing videos during the era of videotapes. Now, let's delve into the process of video capture. During the demonstration, I was constantly navigating through various cables, which can be another headache in video processing.
 
-英国唱片业协会（BPI）设计的“家庭录音正在扼杀音乐”标志
-在中国的话针对盒式磁带也产生了一个特别的发明，就是复读机。复读机使用了类似电脑内存的RAM去保存最近播放过的声音片段，在按下“复读”按钮的时候就暂停播放磁带，而播放内存里保存的声音片段；在国外与复读机功能最类似的是听写机（Transcriber），但是听写机的“复读”（Backspace）功能是靠机械倒带特定的长度完成的。
+The most prevalent analog video cable is the Composite Video cable, typically featuring three colors: yellow, white, and red. However, the white and red are audio left and right channels, respectively, with only the yellow carrying the video signal. While this cable is present in almost all analog video devices, the image quality it delivers is relatively inferior. Another frequently used cable is the Y/C component cable, also known as S-Video. Its interface looks similar to PS/2 port for keyboard and mouse on a computer. The S-Video connector comprises four pins, representing two pairs of lines. Its luminance and chrominance are separate, resulting in a better-quality image compared to the Composite Video cable. The third type is the component video cable, commonly found in DVD or Blu-ray players as it supports high-definition output.
 
-松下RR-830听写机有两个踏板，分别控制播放和“复读”功能
-由于盒式磁带很便宜又便于翻录，因此在许多发展中国家远比黑胶唱片等更早出现的录音发行渠道流行。特别是在中国的80年代，盒式磁带的普及成为中国流行音乐的种子，而双卡带录音机在今天已经成为八九十年代以迪斯科为代表的流行音乐的文化符号，并出现在许多展示复古风味的影像和空间里。
+Sometimes, you might encounter the SCART, a European standard plug, which can be a bit perplexing because it may transmit various signals—sometimes component, other times S-Video, RGB or YPbPr composite video. Finding equipment that supports SCART signals is ideal, but such devices are usually available primarily in Europe. Connecting SCART devices with those that don't support SCART requires consulting the SCART device's manual to determine the specific supported signals and using corresponding adapters accordingly.
 
-当然磁带也有一个相对少见但也非常重要的用途，就是用它存储电脑数据。比如我们展示用的Laser 310电脑就有录音机接口，可以用来保存和加载程序。当然现在的话，使用电脑、手机或录音笔也可以代替磁带录音机完成向老式电脑加载程序的动作。
+Most analog TV tunner cards or video capture cards typically come with at least composite video and S-Video interfaces. Component interfaces are often found only in high-definition capture cards. Many gaming streamers use component cables to capture game console screens. TV cards might also handle RF coaxial television signals, FM radio signals, and digital TV signals.
 
-这就是今天的全部内容了，我们回顾了磁盘、光盘和磁带的特性和用途。这些存储介质要么是直接构成多媒体电脑的元件，如磁盘和光盘。要么它们的操作逻辑被多媒体电脑所继承，比如电脑和手机上的“录音机”程序，很多时候就拟物化地还原了磁带录音机的操作面板。下节课我们将会讨论构成今天作为媒体机器的电脑的另一个起源：老式个人电脑。
+For DV tapes, since they are digital in nature, the best way to capture their quality is by using a IEEE 1394 cable. The IEEE 1394 interface, often referred to as i.Link in many camcorders, particularly Sony models, typically comes with a small 4-pin connector. The 6-pin IEEE 1394 interface is the most common on computers and was found on Apple computers from around 2000 to 2010. Additionally, the 9-pin IEEE 1394b interface was also quite prevalent on Apple computers from 2003 to 2012. However, after 2012, the Retina Display Macbook Pro models no longer featured a 1394 interface and could only be connected via IEEE 1394 to Thunderbolt adapter.
+
+The difference between these three interfaces is that the 9-pin IEEE 1394b supports a transfer speed of 800 Mbps, while the 4-pin or 6-pin 1394a only supports 400 Mbps. Thus, when using a 1394b to 1394a data cable, all IEEE 1394b devices will operate at the reduced speed of 400 Mbps. However, interchanging the two IEEE 1394a interfaces does not affect the speed. The 6-pin interface, compared to the 4-pin, includes a 12V power supply function, but most DV devices do not utilize the 1394 port for power, except for the early iPods.
+
+There are rare instances where certain set-top boxes use the SCSI interface. For instance, the NOKIA DVB9600S supports connecting a hard drive via SCSI to record digital TV programs. DVB2000, an alternative operating system developed by enthusiasts for the NOKIA DVB9600S, contains detailed technical information about SCSI interfaces, SCART interfaces, and digital TV[^17].
+
+However, in most cases, the recording of digital TV is typically done using either a IEEE 1394 cable or Ethernet. Many set-top boxes support transmitting MPEG-TS (MPEG Transport Stream) over Ethernet, allowing users to losslessly transfer digital TV streams from set-top box to their computers with softwares like VLC. With these variant methods for converting analog and digital videos into digital files, enabling different forms of video to be stored as digital files on computers for editing and production purposes.
+
+## Cassette Tapes
+
+The last topic we'll discuss is cassette tapes. They were the first devices to gain popularity in households, often utilized in small-scale personal recording setups. As the starting point for home recording, cassette tapes had a profound impact on popular culture and even caused panic among record labels. The British Phonographic Industry (BPI) once used the slogan "Home Taping Is Killing Music" to advocate against cassette tapes and home recording, suggesting it would lead to rampant piracy within the music industry. However, some bands and labels embraced home recording by leaving the B-side of sold tapes blank for buyers to record on their own.
+
+In China, a notable invention related to cassette tapes was the "Repeater"(复读机/fù dú jī), utilizing RAM similar to computer memory to store recently played audio segments. Pressing the "repeat" button would pause the tape playback and play the audio segment stored in memory. Transcribers have similar function to the "Repeater", although its "repeat" (Backspace) function relied on mechanically rewinding tape for a specific length.
+
+Because cassette tapes were affordable and easy to duplicate, they became popular in many developing countries much earlier than other recording distribution channels like vinyl records. In China, their widespread use in the 1980s became the foundation for Chinese pop music. Dual-cassette recorders have since become a cultural symbol of the '80s and '90s music scene, particularly associated with disco, often appearing in displays and spaces nostalgic for that era.
+
+Cassette tapes also had a less common yet crucial use: storing computer data. For instance, computers like the Laser 310, which we showcased, had a tape recorder interface used to save and load programs. Today, computers, phones, or digital recorders can used as replacement to tape recorders for loading programs into vintage computers.
+
+That's all for today; we've covered the characteristics and uses of disks, optical media, and tapes. These storage mediums either directly formed components of multimedia computers, like disks and optical discs, or their operational logic was inherited by multimedia computers, as seen in the "audio recorder" programs found on computers and phones, often mimicking the control panels of cassette tape recorders. In the next class, we'll delve into another origin of modern media machines: vintage personal computers.
 
 ## 参考资料
 [^1]: OmniFlop网站：http://www.shlock.co.uk/Utils/OmniFlop/

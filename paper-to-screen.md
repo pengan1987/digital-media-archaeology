@@ -1,131 +1,132 @@
-# 从纸张到屏幕
-今天是数字媒体的实验考古的第七节课：“从纸张到屏幕”，这节课的主要目的，是希望讲一下电子显示屏是如何成为电脑艺术中最重要的元素的。我们今天去参观一个新媒体艺术或数字艺术展览，往往第一印象就是大大小小的显示屏，但是在新媒体艺术和计算机的发展过程中，纸上的硬拷贝是发挥过很重要的作用的。特别是基于计算机的视觉创作，早期使用计算机的艺术家们曾经以纸张为媒介做过许多有趣的探索。
+# From Paper to Screen
+Today marks the seventh session of our series: "From Paper to Screen." The primary objective of this class is to shed light on how video monitors have become the most crucial element in computer art. When visiting a new media art or digital art exhibition, our first impression often revolves around displays of various sizes. However, in the evolution of new media art and computer development, hard copies on paper have played a significant role. Particularly in computer-based visual creation, early artists using computers conducted many intriguing explorations through paper as a medium.
 
-而我们现在习以为常的电子显示屏加键盘计算机操作范式，大概到70年代中后期才成为计算机标准的操作方式。而这种操作方式的起点，是我接下来要讲到的视频终端（Video Terminal）。而在视频终端带来的电脑操作方式的变化发生之前，大部分人操作电脑都是电传打字机（teletypewriter），虽然我没有能够找到真正的电传打字机，但许多设备、协议的工作原理都继承自电传打字机，通过了解这些设备的工作方式，我们可以大概的推演电传打字机的工作原理。
+The familiar paradigm of using video monitors alongside keyboard-operated computers became the standard computer operation mode only around the mid-to-late 1970s. The starting point of this mode of operation is what I am about to discuss next: the Video Terminal. Before the changes in computer operation introduced by the Video Terminal, most people interacted with computers using teletypewriters, although I couldn't find a real teletypewriter. However, many devices and protocols inherited their principles of operation from teletypewriters. By understanding the workings of these devices, we can roughly infer the operational principles of teletypewriters.
 
-## 位图
-在开始之前，我们来想一下电脑是如何处理图形的。我们发现我们前面几节课讲到的大多电脑所生成、处理的图像都是位图，也就是bitmap。今天电脑上面最常见的图形都是位图，比如说Photoshop编辑的数字照片，或者数字绘画（digital painting）作品通常都是位图。
+## Bitmaps
+Before we dive in, let's consider how computers handle graphics. We've noticed that most images generated or processed by computers are bitmaps. Today, bitmaps are the most common graphics on computers, such as the digital photos edited in Photoshop or digital paintings, which are typically bitmaps.
 
-但是对于老式电脑来说，位图有一个很大的问题就是需要占用很大的内存，在相当一段时间里，用电脑处理位图都是一项奢侈的功能。一般来讲，位图占用的显存空间就是水平分辨率乘以垂直分辨率再乘以颜色深度。对于24位真彩色的图像来说，它的每一个像素都要占三个字节。
+However, for older computers, bitmaps posed a significant issue—they required large amounts of memory. For quite some time, manipulating bitmaps on a computer was a luxurious function. Generally, the memory space occupied by a bitmap is the horizontal resolution multiplied by the vertical resolution, further multiplied by the color depth. For a 24-bit true-color image, each pixel occupies three bytes.
 
-我现在使用的屏幕分辨率是1366x768，这已经是一个比较旧的规格了。如果我的显示屏设置为24位真彩色的话，那么这样一屏所占用的显存就是1366x768x24 = 25,178,112 bit，大概是24Mbit，每字节8个bit，也就大概是3MByte，这是能支持这个显示规格最小的显存容量。
+The screen resolution I'm using now is 1366x768, which is already quite an outdated specification. If my display is set to 24-bit true color, the memory consumed by a single screen is 1366x768x24 = 25,178,112 bits, roughly 24 Mbits, where each byte consists of 8 bits, approximately 3 MBytes—the minimum memory required to support this display specification.
 
-一直到90年代中期，主流的显卡的显存也往往只有4MByte，晚一些带3D加速的显卡会有8MByte，因此我们前面两节课提到的80年代直到90年代初的电脑，它们来处理全屏真彩色位图是颇为困难的事情。《网页风格指南：第二版》（Web Style Guide, 2nd Edition）中详细地介绍了彩色位图的显示原理[^1]。在90年代，商业应用为了追求高分辨率而牺牲颜色深度是普遍的做法，16-bit“增强色”曾经是一个常见的设置，它能显示6万5千种颜色，每个字节只需要2个字节，可以比24位真彩色省1/3的显存，而在更老的设备上，可以用8-bit也就是一个字节存储彩色，这种情况下就只有256种颜色。而一个极端的案例就是老式Macintosh，它为了支持更高的显示分辨率完全放弃了彩色，而只有黑白显示，这类机型一直生产到90年代（最后一款是Macintosh Classic II）。
+Even until the mid-90s, mainstream graphics cards often had only 4 MBytes of memory, while those with 3D acceleration might have had 8 MBytes. Thus, handling full-screen true-color bitmaps on computers from the 80s to the early 90s was quite challenging. The "Web Style Guide, 2nd Edition" elaborates extensively on the display principles of color bitmaps [^1]. In the 90s, sacrificing color depth for higher resolution in commercial applications was common practice. The 16-bit "high-color" setting was prevalent, capable of displaying 65,536 colors, requiring only 2 bytes per pixel—about one-third less memory than 24-bit true color. On older devices, 8-bit or one-byte color storage allowed only 256 colors. An extreme case was the old Macintosh, which, in pursuit of higher display resolutions, entirely abandoned color, opting for monochrome displays. These models were produced until the 90s (the last one being the Macintosh Classic II).
 
-在Macintosh发布时最引人注目的软件就是MacPaint，它充分展示了苹果电脑处理位图的功能，其中最著名的画面是日本版画家桥口五叶（Hashiguchi Goyo）的作品《梳头的女人》的数字化版本，虽然它的分辨率照现在的标准并不高，但仍然能清晰的展现出服饰上的花纹和发丝的质感，在大多数家用电脑只能显示“卷轴和精灵”图像的1984年，可以实现全屏幕位图编辑的Macintosh是非常先进的。苹果设计师Susan Kare在2000年的采访中解释了这张图片制作的过程[^2]。
+When the original Macintosh was released, one of its most notable software was MacPaint, showcasing the bitmap capabilities of Macintosh. One of the most famous images was a digitized version of the artwork "Woman Combing Her Hair" by Japanese printmaker Hashiguchi Goyo. Although its resolution by today's standards wasn't high, it still vividly depicted the texture of clothing patterns and hair strands. In 1984, when most home computers could only display "scrolls and sprites," the Macintosh, capable of full-screen bitmap editing, was highly advanced. Apple designer Susan Kare explained the process of creating this image in an interview in 2000 [^2].
 
-黑白屏幕的老式Macintosh的分辨率是512×342像素，只有黑白两色，因此每个像素只占一个bit，换算下来它需要21.375KByte显存，这个容量看起来不大，但是初代Macintosh只有128KB内存，同时它没有独立的显存，因此有将近1/6的内存用做显示的，仅剩下略多于100KB的内存可以提供给应用程序和操作系统。
+The old Macintosh with a monochrome screen had a resolution of 512x342 pixels, displaying only black and white colors. Therefore, each pixel occupied just one bit, totaling around 21.375 KBytes of memory. Despite this seemingly small capacity, the original Macintosh had only 128 KB of memory, without separate graphics memory. Consequently, nearly 1/6th of the memory was utilized for display purposes, leaving slightly more than 100 KB of memory available for applications and the operating system.
 
-初代Macintosh发布于1984年。在当时，能够提供桌面出版、CAD等应用的电脑系统往往会使用黑白显示屏换取更高的分辨率。在PC平台上，1982年发售的大力神图形卡（Hercules Graphics Card - HGC）支持720×348的黑白图像，较高的图形分辨率让HGC显卡成为80年代PC软件汉字系统最常用的型号。
+The first Macintosh was released in 1984. During that period, computer systems offering desktop publishing, CAD, and similar applications often opted for monochrome displays in exchange for higher resolution. On the PC platform, the Hercules Graphics Card (HGC), released in 1982, supported 720x348 monochrome images. Its higher graphics resolution made the HGC card the most commonly used model for PC software Chinese character systems in the 1980s.
 
-但对于更老的硬件来说，即使是单色位图处理起来也是相当消耗资源的，它们往往会使用只能显示固定字母的逻辑，比如IBM PC发售时所标配的MDA单色显卡。而对于类似游戏机的家用电脑来说，它们通常以更低的分辨率来换取显示颜色，同时它们的显示芯片往往会限制特定显示块（block）内的色彩数量。
+For even older hardware, processing monochrome bitmaps was quite resource-intensive. They often used logic that could only display fixed letters, like the MDA monochrome graphics card that came standard with the IBM PC. As for home computers resembling gaming consoles, they usually compromised on display resolution to present color, and their display chips often restricted the number of colors within specific display blocks (blocks).
 
-## 主机和终端
-到现在为止，我们提到的情形仍然只限于家用电脑。但在当时，人们使用电脑的另一个重要途径是通过终端去操作更加强大的电脑主机。主机+终端的组合无论是大型机、小型机还是微型机，都被广泛使用。
+## Host and Terminal
 
-当时的大型计算机往往是若干个大机柜，一个机柜是CPU，一个机柜是磁带机，一个机柜是硬盘。有些时候甚至CPU和内存都是不同的机柜。电脑的使用者通常并不能直接接触到电脑主机，也不能独占电脑资源，而是需要和很多人共享计算机资源。分时系统（time-sharing）的出现让多个用户可以同时操作同一台计算机，每一个用户独占一套输入输出设备，但CPU和内存资源是分享的。这套服务于单个用户输入输出设备通常是一台电传打字机、或者是后面提到的视频显示型终端机，这样的设备在整个电脑系统里是触角的末端，也因此被称作终端。
+Up until now, the situations we've mentioned have been limited to personal computers. However, another significant way people used computers at that time was by operating more powerful computer hosts through terminals. The combination of hosts and terminals, be it mainframes, minicomputers, or microcomputers, was widely used.
 
-我们在第三节课“电信网络”中已经展示过终端的基本用法，我们展示的终端是比较新的型号，因此可以显示中文，不过它也只支持较早的GB2312和GBK中文编码，不能支持UTF-8。我今天展示的终端是使用以太网连接到我的笔记本扮演的主机上的，但更多情况下终端机是通过串口线、或Modem电话拨号来连接的。
+Large computers of that era often comprised several large cabinets, with one for the CPU, another for tape drives, and yet another for the hard disk. Sometimes even the CPU and memory were housed in separate cabinets. Computer users typically couldn't directly access the computer host, nor could they exclusively claim computer resources. Instead, they needed to share these resources among many users. The emergence of time-sharing systems allowed multiple users to simultaneously operate the same computer. Each user had a dedicated set of input-output devices, while the CPU and memory resources were shared. The device serving as the input-output interface for individual users, such as a teleprinter or the later-mentioned video display terminal, was at the extremity of the entire computer system and was hence referred to as the terminal.
 
-在我们教室里展示的这两台终端机都是连在同一台笔记本电上的，它们使用Linux系统里设置好的用户登陆。这种情形与大型主机的工作模式非常接近，两个用户分别操作两台终端，可以同时在主机上独立执行程序而几乎感知不到对方的存在。这种操作体验，很荣易让人联想到今天互联网上多人在线游戏或社交网络的情形，其实主机/终端模型正是PC和互联网流行之后逐渐衍生出客户机/服务器（C/S模型，典型的情形是客户端网游）和浏览器/服务器模型（B/S模型，典型的例子是网页多人游戏）的基础[^3]。
+In our third class on "Telecommunication Networks," we demonstrated the basic usage of terminals. The terminals we showcased were of relatively newer models, capable of displaying Chinese characters. However, they only supported the older GB2312 and GBK Chinese encodings and couldn't support UTF-8. The terminal I showcased today was connected via Ethernet to my laptop acting as a host. However, in most cases, terminals were connected through serial cables or dial-up Modem.
 
-## 矢量显示终端
-我们在前面讲到电脑显示位图对于资源的要求颇高，因此能够显示位图的设备也曾经非常昂贵。而对于主机/终端架构的应用场景来说，位图对传输的带宽要比较高，在较慢的网络下也无法使用。因此在大型主机时代一种常用的图像显示装置是矢量显示终端。
+The two terminals displayed in our classroom were both connected to the same laptop. They were logged in as users set up in the Linux system. This situation closely resembled the working mode of large hosts, where two users independently operated two terminals, executing programs on the host simultaneously without being aware of each other's presence. This operating experience is quite reminiscent of the multiplayer online games or social networks on the internet today. In fact, the host/terminal model was the basis for the gradual emergence of the client-server (C/S model, typical in client-based online games) and the browser-server model (B/S model, typical in web-based multiplayer games) after the popularity of PCs and the internet[^3].
 
-矢量显示终端是早期计算机图形最常用的电子式显示设备，电子枪可以平滑的在屏幕上的特定两点间画线，因此它所需要传输的数据量较小，不需要传输所有的像素，只要传递路径的起止点就可以在屏幕上显示图形。
+## Vector Graphics Terminals
+Previously, we discussed how displaying bitmaps on computers demanded significant resources, making devices capable of displaying bitmaps quite expensive. For applications following the host/terminal architecture, bitmaps required higher bandwidth for transmission and were impractical on slower networks. Hence, a commonly used image display device during the era of large hosts was the vector graphics terminal.
 
-在1970年代，常见的矢量显示终端有Imlac PDS-1和Tektronix 4010系列等。它们的刷新频率比较低，但是分辨率却比较高，比如Imlac PDS-1有1024x1024个可定位的位置。它们所使用的显像管并不像电视机那样有固定的扫描线，而是由显像管控制电子束只沿着需要绘制的路径扫描需要绘图的部分。也因此在显示线条和图表的时候，几乎不会出现低分辨率光栅显示器上常见的锯齿。
+Vector graphics terminals were the most commonly used electronic display devices for early computer graphics. An electron gun smoothly drew lines between specific points on the screen, requiring a smaller data transmission volume. It didn't need to transmit every pixel but only the starting and ending points of the path to display the graphics on the screen.
 
-其中Tektronix 4010为了节约成本使用了长效荧光粉，使用这种荧光粉的显像管叫做存储管（storage tube）。使用存储管的显示器一旦电子枪在屏幕上扫过图形的线条路径之后，就不再需要像普通显像管那样需要反复扫描就可以长期维持发光，但存储管需要擦除画面的时候，却无法部分地擦除，只能全屏幕擦除之后重画。
+In the 1970s, common vector graphics terminals included the Imlac PDS-1 and Tektronix 4010 series. While their refresh rates were relatively low, they had higher resolutions; for instance, the Imlac PDS-1 had 1024x1024 locatable positions. Unlike television sets with fixed scan lines, their cathode ray tubes allowed the electron beam to scan only the required parts for drawing. Consequently, when displaying lines and charts, the common aliasing seen on low-resolution raster displays was almost non-existent.
 
-而Imlac PDS-1使用的是类似普通电视机的短效荧光粉，当电子枪扫过对应的位置之后很快就会变暗，因此它需要反复扫描才能维持屏幕上的画面，这让它必须内置一定容量的存储器来存储画面内容，也因此生产成本更高。但它有更高的刷新速度，可以实现一些存储管无法展示的，需要动画效果的游戏，第一人称射击游戏的起源《迷宫大战》（Maze War）就诞生在Imlac PDS-1上。
+The Tektronix 4010 utilized long-persistence phosphors to reduce costs, employing a storage tube. Once the electron gun traced the lines of a graphic on the screen, it no longer required repeated scanning to maintain the illumination, unlike standard CRTs. However, this type of tube could only perform full-screen erasures and redraws.
 
-在计算机图形学相关的资料里，以Imlac PDS-1为代表的，以矢量画线方式工作、使用短效荧光粉，需要刷新来维持画面的，通常被称作随机扫描显示器（Random-Scan Display）；而Tektronix 4010这样使用长效荧光粉的，通常称作存储管显示器（Storage Tube Display）或更常用的直观存储管（DVST - Direct View Storage Tube）；今天我们看到的大多数CRT显示器，包括电视机，它们的电子枪都只能按照顺序进行扫描，因此被称作光栅扫描显示器（Raster-Scan Display）。
+On the other hand, the Imlac PDS-1 used short-persistence phosphors like those found in standard television sets. Once the electron gun passed over a position, it quickly darkened, necessitating repeated scanning to maintain the screen's content. This required the terminal to incorporate a certain amount of memory to store screen content, increasing production costs. Nonetheless, it had a higher refresh rate and could execute games with animation effects that storage tubes couldn't support. The origin of the first-person shooter game "Maze War" was on the Imlac PDS-1.
 
-现在想买到矢量显示器已经相当困难，我们可以用软件模拟它。在Linux系统上使用大多数发行版自带的xterm就可以模拟Tektronix图形终端（xterm模拟的是Tektronix 4014，是19寸屏幕的型号，原始的4010使用的是11寸显示屏）。我们用``xterm -t``命令就可以启动xterm内置的Tektronix仿真模式，我们会发现这个时候退格键并不能将我们已经输入的字符从屏幕上擦掉，而当显示的内容超过一屏时，新的内容会直接覆盖在旧的内容上面，而不是把旧的内容顶掉。这个时候要想清除屏幕，就必须用Linux的clear命令做全屏清除。这正是Tektronix 4010等存储管显示器所具有的特性。
+In computer graphics literature, vector graphics terminals, represented by the Imlac PDS-1, which worked in a line drawing manner, used short-persistence phosphors and required refreshing to maintain the image, are commonly referred to as Random-Scan Displays. In contrast, terminals like the Tektronix 4010, utilizing long-persistence phosphors, are known as Storage Tube Displays or more frequently as Direct View Storage Tubes (DVSTs). Most CRT displays today, including televisions, scan sequentially and are thus known as Raster-Scan Displays.
 
-在1970年代，矢量显示终端被广泛应用在工程和科学绘图上。Tektronix开发了一组用于绘图的FORTRAN语言子程序，被称作PLOT-10[^4]。但今天PLOT-10的环境配置起来较为复杂，我用Linux上常见的交互式绘图软件Gnuplot来做展示，这款软件最初发布于1986年，因此可以相当完整的支持Tektronix终端。
+Acquiring a vector graphics terminal is considerably challenging nowadays, but we can simulate it using software. On Linux systems, using the xterm that comes with most distributions, we can emulate Tektronix graphic terminals (xterm simulates the Tektronix 4014, a 19-inch model, while the original 4010 used an 11-inch screen). The command `xterm -t` starts xterm's built-in Tektronix emulation mode. Here, the backspace key doesn't erase characters already entered on the screen. When new content exceeds a screen, it overlays directly on the old content rather than replacing it. To clear the screen in this scenario, you must use the Linux `clear` command. These are specific features of Tektronix 4010 and similar storage tube displays.
 
-在1976年5月份的《计算机图形与艺术》（Computer Graphics and Art）杂志上[^5]，杜兰大学（Tulane University）的化学教授Charles J Fritchie的文章《存储阴极射线管产生的平价图形》介绍了使用存储式阴极射线管作为廉价的计算机图形设备的尝试。
+In the 1970s, vector graphics terminals were widely used for engineering and scientific graphics. Tektronix developed a set of FORTRAN language subprograms for drawing, known as PLOT-10[^4]. While configuring PLOT-10 today can be complex, I demonstrated using the commonly available interactive plotting software Gnuplot on Linux. Gnuplot was initially released in 1986 and hence adequately supports Tektronix terminals.
 
-如果我们翻阅当时的电脑图形杂志，会发现当时的计算机图形许多都是基于线条的。早期计算机图形的这种形态也塑造了80年代的科幻电影和绘画中，在当时的科幻作品中，往往会使用光条图形来代表计算机构建的虚拟世界。[^6]
+In May 1976, an article by Charles J Fritchie, a chemistry professor at Tulane University, titled "Economical Graphics from Storage CRTs" appeared in Computer Graphics and Art magazine[^5], discussing attempts to use storage-type cathode-ray tubes as inexpensive computer graphics devices.
 
-另外一个重要的矢量显示设备是PLATO，也就是“柏拉图”终端机[^7]。网页里的电脑博物馆里的PLATO模拟器是现代爱好者重建的版本，它是支持彩色的，但当时的柏拉图终端只支持黑白显示。在柏拉图终端里孵化了许多电子游戏的原型，比如空当接龙纸牌游戏的最早实现就是在PLATO平台上的。同时柏拉图系统也是许多社交和协作系统的起点，比如PLATO Notes就是企业群件（groupware）的起点，著名的Lotus Notes也得名于此[^8]。PLATO也是世界上最早广泛用触摸屏的设备之一，1964年的PLATO IV使用了带有触摸屏的等离子显示器。
+If we examine computer graphics magazines of that time, we'll find that many computer graphics were based on lines. This early form of computer graphics also influenced the depiction of virtual worlds in 1980s science fiction movies and paintings. In the science fiction works of that era, luminous line graphics often represented computer-generated virtual worlds[^6].
 
-## 笔式绘图仪
-使用矢量绘图的方式工作的另外一种图像输出设备就是笔式绘图仪（Pen Plotter），今天仍在广泛使用的刻字机其实也是一种笔式绘图仪，只不过它的笔尖被换成了刻刀。我们现场使用的机型就是国内比较容易买到的刻乐刻字机，它只需要换一个刀座就可以用普通的圆珠笔画图了。
+Another essential vector display device was PLATO, the "Programmed Logic for Automatic Teaching Operations" terminal[^7]. The PLATO emulator in computer museums' websites today is a modern enthusiast's re-creation. While the website version supports color, the original PLATO terminal only had black and white display capabilities. Many prototypes of electronic games were incubated on the PLATO terminal. For instance, the earliest implementation of the Solitaire card game was on the PLATO platform. Additionally, the PLATO system was the starting point for many social and collaborative systems. For instance, PLATO Notes marked the beginning of groupware, and the well-known Lotus Notes got its name from this system[^8]. PLATO was also one of the earliest devices worldwide to use a touchscreen. The PLATO IV, in 1964, utilized a plasma display with a touchscreen.
 
-绘图仪是最早的计算机图形输出设备之一，第一款商品化的电脑绘图仪是1959年的Calcomp 565滚筒式绘图仪，它的滚筒可以带动纸张做垂直移动，而笔尖则在横杆上做水平移动，以此在二维平面上定位笔尖并完成绘图。
+## Pen Plotters
+Another type of image output device that works using vector graphics is the pen plotter. The widely used engraving machine we have today is essentially a type of pen plotter, but instead of a pen tip, it uses a cutting blade. The model we're using on-site is the relatively common Keli engraving machine in China, which can be easily switched to use a regular ballpoint pen for drawing.
 
-今天市面上大多数刻字机和绘图仪都是使用HP-GL语言控制的，HP-GL是1977年惠普为HP-8972绘图仪开发的控制语言，其中最常见的两个命令就是PU和PD，分别对应绘图仪抬笔（Pen Up）和落笔（Pen Down）的移动。通常每个PU或PD命令后面都会跟随两个数字，就是笔尖要移动的下一个目的地的二维坐标。抬笔、落笔、横向移动、纵向移动是几乎所有绘图仪都具备的四个基本动作。
+Plotter is one of the earliest computer graphics output devices. The first commercialized computer plotter was the 1959 Calcomp 565 drum plotter. Its drum moved the paper vertically, while the pen moved horizontally on a crossbar to position the pen tip and complete the drawing on a 2D plane.
 
-前面介绍的Gnuplot就可以输出HP-GL文件供绘图仪使用，开源的矢量图形设计软件InkScape也可以导出AutoCAD DXF或者HP-GL文件用于刻字机、绘图仪的输出。HP-GL是可以被人工解读和编写的，因此我们还可以编写程序生成HP-GL命令序列，并通过绘图仪输出来实现生成艺术效果。
+Most engraving machines and plotters available today are controlled using HP-GL language. HP-GL, developed by HP in 1977 for the HP-8972 plotter, commonly uses two commands: PU (Pen Up) and PD (Pen Down), corresponding to lifting and lowering the pen, respectively. Usually, each PU or PD command is followed by two numbers, denoting the two-dimensional coordinates of the next destination for the pen tip. Lifting, lowering, horizontal movement, and vertical movement are the four basic actions present in almost all plotters.
 
-近年来，海外的数字艺术社群经历了一场“复兴”，艺术家和爱好者们意识到使用不同的笔尖材质和绘图轨迹可以为电脑生成艺术带来更多变化。2015年日本艺术家深地宏昌在他的作品《Plotter Drawing》中就使用刻字机和吴竹水彩毛笔绘制出具有水墨意味的生成艺术作品[^9]。
+Gnuplot, as introduced earlier, can generate HP-GL files for plotters. The open-source vector graphic design software, InkScape, can export AutoCAD DXF or HP-GL files for engraving machines and plotters. HP-GL is human-readable and writable, allowing us to write programs to generate HP-GL command sequences for artistic output through plotters.
 
-2016年1月开始，#plottertwitter标签出现在Twitter上，并成为绘图仪爱好者们展示作品的暗号。Brian Boucheron是#plottertwitter的发起者之一，他的Github上搜集了大量绘图仪相关的资料[^10]，而Derrick Schultz则是最早使用#plottertwitter标签进行创作的艺术家[^11]。2021年秋天，卡内基梅隆大学Golan Levin教授开设了“机器绘画”（DrawingWithMachines）课程[^12]，开始系统地讲解和讨论面向绘图仪的创意编程。
+In recent years, there has been a "renaissance" in the overseas digital art community, where artists and enthusiasts realize that using different pen tip materials and drawing trajectories can bring more variations to computer-generated art. In his work "Plotter Drawing" in 2015, Japanese artist Hiromasa Fukaji used an engraving machine and a Kuretake brush pen to create generative art with ink-like aesthetics[^9].
 
-在国内使用绘图仪进行生成艺术创作还是一个很新的话题，但是相关的设备并不难买，广告公司使用的刻字机、模切机都可以通过更换笔头的方式转换为绘图仪，而以AxiDraw为代表的“写字机器人”类产品也可以在淘宝上找到。
+In January 2016, the hashtag #plottertwitter emerged on Twitter and became a code for enthusiasts to showcase their plotter artworks. Brian Boucheron, one of the initiators of #plottertwitter, compiled a vast amount of plotter-related information on his Github[^10], and Derrick Schultz was among the earliest artists to create works using the #plottertwitter tag[^11]. In the fall of 2021, Professor Golan Levin from Carnegie Mellon University initiated the "DrawingWithMachines" course, systematically discussing and teaching creative programming focused on plotters[^12].
 
-## LOGO语言
-虽然矢量显示器和绘图仪现在都不再常见，但使用计算机输出矢量图形的逻辑大家却并不一定陌生。时至今日，许多中小学的计算机课上仍然会用到LOGO语言，也就是海龟画图，它其中的逻辑和绘图仪是非常接近的，比如抬笔和落笔的PU、PD命令，就同时存在于LOGO语言和绘图仪语言中。甚至曾经作为LOGO语言配件销售过的“小海龟”，本身就是一种绘图仪。
+In China, using plotters for generative art is still a relatively new topic, but the related equipment is not hard to find. Advertising companies often use engraving and cutting machines, which can be converted into plotters by simply changing the pen tip. Products like the AxiDraw, representing "writing robots," can also be found on platforms like Taobao.
 
-在淘宝上我们仍然能买到类似“海龟”的“绘图小车”，不过它通常已经不能直接用LOGO语言控制了。但使用LOGO语言制作用于绘图仪输出的图案仍然是可行的。UCBLogo[^13]是现在维护最积极，资料最完备的LOGO语言环境，非常适合用来上手生成艺术创作。而通过将UCB Logo中的图像导入到Inkscape中，可以使用绘图仪绘制LOGO语言图案[^14]。
+## LOGO Language
 
-LOGO语言的设计者西蒙・帕佩特（Seymour Papert）曾写过《因计算机而强大》（Mindstorms: Children, Computers, and Powerful Ideas）一书，介绍了LOGO语言的设计理念和希望解决的问题。前面的六节课里，我们已经将计算机艺术的华丽外壳层层打开，并一路追溯到其原始的状态——第一节课的移动设备几乎都是21世纪的产品，而这节课我们讨论的内容已经是1960年代的事情了。这时你再去探索诞生于1967年的LOGO语言应该会有不一样的感受。
-​
-## 行式打印机
-我们今天在使用打印机时候，首先要关注的一个参数通常是纸张的尺寸，比如是A3纸、A4纸或者是Letter纸等等。这是由于目前市面上大多数打印机，特别是激光打印机，都是页面式打印机（Page printer）。但激光打印机直到1976年才出现在市场上（IBM 3800，是大型的商用激光打印机）。在此之前的打印机多数都不具备整页输出的功能，它们或者是类似打字机那样一次只能输出一个字符，或者是以行式打印机（Line printer）的方式工作，每次输出一个整行。
+While vector monitors and plotters are no longer common today, the logic of computer-generated vector graphics might not be entirely unfamiliar to everyone. Even today, many elementary and middle school computer classes still utilize LOGO language, known as turtle graphics. Its logic closely aligns with that of plotters, incorporating commands like PU (Pen Up) and PD (Pen Down) for lifting and lowering the pen, common to both LOGO language and plotter languages. The "turtle," once sold as an accessory for LOGO language, was essentially a kind of plotter itself.
 
-现在我们最常见的每次输出单个字符的打印机是针式打印机，在银行里常见的打印存折的打印机，以及打印多联发票的打印机都属于这一类。而最常见的行式打印机是热敏打印机，商场、快递的小票机多属于这一类。
+On platforms like Taobao, we can still find items resembling "turtles," such as "drawing cars," but they might not directly support control through LOGO language anymore. However, creating patterns for plotter output using LOGO language remains feasible. UCBLogo[^13] stands out as the most actively maintained and well-documented LOGO language environment, perfect for initiating artistic creations. By importing images from UCB Logo into Inkscape, one can still use a plotter to draw patterns created with LOGO language[^14].
 
-行式打印机曾经专指用于较大型的计算机上的鼓式打印机（Drum printers）、链式打印机（Chain/train printers）它们的打印器件可以覆盖整个纸张宽度，可以在同一时刻打印多个字符，因此比每次只能输出一个字符的打印机速度更快。但在90年代之后这类打印机最重要的应用场景：大型计算机的结果和日志输出逐渐被电子显示屏取代，而微型计算机上这类打印机并没有被广泛使用，微机上类似、但打印量较少的场景通常由针式打印机（dot-matrix printer）承担。而我们这次的演示机，也是针式打印机。
+Seymour Papert, the designer of LOGO language, wrote "Mindstorms: Children, Computers, and Powerful Ideas," delving into the design philosophy of LOGO and the problems it aimed to solve. In the previous six sessions, we've peeled back the layers of computer art's magnificent shell, tracing back to its primitive state—while the mobile devices discussed in the first session were products of the 21st century, the content we're discussing in this session dates back to the 1960s. Exploring LOGO language, born in 1967, might evoke a different sense of discovery.
 
-在软件上，由于行式打印机曾经是计算机上最广泛使用的设备，所以无论是DOS还是Linux在操作打印机时，默认都是将打印机作为行式打印机来操作的，即无论内容长短，默认都在打印完后换行。同时电脑的打印机接口也叫做LPT (line print terminal，行式打印机终端)或lp（Unix、Linux的叫法，即line printer的缩写）。
+## Line Printers
+When using printers today, one of the first parameters we typically consider is the paper size, such as A3, A4, or Letter paper. This is because most printers on the market, especially laser printers, are page printers. However, laser printers only emerged in the market around 1976 (IBM 3800, a large commercial laser printer). Prior to this, many printers did not offer whole-page output capabilities. They either functioned like typewriters, producing one character at a time, or operated as line printers, processing an entire line at once.
 
-无论是字符式打印机还是行式打印机，它们输出的字符都是等宽的，这样的设计让使用电脑制作表格更加方便。同时它也提供了计算机艺术创作不同于矢量绘图的另一个路径——使用字符组合成图像。1968年，Richard Williams在新墨西哥州立大学的IBM 360电脑上开发了Art1[^15]，为非技术人员提供了一个易于使用的电脑艺术创作工具。值得一提的是，虽然ART1制作的电脑图像看起来非常像是“ASCII Art”，但严格的讲它却不是“ASCII”，因为当时的IBM大型机使用的是EBCDIC编码，因此它能够使用的字符和今天的ASCII Art是不同的。前些年也有软件工程师开发了art1.js，将ART1移植到Node.js平台[^16]。
+The most common printers that output a single character at a time today are dot matrix printers, commonly found in banks for passbook printing or for printing multi-part invoices. Thermal printers, frequently seen in stores and used for receipts in the courier industry, represent the most prevalent line printers.
 
-行式打印机（Line Printer）可以直接将电脑输出的文本打印出来，而不需要考虑纸张、字号、排版的问题，针式打印机也可以以这种方式工作。在Linux下，只要用“>”符号重定向输出，就可以把程序、命令运行的结果直接通过打印机打印出来。比如“echo”命令是输出字符。
+Previously, line printers referred specifically to drum printers and chain/train printers used on larger computers. Their printing devices could cover the entire width of the paper, allowing printing of multiple characters simultaneously, making them faster than printers that could only output one character at a time. However, after the 1990s, their primary applications—generating results and log outputs for large computers—were gradually replaced by video displays. They weren't widely used on microcomputers, and works with similar but lower print volumes were typically handled by dot matrix printers. Even the printer used in our demonstration today is a dot matrix printer.
+
+In terms of software, since line printers were once the most widely used devices on computers, both DOS and Linux default to treating printers as line printers when handling them. This means that regardless of content length, they default to line breaks after printing. Additionally, the computer's printer interface is also known as LPT (line print terminal) or lp (Unix and Linux terminology, an abbreviation for line printer).
+
+Both character and line printers output characters of equal width, making it more convenient to create tables using computers. They also offered a different path for computer art creation distinct from vector graphics—using characters to form images. In 1968, Richard Williams developed ART1 at New Mexico State University on an IBM 360 computer, providing a user-friendly computer art creation tool for non-technical individuals[^15]. Notably, although the computer images created by ART1 resemble "ASCII Art" greatly, strictly speaking, it isn't "ASCII" because the IBM mainframes at that time used EBCDIC encoding, so the characters available were different from today's ASCII Art. In recent years, software engineers have even developed art1.js, porting ART1 to the Node.js[^16].
+
+Line printers can directly print text output from a computer without concerns about paper, font sizes, or typesetting issues, and dot matrix printers can also function in this manner. In Linux, by using the ">" symbol to redirect output, you can print program or command results directly through the printer. For instance, the "echo" command outputs characters:
 ```bash
 echo "hello world"
 ```
-就会在屏幕上打出一行“hello world”，那么我们将它重定向到打印机：
+This command will display "hello world" on the screen. If we redirect it to the printer:
 ```bash
-#第一个命令用来设置打印机写操作权限
+# The first command sets write permissions for the printer
 chmod 664 /dev/usb/lp0
-#第二个命令将文字发送到打印机
+# The second command sends the text to the printer
 echo "hello world" > /dev/usb/lp0
 ```
-当然也可以用cat命令来将连续（concatenate）的文件输出到打印机上，比如打印一个文本文件
+Similarly, the `cat` command can concatenate files and output them to the printer, such as printing a text file:
 ```bash
 cat demo1.txt > /dev/usb/lp0
 ```
-此外，利用Gnuplot等工具也可将将图表以字符图像的方式将图标输出到打印机[^17]。
+Furthermore, tools like Gnuplot can output charts as character images to printers as well[^17].
 
-## 视频显示终端
-直到1970年代，人们与电脑交互的主要形态仍然是电传打字机。矢量式的显示终端虽然逐渐被CAD等行业用途接受，但作为日常办公使用的电脑终端仍然过于昂贵。在1970年，Tektronix 4014的售价为8450美元，换算到今天已经超过40000美元了，而最常见的电传打字机ASR 33根据配置的不同只要755~1220美元[^18]。
+## Video Display Terminals
 
-电传打字机存在一些明显的限制，比如需要纸张、色带等耗材，输出速度慢等等。1960年代，包括IBM 2260在内的一些终端机使用CRT显像管代替打印纸纸张上的硬拷贝展示文本内容，这类终端机被称作视频显示终端（Video Display Terminal）或视频显示单元（Video Display Unit）。
+Until the 1970s, the primary means of interacting with computers was through teleprinters. Though vector-based display terminals were gradually accepted for industry applications like CAD, they remained too expensive for regular office use. In 1970, the Tektronix 4014 was priced at $8,450, which, adjusted for inflation, exceeds $40,000 today. In contrast, the commonly used teleprinter, ASR 33, ranged from $755 to $1,220, depending on the configuration[^18].
 
-视频显示终端普及的一个重要事件是1973年9月《无线电电子》（Radio-Electronics）杂志刊登了唐纳德·兰开斯特（Don Lancaster）发明的“电视电传机”（TV Typewriter）。这项发明让视频终端机显示出巨大的成本优势：爱好者只需要购买200美元左右的配件，就可以制作一台使用电视作为显示屏的电脑终端。“电视电传机”在当时的电脑爱好者中大受欢迎，搭配当时新出现的Altair 8800等微型计算机，爱好者们可以在家中进行以往在大型机房中才能完成的计算机实验，这项发明也让个人电脑从诞生之初就与电视技术联系在一起。
+Teleprinters had evident limitations, such as requiring consumables like paper and ribbons and having slow output speeds. During the 1960s, some terminals, including the IBM 2260, used CRT displays to present text content instead of hard copies on paper. These terminals were referred to as Video Display Terminals (VDTs) or Video Display Units (VDUs).
 
-VT100终端机，屏幕上显示的是文字冒险游戏《巨洞探险》
-1970年代末，Intel 8080微处理器被用在DEC VT100终端机上，它是第一款ANSI转义序列（即不可显示的控制字符串，用来实现下划线、反色显示等功能）的视频终端机，并成为文字终端的事实标准。VT100终端机的显示规格是80列，24行。
+An important event in the popularization of video display terminals was the publication in September 1973 of Don Lancaster's "TV Typewriter" in the magazine "Radio-Electronics." This invention brought a significant cost advantage to video terminals. Hobbyists needed only around $200 worth of components to create a computer terminal using a TV as a display screen. The "TV Typewriter" gained popularity among computer enthusiasts of the time. Coupled with newly introduced microcomputers like the Altair 8800, enthusiasts could conduct computer experiments at home that were previously only possible in large computer rooms. This invention also linked personal computers to television technology right from their inception.
 
-今天大多数电脑终端都继承了这个规格，稍有不同的是IBM PC DOS的标准规格是80列，25行，比VT100多一行，许多时候，PC上的终端模拟软件会使用这多余的一行作为状态栏，而保持可使用的空间与VT100一致[^19]。
+Towards the late 1970s, the Intel 8080 microprocessor was used in the DEC VT100 terminal, the first ANSI escape sequence-based video terminal (unprintable control strings used for functionalities like underlining, reverse colors, etc.), becoming the de facto standard for text terminals. The display specifications of the VT100 terminal were 80 columns and 24 rows.
 
-视频终端的出现定义了之后40年里人们与电脑交互的主要形态，即键盘和显示器，时至今日，我们仍然很大程度上被“困”在这种交互中。
+Most computer terminals today inherit this specification. Slight variations exist, such as the IBM PC DOS's standard specification of 80 columns and 25 rows, one row more than the VT100. In many cases, terminal emulation software on PCs uses this extra line as a status bar while keeping the usable space consistent with the VT100[^19].
 
-‍‍对于新媒体创作者来说，基于文字的视频终端不能显示真正的图形，因此ASCII Art或类似的字符拼接图形会是在这些设备上输出图像的主要方式。虽然输出的内容仍然相当受限，但文本视频终端仍然有明显超越打印机的好处，那就是它刷新的速度要明显快于打印机和矢量终端，‍可以用来制作文本动画。
+The emergence of video terminals defined the main forms of human-computer interaction for the next 40 years—keyboard and monitor. Even today, we largely remain "trapped" in this interaction method.
 
-我们把视野拉回到90年代，会发现net.art网络艺术的重要团体ASCII艺术组合（ASCII Art Ensemble）最具代表性的作品《深ASCII码》（Deep ASCII，1998）和《ASCII运动图像历史》（ASCII History of Moving Images，1998）就使用了将电影片段转换为ASCII动态画面的创作手法，以ASCII Art的形式重现了许多著名的电影片段。
+For new media creators, text-based video terminals cannot display true graphics. Therefore, ASCII art or similar character-based graphics serve as the primary means of outputting images on these devices. While the output content remains fairly limited, text video terminals offer a clear advantage over printers—refresh speed, significantly faster than printers and vector terminals, enabling the creation of text animations.
 
-而进行这一创作的基础设施，则来自于演示场景（demoscene）社群，1997年发布的开源ASCII Art库AAlib[^20]可以将任何图片和视频转换为黑白形式的ASCII Art，而类似的Libcaca库[^21]则可以生成彩色的ANSI Art。MPlayer和VLC等开源的媒体播放软件，都可以使用AALib或Libcaca以文本动图的形式播放视频文件[^22]。
+If we look back to the 1990s, we find that the ASCII Art Ensemble, an influential group in net.art, produced iconic works like "Deep ASCII" (1998) and the "ASCII History of Moving Images" (1998). They employed techniques that converted movie clips into ASCII dynamic scenes, using ASCII Art to recreate famous movie segments.
 
-除了从视频转换，原生的ASCII Art动画创作也有着相当丰富的实践，新西兰软件工程师Simon Jansen（网名Asciimation）从1997年开始制作星球大战相关的ASCII动画作品[^23]，应该是同类作品中知名度最高的一部。
+The infrastructure for such creative work came from the demoscene community. The open-source ASCII Art library, AAlib, released in 1997, could convert any image or video into black-and-white ASCII Art. Similar libraries like Libcaca could generate color ANSI Art. Open-source media players like MPlayer and VLC could play video files in the form of text animations using AAlib or Libcaca[^22].
 
-这节课的内容告一段落了，我们探索了矢量显示器、绘图仪两种矢量图形输出设备和行式打印机、电子显示终端两种文本输出设备。在其中可以看到艺术史上最常被讨论、最重要的媒介——纸张，是如何成为计算机系统的一部分，并成为一种“数字化”的媒介；以及在纸张上输出的范式，又是如何转移到玻璃媒介——电子显示屏上的。下一节课，我们将离开数字计算机的世界，去看一下那些模拟媒介上的魔术是如何影响新媒体艺术的。
+Aside from video conversion, native ASCII Art animations also have a rich practice. Simon Jansen, a software engineer from New Zealand, known as Asciimation, started making Star Wars-related ASCII animations in 1997, perhaps the most well-known among similar works[^23].
 
+This class session comes to an end. We explored vector displays, plotters as vector graphic output devices, line printers, and electronic display terminals as text output devices. In these devices, we can see the most discussed and crucial medium in art history—paper—becoming part of computer systems and transforming into a "digitalized" medium. The paradigm of outputting on paper shifted to glass media—electronic display screens. In the next session, we'll step out of the digital computer world to explore how magic on analog media influenced new media art.
 
 [^1]: GRAPHICS Color displays：https://webstyleguide.com/wsg2/graphics/displays.html
 [^2]: Interview with Susan Kare：
