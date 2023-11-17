@@ -3,6 +3,8 @@ Welcome to the third session of digital media archaeology. In this class, we'll 
 
 Today, I've set up an array of equipment, most of which are connected to telephone lines. I aim, from the perspective of media archaeology, to retrace how the internet, in its primitive stages before the era of fiber optics, emerged from the telephone network. During this class, I've constructed a hypothetical telecommunications company. Through this fictitious company's "entrepreneurial history", I'll showcase how telecommunications technology evolved from local telephone communication networks, covering only a few hundred meters or kilometers, into a global network, and how telephone companies transitioned into internet service providers.
 
+![Some of the telecommunication equipment used in the classroom](images/telecom-network/classroom-lab.jpg)
+
 Additionally, I'll demonstrate how the telephone network influenced the personal computer revolution. Apple's co-founders, Wozniak and Jobs, were enthusiasts of the "blue box." The blue box was a device used for hacking into the telephone network, signifying that hackers were active in the telephone network before they emerged on the computer network.
 
 Brazilian artist Eduardo Kac, known for creating telecommunications art using Minitel, presented "[Aspects of the Aesthetics of Telecommunications](http://www.ekac.org/telecom.paper.siggrap.html)" at the 1992 Siggraph conference on computer graphics. Today's class will focus more on experimental demonstrations. However, if you're interested in related theories, I highly recommend reading Kac's paper.

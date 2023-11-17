@@ -6,12 +6,16 @@ Modern web standards consist of two fundamental components: HTML and JavaScript.
 
 Moreover, the Computer Museum on the webpage utilizes WebSocket technology, introduced in 2011, to enable real-time communication. The remote desktop of the "Chinese Linux of the Millennium" online exhibition uses [noVNC](https://novnc.com/), which employs WebSocket. Another modern web technology used in the Computer Museum on the webpage is WebGL, also from 2011. In "3D-Dance: VRML of the 90s," [X_ITE](https://github.com/create3000/x_ite/) library converts 3D content created with VRML into WebGL supported by modern browsers and embeds it within HTML5 web pages for display.
 
+![Remote Desktop with noVNC and WebSocket Connections](images/web-stream/novnc.png)
+
 While the Computer Museum on the webpage greatly benefits from contemporary web technologies, the aforementioned software functionalities aren't exclusively achievable solely through modern web technologies. In fact, whether it's remote desktops within browsers or three-dimensional graphics within browsers, these were already implemented in the 90s or 2000s, preceding the advent of modern web technologies. However, their original solutions were abandoned by modern browsers, restricting their viewing to specialized "museum" websites. This represents a dramatic conflict and issue that the Computer Museum on the webpage aims to demonstrate to its audience.
 
 ## Browser Plugins
 Before the emergence of modern web standards, enriching web content in browsers often relied on browser plugins. In the previous lesson, we saw some works on mobile devices utilizing typical web technologies of the 90s and 2000s like Flash or VRML. These creations using web technologies on mobile devices were influenced by the prosperous era of Net Art in the 90s.
 
 Browser plugins, concerning development technologies and operating environments, generally fall into two major categories: one is NPAPI plugins, primarily supported by Netscape Navigator browsers and its derivatives like Mozilla and Firefox, stemming from Netscape. The other category is ActiveX, primarily supported by Microsoft's Internet Explorer and various IE "shells" like MyIE and Maxthon (originally derived from MyIE as MyIE2). ActiveX offers functionalities similar to NPAPI, but many USB tokens used by online banks only function on Internet Explorer due to their drivers being compatible solely with ActiveX plugins.
+
+![Firefox with various plug-ins installed](images/web-stream/plugins.png)
 
 Common web environments in the 2000s often configured support plugins for various network media formats, including VRML, Java Applet, QuickTime, Flash, Shockwave (Director), and Silverlight. Before HTML5 became prevalent, these plugins were essential for presenting multimedia content through the web.
 
@@ -81,7 +85,11 @@ Apart from the World Wide Web (WWW), several crucial protocols exist on the inte
 
 One such protocol is Gopher, developed by the University of Minnesota in 1993. It's a network protocol that organizes and retrieves information in a directory-like structure. It was a significant competitor to the WWW in the '90s, and support for Gopher sites continued in mainstream web browsers like Internet Explorer and Netscape until the early 2000s.
 
+![Netscape can open the Gopher menu](images/web-stream/gopher.png)
+
 Another vital internet protocol is Telnet, enabling access to remote software systems through emulated terminals. In the Chinese-speaking world, Telnet had a significant influence on sites like PTT in Taiwan and various Telnet BBS (Bulletin Board Systems) in mainland China, such as Tsinghua University's water-moon-clear mirror, Peking University's Hero, Huazhong University of Science and Technology's Baiyun Yellow Crane, Fudan University's Sun-Moon-Light-Hua, among others. These BBS were typically operated and maintained by universities. Additionally, MUD (Multi-User Dungeon) games like Peking University's Xiakexing were also accessed using Telnet.
+
+![Fudan University's Riyue Guanghua BBS is one of the few websites in China that can be accessed using Telnet.](images/web-stream/bbs.png)
 
 Usenet, the network of newsgroups, operated on the internet using the NNTP (Network News Transfer Protocol). Currently, [Newsfan](#user-content-fn-1)[^1] is the only known Usenet newsgroup still running in China. Google Groups also archives a wealth of early Usenet information, including alt.chinese.text, the earliest known Chinese-language postings, offering valuable insights into the early Chinese online community.
 

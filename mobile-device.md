@@ -2,12 +2,16 @@
 
 Today, we are going to discuss our first topic: mobile devices. I have brought along many handheld computers, including various types of PDAs, electronic dictionaries, and UMPCs. Why are we starting this course by talking about PDAs and handheld computers? This is because "mobile computing" has become the most common form of computer use today. We are often glued to our mobile devices, as you can see, some students in this classroom still looking at their phones even now.
 
+![Mobile devices displayed in the classroom](images/mobile-device/devices.jpg)
+
 For this reason, when we discuss how people use computers and engage in "computing" today, the primary focus, at least in today's China, is on mobile devices represented by smartphones, running mobile operating systems like Apple's iOS or Android.
 
 ## Smartphone = PDA + Communication
 So, let's officially begin our exploration of mobile devices. First, let's consider what a smartphone is. A smartphone is essentially a PDA with communication capabilities. Some students who are more interested in Apple products may remember a product called the "Apple Peel 520" around 2010, which was an accessory that turned the iPod Touch into an iPhone.
 
 These accessories that transformed PDAs into smartphones actually appeared in the late 1990s. Representatives of early models include the Handspring Visor Phone on the far right in the picture. The Lenovo XP100+RG100 combination I brought with me is from 2002 or 2003. Typically, the XP100 PDA was sold independently, but if a user purchased an [RG100 GPRS module](#user-content-fn-1)[^1], they could effectively turn their XP100 PDA to turn it into a smartphone.
+
+![Lenovo XP100 PDA and RG100 Wireless Module](images/mobile-device/xp100.jpg)
 
 While it's true that this kind of mobile device capable of making calls has more in common with PDAs than the "feature phones" of the past, why do we call it a "smartphone" today and not a "connected PDA" or a "communicator"? The term "communicator" was once widely used to describe products that fell between PDAs and phones.
 
@@ -27,6 +31,8 @@ The other significant mobile computing platform that played a crucial role befor
 
 One of the first concepts that every PDA user learned in the 2000s was "synchronization." This was one of the most important distinctions between mobile computing devices and desktop computing devices before the advent of mobile internet. In the 2000s, many mobile devices lacked WLAN functionality and cellular data (mobile network) access. Additionally, the peripheral interfaces of mobile devices were typically limited; they couldn't connect via Ethernet cables or USB thumbdrives, and many models couldn't even accommodate flash memory cards (such as the Palm Vx and earlier models).
 
+![Both Palm OS and Windows Mobile devices have synchronization function](images/mobile-device/hotsync.jpg)
+
 However, as computing devices, data exchange with the outside world was a necessity. They needed to connect to a PC through a data cable and perform "synchronization" to transfer data changes made on the mobile device to the PC and vice versa. Synchronization could maintain consistency of data between the PC and the PDA, effectively making the PDA a "mirror" of the PC counterpart application. This mode of operation was known as "PC Companion."
 
 Before high-speed mobile data networks became widespread, "synchronization" was the most crucial method for PDAs to exchange data with the outside world. This functionality continued with iPhones and Android smartphones. If you've ever used an iPhone 3GS or an earlier iPhone and iPod, you might have used the synchronization feature. iTunes served as the desktop counterpart for the iPhone, similar to how Palm had Palm Desktop, and Windows Mobile had ActiveSync and Microsoft Outlook as its desktop counterpart.
@@ -45,19 +51,21 @@ When we look at the PDAs of that era, especially those using the Palm OS, we fin
 
 Most touchscreen mobile computing devices that came after the Palm Pilot, including today's smartphones, to some extent inherited the operational logic of the Palm Pilot. For example, my everyday smartphone, a VIVO Android phone, has a customized Android system called Origin OS. Its launcher is also composed of four app icons at the bottom and an area for app icons that occupy most of the screen, similar to the interactive logic that has persisted for 25 years.
 
-## "The 'Four Heavenly Kings' and Their Utilization
+## The Four "Button Apps" and Their Variant
 
-Originating from the PDA's 'electronic notepad' function, the practice of managing personal information through mobile devices has permeated commercial culture and developed into a unique subculture. The use of mobile apps for 'GTD' (Getting Things Done) and 'time management' became popular among PDA enthusiasts in the mid-2000s, laying the foundation for later popular apps like Evernote and Omnifocus.
+Originating from the PDA's electronic organizer function, the practice of managing personal information through mobile devices has permeated commercial culture and developed into a unique subculture. The use of mobile apps for time management and the term GTD (Getting Things Done) became popular among PDA enthusiasts in the mid-2000s, laying the foundation for later popular apps like Evernote and Omnifocus.
 
-The core function of the 'electronic notepad,' in technical terms, is called 'PIM - Personal Information Management.' The 'Four Heavenly Kings' on Palm devices: Calendar, Phonebook, To-Do List, and Notes, constitute the most classic combination of a PIM system. Nearly all 'GTD' software is an extension or expansion of these 'Four Heavenly Kings.' For instance, Evernote is an enhanced version of a notepad, while Omnifocus is an enhanced version of a to-do list.
+The core function of PIM (Personal Information Management) are implemented by four applications with hardware button assigned to them on the Palm Pilot: Date Book (Calendar), Address Book, To-Do List, and Memo Pad, constitute the most classic combination of a PIM system. In the Chinese enthusiast community, they are jokingly referred to as the "Four Heavenly Kings"(四大天王 / sì dà tiān wáng). Nearly all "GTD" software is an extension or expansion of these four apps. For instance, Evernote is an enhanced version of memo pad, while Omnifocus is an enhanced version of a to-do list.
 
 Next, I'd like to mention a software called ListPro. As its name suggests, it's also an enhanced version of a to-do list. However, under the various extreme uses by Windows Mobile enthusiasts, it became a 'Swiss Army Knife,' serving as a platform for sharing various data sets. For example, the 'Hangzhou Food Map' I'm showcasing displays addresses, contact information, recommended dishes, and reviews of Hangzhou restaurants from 2004, resembling a time-travel version of 'Dianping' (a popular Chinese restaurant review app). Enthusiasts from different places often share the information they've collected via forums. Here, I have several databases such as 'Beijing Travel Guide,' 'Digital Hefei,' 'Pocket Nanjing,' etc., serving as helpful tools for trip planning.
 
-Another important function of PDAs is electronic dictionaries. [Mdict](https://www.mdict.cn/), the most successful domestic electronic dictionary software on Windows Mobile, is still one of the popular mobile dictionary apps."
+Another important function of PDAs is electronic dictionaries. [Mdict](https://www.mdict.cn/), the most successful domestic electronic dictionary software on Windows Mobile, is still one of the popular mobile dictionary apps.
 
 However, the functionality of offline browsing (Web Clipping) might be a bit challenging for today's smartphone users to grasp. The basic function of an offline browser is to download web pages from the internet onto a PC and then synchronize them to be viewed on a mobile device. In the late 90s and early 2000s, many PDAs lacked internet connectivity, and even if they had it, data costs were usually relatively expensive. However, there was a genuine demand for news consumption on mobile devices, leading to the emergence of this indirect solution.
 
 iSilo and HandStory were popular mobile offline browsing software at that time. MobiPocket, a mobile reading software acquired by Amazon in 2005, also had similar functionality. Worth mentioning is that the AZW format used by Amazon's Kindle e-readers originated from MobiPocket.
+
+![iSilo used to be a popular web-clipping software for Palm OS.](images/mobile-device/isilo.jpg)
 
 In China, when officials and academia mentioned mobile news services, they often preferred to highlight the 'mobile newspaper' services led by operators, supported through MMS (Multimedia Messaging Service) and WAP (Wireless Application Protocol). They mentioned PDA's offline news browsing functionality less frequently. However, in my view, while mobile newspapers could provide immediate (WAP) and semi-immediate (MMS) news services, the screens of feature phones during that era were not ideal for reading. On the other hand, the operation of offline browsing on PDAs was more akin to the usage habits seen today in news apps like 'Toutiao' (Today's Headlines).
 
