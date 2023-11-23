@@ -76,11 +76,11 @@ Encoded audio and video data need to be multiplexed using an audio-video multipl
 
 During playback, the process reverses: playback software demultiplexes the container file to extract the compressed encoded audiovisual data, which is then sent to the respective decoders to reconstruct audio and video streams.
 
-![The Windows 3.2 control panel shows the codecs installed on the system](images/multimedia-pc/win3xcodec.jpg)
+![The Windows 3.2 control panel shows the codecs installed on the system](images/multimedia-pc/win3xcodec.png)
 
 Codecs stand among the most crucial software components in multimedia computers and are a fiercely competitive arena, often surrounded by licensing fees and patent barriers. Many influential and capable manufacturers in related industries have staked their claims here, resulting in codec fragmentation. In the realm of personal computer video in the early '90s, Apple Video (1991), Intel's Indeo (1992), and Microsoft Video 1 (1993) were all prevalent codecs utilized in various software applications.
 
-![There are many Codecs installed on Windows 10 computers](images/multimedia-pc/win10codec.jpg)
+![There are many Codecs installed on Windows 10 computers](images/multimedia-pc/win10codec.png)
 
 ## QuickTime and DirectX
 Let's dive into the two most pivotal multimedia architectures: Apple's QuickTime and Microsoft's DirectX. QuickTime by Apple was developed with a focus on handling audiovisual content. The earlier mentioned Apple Video was among the earliest video codecs supported by QuickTime. Over its 30-year development journey, new codecs like MPEG-1, MPEG-2, MPEG-4, H.264, and those specifically designed for post-production, such as ProRes, have been integrated into QuickTime. The MOV container format is also emblematic of QuickTime, and videos shot on today's iPhones are in the MOV format. QuickTime has evolved to include features like QuickTime interactive (QTi) and QuickTime VR.

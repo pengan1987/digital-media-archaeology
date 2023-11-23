@@ -73,7 +73,7 @@ However, there are more challenges with Apple systems. One issue is the incompat
 
 Another challenge when handling files from old Apple computers is the HFS file system's type and creator codes. Unlike Windows or later macOS versions that use file extensions to denote file types, old Mac OS systems store file types in HFS file attributes. Transferring files using non-HFS formatted disks may result in losing file types stored in HFS attributes, leading to uncertainty about which program to use to open the file. Thus, handling these file systems requires special attention. If you still have a Mac OS 9 or earlier Apple computer, tools like [FileTyper](https://www.macintoshrepository.org/2050-filetyper) or [FileType](http://www.frederikseiffert.de/filetype/) can be used to view and modify HFS file system type and creator codes.
 
-![Viewing and modifying HFS types and creator codes with the FileTyper](images/storage-media/filetyper.jpg)
+![Viewing and modifying HFS types and creator codes with the FileTyper](images/storage-media/filetyper.png)
 
 When dealing with disks of uncertain formats, Windows tools like DiskGenius or R-Studio can be used to investigate disk partition conditions. Often, disk tools on Apple systems hide many file system details, making diagnosis and repair challenging. Moreover, newer Linux kernels have built-in hfsplus modules, enabling low-level operations on Apple HFS partition tables using Linux tools like [GParted](https://gparted.org/), which the macOS built-in disk utilities does not support.
 
