@@ -7,6 +7,8 @@ Today, we often refer to the concept of "transmedia art," encompassing intermedi
 
 The primary conduit for interoperating between diverse media today is the computer. Modern PCs can handle almost every kind of media imaginable. They not only manage electronic communication methods like telephony, broadcasting, television, and audio recording but also facilitate digitizing non-electronic media easily. For instance, a scanner can digitize paper documents for interaction with computer programs. Hence, even when not serving as the final presentation platform, PCs often act as intermediaries when working with various media during creative processes.
 
+![Scanners can digitize paper and interact with computer programs, the scanner pictured here is used to simulate a punched card reader](images/multimedia-pc/powermacg4.jpg)
+
 # TV Output
 
 Next, let's revisit a classic case, the 1987 "[Painting with Light](https://genome.ch.bbc.co.uk/18900b0c0fe6426b922b26c45fecd570)" series by the BBC, inviting renowned artists such as David Hockney and Howard Hodgkin to create drawings using the Quantel Paintbox computer device.
@@ -17,13 +19,15 @@ The Quantel Paintbox served as a cross-media system, linking brushes, computer s
 
 A common device for modern PCs to interact with television networks is a TV card. It captures television signals and converts them into digital video within the computer. PCs also have the capability to output signals to television networks. Many graphics cards are equipped with TV-out or S-Video, allowing them to output video signals compatible with television standards.
 
-Image: The NewTek Video Toaster, introduced in 1990, was an early video effects system for personal computers. 
+![The NewTek Video Toaster, introduced in 1990, was an early video effects system for personal computers. Photo taken at VCF PNW Seattle 2019](images/multimedia-pc/videotoaster.jpg)
 
 Television capture cards and similar devices became popular after the 1990s, something I'll discuss later. Prior to that, video capture equipment was often expensive, like the Quantel Paintbox, which cost around $20,000 and was mainly affordable for professional studios. The 1990 NewTek Video Toaster was the first affordable video effects system for enthusiasts and small studios, priced at approximately $3,000. Recently, I bought a TV card for just 30 RMB, allowing us to achieve tasks that were previously exclusive to professionals at a significantly lower cost.
 
 It's notable that the capacity for computers to output video predates their ability to input video by a significant margin. For "home-use" computers, video output can be considered an innate feature. Early personal computers like the Apple II and ZX 81 could utilize televisions as display devices, primarily aimed at reducing purchase and operational costs. Meanwhile, systems such as the Atari 8-bit series and Commodore VIC-20 were designed as a fusion of TV gaming consoles and computers, inheriting the habit of being used with televisions like gaming consoles. These personal computers, akin to early TV gaming consoles, exhibited slight performance disparities due to variations in the NTSC or PAL television standards.
 
 The visuals of home computers supporting TV output could be recorded by VCRs and could make use of various analog TV signal processing devices. Today, I've brought a Laser 310, a computer commonly found around 1984-85, manufactured by Hong Kong's VTech. In China, this computer was widely imported for educational purposes, hence making it one of the most commonly found vintage computers domestically. In the upcoming segment on "Vintage Personal Computers" in this course, I'll delve into the detailed usage of this machine. However, today, its primary purpose is to showcase its interoperability with televisions.
+
+![Today's LCD TVs can still be connected to Laser 310 computers](images/multimedia-pc/laser310.jpg)
 
 The Laser 310 can output to a television in two ways. One method is through composite video signals, known as an AV line. AV interfaces can still be found on today's televisions, allowing modern LCD TVs to connect to the Laser 310 computer. Additionally, the Laser 310 is equipped with an RF modulator, a feature common in many old-school computers but less prevalent in today's technology, which directly transmits signals to a TV tuner.
 
@@ -32,6 +36,8 @@ The Laser 310 can output to a television in two ways. One method is through comp
 The next software to mention is HyperCard. While the visual and auditory language of computer software and games still, to a considerable extent, draws from the logic of movies and TV, the development of computer interactivity is a facet unique to the medium. Introduced in 1987, HyperCard was the first widely used hypermedia tool, supporting button-driven navigation while also allowing the embedding of visual and auditory resources like images and sounds into its cards. HyperCard's organizational approach profoundly influenced the development of the World Wide Web. The first browser supporting embedded images and tables, ViolaWWW, [cited HyperCard as an inspiration](https://web.archive.org/web/20220831020010/http://viola.org/viola/violaIntro.html) for its functionality design.
 
 Older Macintosh programs like HyperCard can no longer run on today's Macs. To demonstrate it, I've prepared a PowerMac G4, a model from 2003. It showcases several configurations different from modern computers, such as a display interface using the dedicated ADC (Apple Display Connector), which can transmit both images and power. This computer can run the native Mac OS 9, thus supporting most software developed for Motorola 68K processor-based Macintosh systems before the mid-1990s.
+
+![PowerMac G4 in the classroom](images/multimedia-pc/powermacg4.jpg)
 
 ### CD-ROMs and Optical Discs
 
@@ -70,7 +76,11 @@ Encoded audio and video data need to be multiplexed using an audio-video multipl
 
 During playback, the process reverses: playback software demultiplexes the container file to extract the compressed encoded audiovisual data, which is then sent to the respective decoders to reconstruct audio and video streams.
 
+![The Windows 3.2 control panel shows the codecs installed on the system](images/multimedia-pc/win3xcodec.jpg)
+
 Codecs stand among the most crucial software components in multimedia computers and are a fiercely competitive arena, often surrounded by licensing fees and patent barriers. Many influential and capable manufacturers in related industries have staked their claims here, resulting in codec fragmentation. In the realm of personal computer video in the early '90s, Apple Video (1991), Intel's Indeo (1992), and Microsoft Video 1 (1993) were all prevalent codecs utilized in various software applications.
+
+![There are many Codecs installed on Windows 10 computers](images/multimedia-pc/win10codec.jpg)
 
 ## QuickTime and DirectX
 Let's dive into the two most pivotal multimedia architectures: Apple's QuickTime and Microsoft's DirectX. QuickTime by Apple was developed with a focus on handling audiovisual content. The earlier mentioned Apple Video was among the earliest video codecs supported by QuickTime. Over its 30-year development journey, new codecs like MPEG-1, MPEG-2, MPEG-4, H.264, and those specifically designed for post-production, such as ProRes, have been integrated into QuickTime. The MOV container format is also emblematic of QuickTime, and videos shot on today's iPhones are in the MOV format. QuickTime has evolved to include features like QuickTime interactive (QTi) and QuickTime VR.

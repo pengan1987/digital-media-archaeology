@@ -81,6 +81,8 @@ When using printers today, one of the first parameters we typically consider is 
 
 The most common printers that output a single character at a time today are dot matrix printers, commonly found in banks for passbook printing or for printing multi-part invoices. Thermal printers, frequently seen in stores and used for receipts in the courier industry, represent the most prevalent line printers.
 
+![Printing Charts and ASCII Art with a Dot Matrix Printer](images/paper-to-screen/matrixprinter.jpg)
+
 Previously, line printers referred specifically to drum printers and chain/train printers used on larger computers. Their printing devices could cover the entire width of the paper, allowing printing of multiple characters simultaneously, making them faster than printers that could only output one character at a time. However, after the 1990s, their primary applications—generating results and log outputs for large computers—were gradually replaced by video displays. They weren't widely used on microcomputers, and works with similar but lower print volumes were typically handled by dot matrix printers. Even the printer used in our demonstration today is a dot matrix printer.
 
 In terms of software, since line printers were once the most widely used devices on computers, both DOS and Linux default to treating printers as line printers when handling them. This means that regardless of content length, they default to line breaks after printing. Additionally, the computer's printer interface is also known as LPT (line print terminal) or lp (Unix and Linux terminology, an abbreviation for line printer).
@@ -125,6 +127,8 @@ If we look back to the 1990s, we find that the ASCII Art Ensemble, an influentia
 The infrastructure for such creative work came from the demoscene community. The open-source ASCII Art library, [AAlib](https://aa-project.sourceforge.net/aalib/), released in 1997, could convert any image or video into black-and-white ASCII Art. Similar libraries like [Libcaca](http://caca.zoy.org/wiki/libcaca) could generate color ANSI Art. Open-source media players like [MPlayer](#user-content-fn-5)[^5] and VLC could play video files in the form of text animations using AAlib or Libcaca.
 
 Aside from video conversion, native ASCII Art animations also have a rich practice. Simon Jansen, a software engineer from New Zealand, known as Asciimation, started making [Star Wars ASCII animations](http://asciimation.co.nz/) in 1997, perhaps the most well-known among similar works.
+
+![Playing ASCII movies on terminal](images/paper-to-screen/terminal.jpg)
 
 This class session comes to an end. We explored vector displays, plotters as vector graphic output devices, line printers, and electronic display terminals as text output devices. In these devices, we can see the most discussed and crucial medium in art history—paper—becoming part of computer systems and transforming into a "digitalized" medium. The paradigm of outputting on paper shifted to glass media—electronic display screens. In the next session, we'll step out of the digital computer world to explore how magic on analog media influenced new media art.
 

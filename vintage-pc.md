@@ -12,6 +12,8 @@ So, what's a "demo"? It's a real-time generated, non-interactive computer audio-
 
 For the Demoscene community, the most significant events are demoparties, where members gather to exchange techniques and showcase their works. Just last weekend (November 12-13, 2021), a Demoparty called Demosplash was held at Carnegie Mellon University in the United States. Let's take a look at what happens at these parties: they cut Commodore 64-themed cakes and create works using old computers like the Amstrad CPC. Inside the computer club at Carnegie Mellon University, they display numerous old computers, similar to the ones set up in our classroom, replicating a small part of their environment.
 
+![Vintage computers in Carnegie Mellon University Computer Club](images/vintage-pc/cmucc.jpg)
+
 This is a typical, active community of vintage computer enthusiasts, tied to university activities. How do they define old computers in such communities? They organize compos, which are demo-making competitions, divided into several categories, with "Retro" being a category specifically for old computers.
 
 The [rules of the Demosplash competition](http://www.demosplash.org/compo/retro) state:
@@ -59,6 +61,8 @@ The Laser 310 appeared later, in 1985. It was an affordable low-end 8-bit comput
 ## Advanced 8-bit Computers (1979~1990s)
 
 However, the "second generation" of 8-bit computers appeared earlier than the Laser 310. Shortly after the first batch of home computers in 1977, Atari attempted to integrate rich graphics and sound features from gaming consoles into computers. In 1979, Atari released the first home computers equipped with dedicated graphics and sound processing chips: the Atari 8-bit series. This series included the Atari 400 and Atari 800 as its initial models, with 4KB and 8KB of memory, respectively. Both computers were equipped with dedicated graphics and sound chips, enabling them to feature scrolling and sprite capabilities, features that were previously exclusive to gaming consoles.
+
+![Atari 800](images/vintage-pc/atari800.jpg)
 
 The advanced 8-bit home computers, starting with the Atari 8-bit series, boasted stronger graphic and sound capabilities, surpassing earlier or lower-end 8-bit home computers like the Apple II, TRS-80, or Laser 310. Consequently, most 8-bit demos in the demoscene were developed around this generation of home computers. For instance, the Commodore 64 became the most popular 8-bit demo platform. Even today, many enthusiasts continue to create around it. When discussing the 8-bit style in Europe and America, the visual and auditory style of the Commodore 64 often springs to mind.
 

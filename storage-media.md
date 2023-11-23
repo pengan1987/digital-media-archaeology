@@ -19,6 +19,8 @@ When discussing floppy disks, we often refer to the 3.5-inch floppy as a "1.44 M
 
 Even similar-looking 3.5-inch floppy disks might have varying capacities on different computers. Many might not even be readable with standard PC floppy drives. The floppy disk formats of Apple Macintosh and Apple IIGS are notably different from those on IBM PCs. Their 400KB and 800KB formats used a Sony-developed Zoned Constant Angular Velocity (Zoned CAV) floppy drive. Therefore, old Macintosh floppy disks cannot be read using modern floppy drives. I've personally encountered this issue before with my old Macintosh SE, which used an 800KB floppy drive incompatible with standard PC drives, hindering the use of floppy disks as a data transfer medium.
 
+![Apple 3.5 Drive for Apple IIGS is also an 400/800KB model](images/storage-media/appleiigs.jpg)
+
 To make it possible to read these less common formats using more readily available equipment, especially floppy drives in IBM PCs and compatible machines, various software and tools have been developed for floppy disk digital preservation and forensics. For instance, [fdrawcmd](https://simonowen.com/fdrawcmd/) is a Windows floppy drive controller driver supporting more floppy disk formats, while [KyroFlux](https://kryoflux.com/) offers a dedicated hardware floppy drive controller capable of reading formats, including Apple 400/800KB formats, that many PC floppy drives cannot.
 
 ## Hard Disk
@@ -36,6 +38,8 @@ However, the CHS information provided by modern computer hard disks no longer ac
 
 ## Removable Disks and Memory Cards
 Many storage devices that do not structurally resemble hard drives simulate CHS information to provide software compatibility. For instance, the Zip drive is a typical example. Physically, it's an upgrade from the floppy disk, slightly larger with a more robust outer shell, and similar internal disk material. Despite its physical structure resembling a floppy disk, software operations on the Zip disk follow CHS addressing rules similar to hard drives.
+
+![Zip drive and disk](images/storage-media/zipdrive.jpg)
 
 The Jaz drive is another intriguing case representing the primary approach to make hard drives portable before the common USB-based mobile hard drives today. The disks were relatively inexpensive, but the mechanisms for reading and writing, like the heads and control circuits, were costly. In the Jaz drive, the disk was placed inside a removable and portable cartridge, while the heads and control circuits remained fixed inside the drive. Upon its launch in 1995, its capacity was comparable to internal hard drives of that time. However, due to the fixed heads and circuits, upgrading the capacity required replacing the entire drive rather than just swapping the disk cartridge. Consequently, it was replaced by the USB mobile hard drives that became common after the 2000s.
 
@@ -61,11 +65,15 @@ However, if your device has an IDE interface, it's better to avoid using SCSI. S
 ## File Systems
 Another challenge in digital preservation is encountering various file systems in old computers' disks. The FAT16 or FAT32 used in IBM PCs and compatibles is the easiest to handle. Generally, if the disk has an appropriate interface to connect to the host, disks with FAT formats are mostly readable on modern computers. Additionally, Windows systems largely maintain binary compatibility with old applications. Even 32-bit Windows 7 and Windows 10 can directly run many 16-bit Windows 3.0 programs.
 
+![Reversi from Windows 3.0 also run on Windows 7](images/storage-media/reversi.jpg)
+
 As an example from my own experience, I have a 1987 IBM PS/2 Model 30 with a 720KB 3.5-inch floppy drive. With a USB floppy drive, I successfully copied a Windows 3.0 game of Othello and executed it on a Windows 7 computer. Linux, developed initially for the IBM PC, supports ext2, introduced in 1993, and reading it on current distributions poses no major obstacles.
 
 However, there are more challenges with Apple systems. One issue is the incompatibility with earlier mentioned floppy disk formats. The 400k and 800k Macintosh floppy drives were discontinued after the PowerMac G3, and regular PC floppy drives cannot read them. This requires multiple data migrations, necessitating a compatible machine like my Power Macintosh 6100 and Power Macintosh 7300, both acting as intermediaries for the Macintosh SE, exchanging data with modern computers via Ethernet due to their Ethernet cards. This is a common approach when dealing with data from old computers.
 
 Another challenge when handling files from old Apple computers is the HFS file system's type and creator codes. Unlike Windows or later macOS versions that use file extensions to denote file types, old Mac OS systems store file types in HFS file attributes. Transferring files using non-HFS formatted disks may result in losing file types stored in HFS attributes, leading to uncertainty about which program to use to open the file. Thus, handling these file systems requires special attention. If you still have a Mac OS 9 or earlier Apple computer, tools like [FileTyper](https://www.macintoshrepository.org/2050-filetyper) or [FileType](http://www.frederikseiffert.de/filetype/) can be used to view and modify HFS file system type and creator codes.
+
+![Viewing and modifying HFS types and creator codes with the FileTyper](images/storage-media/filetyper.jpg)
 
 When dealing with disks of uncertain formats, Windows tools like DiskGenius or R-Studio can be used to investigate disk partition conditions. Often, disk tools on Apple systems hide many file system details, making diagnosis and repair challenging. Moreover, newer Linux kernels have built-in hfsplus modules, enabling low-level operations on Apple HFS partition tables using Linux tools like [GParted](https://gparted.org/), which the macOS built-in disk utilities does not support.
 
@@ -131,6 +139,8 @@ Another device commonly used in linear editing is the video mixer, allowing for 
 With a video mixer, many classic video effects can be achieved. For instance, the fly-in/fly-out effect involves combining green screen with picture-in-picture functionality. This technique places the actor's image into the background using the green screen and then uses picture-in-picture to zoom in, zoom out, or move the image left and right—all controlled easily through the levers on the effects mixer.
 
 Pairing an old computer with a effects mixer creates a setup resembling an 80s-style character generator. Since old computers had limited capabilities, they couldn't overlay subtitles directly onto the video. Instead, they typically placed a solid color background behind the text. Then, using the effects mixer's Chroma Key or Luma Key functions, they would overlay the text onto the video through picture-in-picture, achieving the effect of video subtitles.
+
+![The Laser 310 with video mixer can build a oldschool subtitle systems](images/storage-media/videomixer.jpg)
 
 Even in modern content creation, this type of video mixer retains practical value. One application is producing nostalgic videos, accurately recreating the vintage TV effects seen in shows like "Journey to the West" and "Ultraman." Additionally, analog effects mixers offer almost no delay when producing the desired effects. Although limited in resolution due to analog signals, they prove highly valuable in situations where minimizing delay is more critical than achieving high image quality, such as in live performances.
 
