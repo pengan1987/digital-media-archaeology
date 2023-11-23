@@ -12,4 +12,8 @@ In this course, each episode will discuss a specific theme. For example, first e
 
 For each episode's topic, it will first attempt to discuss how the IT industry and regular users utilized these technologies and devices at the time. Next, I will explore and showcase the works created by new media artists using these mediums. Additionally, the course will provide background information on specific media.
 
+Preview the book on [GitBook](https://compumuseum.gitbook.io/hands-on-digital-media-archaeology/)
+
+Suggestions for revision on [Github](https://github.com/pengan1987/digital-media-archaeology)
+
 [^1]: The original title was "Experimental Archaeology of Digital Media"(数字媒体的实验考古), but it was changed to the current name because its content is more related to media archaeology rather than experimental archaeology.
