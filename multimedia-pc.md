@@ -7,7 +7,7 @@ Today, we often refer to the concept of "transmedia art," encompassing intermedi
 
 The primary conduit for interoperating between diverse media today is the computer. Modern PCs can handle almost every kind of media imaginable. They not only manage electronic communication methods like telephony, broadcasting, television, and audio recording but also facilitate digitizing non-electronic media easily. For instance, a scanner can digitize paper documents for interaction with computer programs. Hence, even when not serving as the final presentation platform, PCs often act as intermediaries when working with various media during creative processes.
 
-![Scanners can digitize paper and interact with computer programs, the scanner pictured here is used to simulate a punched card reader](images/multimedia-pc/powermacg4.jpg)
+![Scanners can digitize paper and interact with computer programs, the scanner pictured here is used to simulate a punched card reader](images/multimedia-pc/scanner.jpg)
 
 # TV Output
 
